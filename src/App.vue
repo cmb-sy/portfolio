@@ -2,6 +2,7 @@
 import Header from "./components/CustomHeader.vue";
 import Footer from "./components/CustomFooter.vue";
 import About from "./components/CustomAbout.vue";
+import Top from "./components/TopPage";
 </script>
 
 <template>
@@ -35,17 +36,17 @@ import About from "./components/CustomAbout.vue";
       </a>
     </div>
   </div>
-  <kinesis-container>
-    Here, you can put
-    <kinesis-element :strength="20">
-      <VueTyper
-        :text="['テキスト1', 'テキスト2', 'テキスト3']"
-        type-delay="100"
-      ></VueTyper>
-      <VueTyper text="watermelon" :repeat="10"></VueTyper>
-      <vue-typer :text="['テキスト1', 'テキスト2', 'テキスト3']"></vue-typer>
-    </kinesis-element>
-  </kinesis-container>
+  <Top />
+  <div class="context">
+    <kinesis-container>
+      <kinesis-element :strength="20">
+        <VueTyper
+          :text="['テキスト1', 'テキスト2', 'テキスト3']"
+          type-delay="10"
+        ></VueTyper>
+      </kinesis-element>
+    </kinesis-container>
+  </div>
 
   <About id="about"></About>
   <!-- <Skill id="skill"></Skill> -->
