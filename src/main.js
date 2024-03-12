@@ -1,13 +1,10 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import VWave from "v-wave";
+import VueTyper from "vue3-typer";
+import VueKinesis from "vue-kinesis";
 
 const app = createApp(App);
 
-app.use(VWave, {
-  color: "red",
-  initialOpacity: 0.5,
-  easing: "ease-in",
-});
-
+app.use(VueKinesis);
+app.use(VueTyper);
 app.mount("#app");

@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "v-wave": "^2.0.0",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-kinesis": "^2.0.5",
+    "vue3-typer": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
