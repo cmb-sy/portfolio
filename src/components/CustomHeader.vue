@@ -5,7 +5,11 @@ import navigationBar from "/src/components/NavigationBar";
 <template>
   <div class="header">
     <div class="header-inner">
-      <h1 class="title" @click="clickSmoothScroll('#app')">Shoma's Profile</h1>
+      <h1 class="title" @click="clickSmoothScroll('#app')">
+        <kinesis-container>
+          <kinesis-element :strength="20"> Kunst portfolio </kinesis-element>
+        </kinesis-container>
+      </h1>
       <navigationBar class="nav" />
     </div>
   </div>

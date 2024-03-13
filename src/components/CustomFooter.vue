@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p class="title">&copy;2020 Shoma Kobayashi</p>
+    <p class="title">&copy;2024 kunst-portfolio</p>
   </div>
 </template>
 

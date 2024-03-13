@@ -1,6 +1,7 @@
 <script setup>
 import Header from "./components/CustomHeader.vue";
 import Footer from "./components/CustomFooter.vue";
+import Work from "./components/MyWork";
 import About from "./components/CustomAbout.vue";
 import Top from "./components/TopPage";
 </script>
@@ -37,20 +38,10 @@ import Top from "./components/TopPage";
     </div>
   </div>
   <Top />
-  <div class="context">
-    <kinesis-container>
-      <kinesis-element :strength="20">
-        <VueTyper
-          :text="['テキスト1', 'テキスト2', 'テキスト3']"
-          type-delay="10"
-        ></VueTyper>
-      </kinesis-element>
-    </kinesis-container>
-  </div>
 
   <About id="about"></About>
   <!-- <Skill id="skill"></Skill> -->
-  <!-- <Work id="work"></Work> -->
+  <Work id="work"></Work>
   <!-- <Contact id="contact"></Contact> -->
   <Footer></Footer>
 </template>

@@ -6,7 +6,7 @@
 
     <ul class="works">
       <li class="card">
-        <img class="card-img" src="../assets/work/graph.png" alt="" />
+        <!-- <img class="card-img" src="../assets/work/graph.png" alt="" /> -->
         <div class="card-content">
           <h1 class="card-title jp">三重県コロナウイルス対策サイト</h1>
           <p class="card-text">東京都のものから派生したサイト</p>
@@ -21,7 +21,7 @@
         </div>
       </li>
       <li class="card">
-        <img class="card-img" src="../assets/work/fulfill.png" alt="" />
+        <!-- <img class="card-img" src="../assets/work/fulfill.png" alt="" /> -->
         <div class="card-content">
           <h1 class="card-title jp">Fulfill</h1>
           <p class="card-text">JPHACKS2020提出作品</p>
@@ -38,7 +38,7 @@
         </div>
       </li>
       <li class="card">
-        <img class="card-img" src="../assets/work/this.png" alt="" />
+        <!-- <img class="card-img" src="../assets/work/this.png" alt="" /> -->
         <div class="card-content">
           <h1 class="card-title">This site</h1>
           <p class="card-text">私のプロフィールサイト</p>

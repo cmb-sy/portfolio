@@ -1,9 +1,27 @@
-<!-- <script script setup></script> -->
+<script script setup>
+import { ref } from "vue";
+const movingBlockNumber = ref(100);
+</script>
 
 <template>
   <div class="area">
+    <!-- 文字 -->
+    <h1>
+      <VueTyper
+        :text="[
+          'あ',
+          'あり',
+          'ありが',
+          'ありがと',
+          'ありがとう',
+          'ありがとうね',
+        ]"
+        type-delay="0.5"
+      ></VueTyper>
+    </h1>
+    <!-------->
     <ul class="circles">
-      <li></li>
+      <li v-for="index in movingBlockNumber" :key="index"></li>
     </ul>
   </div>
 </template>
@@ -22,8 +40,8 @@ body {
 
 .context {
   width: 100%;
-  position: absolute;
-  top: 50vh;
+  /* position: absolute; */
+  /* top: 50vh; */
 }
 
 .context h1 {
@@ -36,7 +54,7 @@ body {
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   width: 100%;
-  height: 100vh;
+  height: 500px;
 }
 
 .circles {
