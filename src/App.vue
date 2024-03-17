@@ -1,5 +1,5 @@
 <script setup>
-import Header from "./components/CustomHeader.vue";
+import HeaderBar from "./components/HeaderBar";
 import Footer from "./components/CustomFooter.vue";
 import Work from "./components/MyWork";
 import About from "./components/CustomAbout.vue";
@@ -8,37 +8,9 @@ import Top from "./components/TopPage";
 
 <template>
   <div id="app">
-    <Header id="header"></Header>
-    <div class="res">
-      <h1 class="res-title" @click="clickSmoothScroll('#app')">
-        Shoma's Profile
-      </h1>
-    </div>
-    <div class="nav-res">
-      <a href="#" class="link-content" @click="clickSmoothScroll('#app')">
-        <font-awesome-icon icon="image" class="nav-icon" />
-        <p class="comment">Top</p>
-      </a>
-      <a href="#" class="link-content" @click="clickSmoothScroll('#about')">
-        <font-awesome-icon icon="user-circle" class="nav-icon" />
-        <p class="comment">About</p>
-      </a>
-      <a href="#" class="link-content" @click="clickSmoothScroll('#skill')">
-        <font-awesome-icon icon="code" class="nav-icon" />
-        <p class="comment">Skill</p>
-      </a>
-      <a href="#" class="link-content" @click="clickSmoothScroll('#work')">
-        <font-awesome-icon icon="hammer" class="nav-icon" />
-        <p class="comment">Works</p>
-      </a>
-      <a href="#" class="link-content" @click="clickSmoothScroll('#contact')">
-        <font-awesome-icon icon="handshake" class="nav-icon" />
-        <p class="comment">Contact</p>
-      </a>
-    </div>
+    <HeaderBar id="headerNav" class="nav" />
   </div>
   <Top />
-
   <About id="about"></About>
   <!-- <Skill id="skill"></Skill> -->
   <Work id="work"></Work>
@@ -183,3 +155,4 @@ import Top from "./components/TopPage";
   }
 }
 </style>
+./components/HeaderBar.vue

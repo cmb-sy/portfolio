@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="content-title">
-      <font-awesome-icon icon="user-circle" class="icon" /> About
+      <font-awesome-icon icon="user-circle" class="icon" /> background
     </h1>
     <div>
       <div class="about">
