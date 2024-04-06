@@ -11,7 +11,7 @@ defineProps<{
       <nav>
         <ul v-for="(item, index) in headerItems" :key="index">
           <li>
-            <a href="#">{{ item }}</a>
+            <a class="" href="#">{{ item }}</a>
           </li>
         </ul>
       </nav>
