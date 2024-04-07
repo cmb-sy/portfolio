@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { type headerItem } from "@/components/Header/headerItem";
+
 defineProps<{
-  headerItems: string[];
+  headerItems: headerItem[];
 }>();
 </script>
 
@@ -11,7 +13,7 @@ defineProps<{
       <nav>
         <ul v-for="(item, index) in headerItems" :key="index">
           <li>
-            <a class="" href="#">{{ item }}</a>
+            <a class="" href="#">{{ item.value }}</a>
           </li>
         </ul>
       </nav>

@@ -1,18 +1,13 @@
 <script setup lang="ts">
-import Header from "@/components/Header.vue";
-
-const headerItem: string[] = [
-  "お問い合わせ",
-  "保有資格",
-  "保有技術",
-  "作品",
-  "経歴",
-  "トップページ",
-];
+import Header from "@/components/Header/Header.vue";
+import About from "@/components/About/About.vue";
+import { AboutLinks } from "@/components/About/link";
+import { headerItems } from "@/components/Header/headerItem";
 </script>
 
 <template>
-  <Header :header-items="headerItem" />
+  <Header :headerItems="headerItems" />
+  <About :aboutLinks="AboutLinks" />
 </template>
 
 <style scoped></style>
