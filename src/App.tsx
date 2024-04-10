@@ -1,20 +1,15 @@
 import React from "react";
 import "./App.css";
-import Header from "./componemt/HeaderComponent/Header";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Background from "./pages/BackgroundPage";
-import HomePage from "./pages/HomePage";
+import Header from "./componemt/Header/HeaderSection";
+import Career from "./componemt/Career/CareerSection";
+import HomePage from "./componemt/Home/HomePage";
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/background" element={<Background />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="App">
+      <Header />
+      <HomePage />
+      <Career />
+    </div>
   );
 }
 
