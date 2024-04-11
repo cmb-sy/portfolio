@@ -3,16 +3,16 @@ import "./Career.css";
 function CareerSection() {
   return (
     <section>
+      <h1>aaa</h1>
       {careers.map((item) => (
-        <ul className="timeline">
-          <li>
-            <p className="timeline-date">{item.date}</p>
-            <div className="timeline-content">
-              <h3>{item.name}</h3>
+        <div className="container">
+          <div className="timeline-item" date-is={item.date}>
+            <div className="text-box">
+              <h1>{item.name}</h1>
               <p>{item.description}</p>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       ))}
     </section>
   );

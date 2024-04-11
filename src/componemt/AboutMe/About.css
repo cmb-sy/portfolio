@@ -1,0 +1,15 @@
+.content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customImg {
+  border-radius: 50%;
+  width: 230px;
+}
+
+.text2 {
+  margin-top: 10px;
+}
