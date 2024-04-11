@@ -11,5 +11,10 @@
 }
 
 .text2 {
-  margin-top: 10px;
+  margin-left: 80px;
+}
+.customTable {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
 }

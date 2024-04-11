@@ -1,5 +1,7 @@
 import React from "react";
-import "./About.css";
+import "./AboutSection.css";
+
+import { AboutLinks } from "./link";
 
 function AboutSection() {
   return (
@@ -13,11 +15,13 @@ function AboutSection() {
               className="customImg"
             />
           </div>
-          <div className="mt-2 text--bold text-gray">
-            tetdivdejsnviwsncdjksncsinckiwsdcKN
+          <div className="customTable">
+            {AboutLinks.map((item) => (
+              <span>{item.name}</span>
+            ))}
           </div>
         </div>
-        <div className="text2">ejwfjc</div>
+        <div className="text2">簡単な自己紹介？</div>
       </div>
     </section>
   );
