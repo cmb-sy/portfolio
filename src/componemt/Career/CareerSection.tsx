@@ -8,7 +8,7 @@ function CareerSection() {
         <div className="container">
           <div className="timeline-item" date-is={item.date}>
             <div className="text-box">
-              <h1>{item.name}</h1>
+              <h3>{item.name}</h3>
               <p>{item.description}</p>
             </div>
           </div>

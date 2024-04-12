@@ -1,12 +1,13 @@
 import React from "react";
 import "./AboutSection.css";
-
 import { AboutLinks } from "./link";
 
+const introduction: string =
+  "私は、優れた結果を提供することに情熱を持ったフルスタック開発者です。フロントエンドの React と NextJS、バックエンドの PHP、CodeIgniter、NodeJS、Express の専門知識を活かして、私が取り組んでいるすべてのプロジェクトに技術スキルと創造的な問題解決の独自の組み合わせをもたらします。";
 function AboutSection() {
   return (
-    <section className="tester">
-      <h2>test</h2>
+    <section>
+      <h1>test</h1>
       <div className="content">
         <div className="text1">
           <div>
@@ -21,7 +22,7 @@ function AboutSection() {
             ))}
           </div>
         </div>
-        <div className="text2">簡単な自己紹介？</div>
+        <div className="text2">{introduction}</div>
       </div>
     </section>
   );

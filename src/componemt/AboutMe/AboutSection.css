@@ -12,6 +12,8 @@
 
 .text2 {
   margin-left: 80px;
+  width: 30%;
+  text-align: left;
 }
 .customTable {
   gap: 10px;
