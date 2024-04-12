@@ -5,6 +5,7 @@ import Career from "./componemt/Career/CareerSection";
 import HomePage from "./componemt/Home/HomePage";
 import About from "./componemt/AboutMe/AboutSection";
 import Works from "./componemt/Works/WorksSection";
+import Skill from "./componemt/Skill/SkillSection";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Career />
       <Works />
+      <Skill />
     </div>
   );
 }

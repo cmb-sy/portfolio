@@ -1,0 +1,14 @@
+.serviceBox {
+  border: solid;
+  margin: 20px;
+  width: calc(30% - 40px);
+}
+
+.worksArea {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  flex-wrap: wrap; /* 折り返し */
+  width: 100%;
+  justify-content: space-around;
+}
