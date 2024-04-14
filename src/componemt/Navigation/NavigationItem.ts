@@ -8,5 +8,5 @@ export const navigationItems: NavigationItem[] = [
   { value: "Career", key: "#career" },
   { value: "Works", key: "#works" },
   { value: "Skill", key: "#skill" },
-  { value: "お問合せ", key: "#contact" },
+  { value: "contact", key: "#contact" },
 ];

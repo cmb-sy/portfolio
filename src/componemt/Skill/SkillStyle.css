@@ -1,0 +1,9 @@
+.skillArea {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testerr {
+  text-align: left;
+}

@@ -1,12 +1,32 @@
-export type NavigationItem = {
-  value: string;
-  key: string;
+export type SkillList = {
+  skillType: "プログラミングスキル" | "保有資格";
+  skill: {
+    skillTitle: string;
+    image?: HTMLImageElement | string;
+  }[];
 };
 
-export const navigationItems: NavigationItem[] = [
-  { value: "AboutMe", key: "#about" },
-  { value: "Career", key: "#career" },
-  { value: "Works", key: "#works" },
-  { value: "Skill", key: "#skill" },
-  { value: "お問合せ", key: "#contact" },
+export const skillLists: SkillList[] = [
+  {
+    skillType: "プログラミングスキル",
+    skill: [
+      {
+        skillTitle: "python",
+      },
+      {
+        skillTitle: "javascript",
+      },
+    ],
+  },
+  {
+    skillType: "保有資格",
+    skill: [
+      {
+        skillTitle: "基本情報",
+      },
+      {
+        skillTitle: "test4",
+      },
+    ],
+  },
 ];
