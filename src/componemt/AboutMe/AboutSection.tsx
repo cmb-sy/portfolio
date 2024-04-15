@@ -7,22 +7,22 @@ const introduction: string =
 function AboutSection() {
   return (
     <section>
-      <h1>About</h1>
-      <div className="text-center flex items-center justify-center">
-        <div>
-          <div className="flex justify-center">
+      <h1>test</h1>
+      <div className="content">
+        <div className="text1">
+          <div>
             <img
               src="https://avatars.githubusercontent.com/u/63276819?v=4"
-              className="rounded-full w-3/6 text-center"
+              className="customImg"
             />
           </div>
-          <div className="flex justify-center gap-10">
+          <div className="customTable">
             {AboutLinks.map((item) => (
               <span>{item.name}</span>
             ))}
           </div>
         </div>
-        <div className="text-left ml-20 w-2/6">{introduction}</div>
+        <div className="text2">{introduction}</div>
       </div>
     </section>
   );
