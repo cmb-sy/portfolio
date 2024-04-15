@@ -1,9 +1,36 @@
 .skillArea {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .testerr {
   text-align: left;
+  /* white-space: normal; */
+  /* width: 100%; */
+}
+
+.testerr2 {
+  /* text-align: left; */
+  white-space: nowrap;
+  /* width: 100%; */
+  width: 20%;
+}
+.testerr3 {
+  /* text-align: left; */
+  white-space: nowrap;
+  /* width: 100%; */
+  width: 20%;
+}
+.testerr4 {
+  /* text-align: left; */
+  white-space: nowrap;
+  /* width: 100%; */
+  /* width: 25%; */
+}
+
+.skillArea2 {
+  width: 50%;
+  border: solid;
+  margin: 20px;
 }

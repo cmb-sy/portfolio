@@ -1,31 +1,51 @@
-export type SkillList = {
-  skillType: "プログラミングスキル" | "保有資格";
+export type ProgrammingSkill = {
+  skillType: "ProgrammingSkill";
   skill: {
     skillTitle: string;
-    image?: HTMLImageElement | string;
+    imageUrl?: string;
+    experienceYear: string;
+    comment: string;
   }[];
 };
 
-export const skillLists: SkillList[] = [
+export type Certificate = {
+  skillType: "Certificate";
+  skill: {
+    Title: string;
+    imageUrl?: string;
+  }[];
+};
+
+export const ProgrammingSkills: ProgrammingSkill[] = [
   {
-    skillType: "プログラミングスキル",
+    skillType: "ProgrammingSkill",
     skill: [
       {
         skillTitle: "python",
+        imageUrl:
+          "/Users/snakashima/develop/nakashima/portfolio/src/assets/Python_logo_01.svg",
+        experienceYear: "3年",
+        comment:
+          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        skillTitle: "javascript",
+        skillTitle: "python",
+        experienceYear: "a",
+        comment: "aaa",
       },
     ],
   },
+];
+
+export const Certificates: Certificate[] = [
   {
-    skillType: "保有資格",
+    skillType: "Certificate",
     skill: [
       {
-        skillTitle: "基本情報",
+        Title: "python",
       },
       {
-        skillTitle: "test4",
+        Title: "javascript",
       },
     ],
   },
