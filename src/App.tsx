@@ -6,6 +6,7 @@ import HomePage from "./componemt/Home/HomePage";
 import About from "./componemt/AboutMe/AboutSection";
 import Works from "./componemt/Works/WorksSection";
 import Skill from "./componemt/Skill/SkillSection";
+import Menu from "./componemt/Test/Menu";
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,10 @@ function App() {
       <Career />
       <Works />
       <Skill />
+      <Menu title="親メニュー" withIcon={true}>
+        <Menu title="子メニュー1" />
+        <Menu title="子メニュー2" />
+      </Menu>
     </div>
   );
 }
