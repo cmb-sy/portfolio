@@ -15,11 +15,11 @@ function App() {
       <About />
       <Career />
       <Works />
-      <Skill />
       <Menu title="親メニュー" withIcon={true}>
         <Menu title="子メニュー1" />
         <Menu title="子メニュー2" />
       </Menu>
+      <Skill />
     </div>
   );
 }

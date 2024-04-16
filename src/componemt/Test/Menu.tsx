@@ -1,5 +1,5 @@
 import { FC, ReactNode, useEffect, useRef, useState } from "react";
-import { ReactSVG } from "react-svg";
+import Chevron from "../../assets/chevron.svg";
 import styles from "./Menu.module.css";
 
 type Props = {
@@ -32,13 +32,7 @@ function Menu({ title, withIcon, children }: Props) {
         {title}
         {withIcon && (
           <div className={`${styles.icon} ${reverseIcon && styles.reverse}`}>
-            <img
-              src="../../assets/chevron.svg"
-              alt=""
-              width={30}
-              height={30}
-              style={{ color: "red" }}
-            />
+            aaaa
           </div>
         )}
       </div>
