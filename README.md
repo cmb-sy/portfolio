@@ -1,5 +1,7 @@
 https://webdesigner-go.com/portfolio-template-basic/
 
+スキル部分はカード + アコーディオンにする。
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
