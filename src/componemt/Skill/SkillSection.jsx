@@ -10,18 +10,16 @@ function skillSection() {
         <div className="skillArea2">
           {ProgrammingSkills.map((item) => (
             <div>
-              <h3 className={`text-sky-400`}>{item.skillType}aaa</h3>
+              <h3 className={`text-sky-400`}>{item.skillType}</h3>
               <table>
                 <thead>
                   <th className="testerr2">技術</th>
-                  <th className="testerr3">技術</th>
                   <th className="testerr4">技術</th>
                 </thead>
                 {item.skill.map((item2) => (
                   <tbody>
                     <tr>
                       <td className="testerr">{item2.skillTitle}</td>
-                      <td className="testerr">{item2.experienceYear}</td>
                       <td className="testerr">{item2.comment}</td>
                     </tr>
                   </tbody>

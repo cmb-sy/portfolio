@@ -2,29 +2,34 @@
 import { css } from "@emotion/react";
 
 import { useRef, useState } from "react";
-import { AccordionType } from "./Menu";
+// import { AccordionType } from "./Menu";
 
-const AccordionItem = ({ overview, detail }: AccordionType) => {
+// { overview, detail }: AccordionType
+
+export type Props = {
+  titleNode: React.ReactNode;
+  children: React.ReactNode;
+};
+
+const AccordionItem = (props: Props) => {
   const [showContents, setShowContents] = useState(false);
   const [contentHeight, setContentHeight] = useState(0);
   const childElement = useRef<HTMLDivElement>(null);
 
   const onClickAccordionToggle = () => {
     if (childElement.current) {
-      const childHeight = childElement.current?.clientHeight; // 対象要素の高さの取得
-      setContentHeight(childHeight); // 対象要素の高さの代入
-      setShowContents(!showContents); // アコーディオン表示
+      const childHeight = childElement.current?.clientHeight;
+      setContentHeight(childHeight);
+      setShowContents(!showContents);
     }
   };
 
   return (
     <div css={wrapper}>
       <button onClick={onClickAccordionToggle} css={button}>
-        {overview}
-        {/* showContents: booleanを基に切り替える */}
+        {props.titleNode}
         <span className={showContents ? "isOpen" : "isClose"} css={touchIcon} />
       </button>
-      {/* インラインスタイルで高さの動的変更をする */}
       <div
         style={{
           height: showContents ? `${contentHeight}px` : "0px",
@@ -33,7 +38,7 @@ const AccordionItem = ({ overview, detail }: AccordionType) => {
         css={innerContent}
       >
         <div ref={childElement} className={showContents ? "isOpen" : "isClose"}>
-          {detail}
+          {props.children}
         </div>
       </div>
     </div>
