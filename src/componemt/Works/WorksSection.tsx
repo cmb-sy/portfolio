@@ -19,7 +19,7 @@ function worksSection() {
                 <p className="card-text_06">{work.description}</p>
               </div>
               <div className="card-link_06">
-                <a href="#">HOME</a>
+                <a href="/">HOME</a>
               </div>
             </div>
           </div>

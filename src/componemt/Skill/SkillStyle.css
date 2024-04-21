@@ -1,36 +1,31 @@
-.skillArea {
-  display: flex;
-  justify-content: center;
-  /* gap: 10px; */
+.Table {
+  width: 100%;
+  border: solid 2px #333;
+  border-collapse: collapse;
+  font-size: 16px;
 }
-
-.testerr {
-  text-align: left;
-  /* white-space: normal; */
-  /* width: 100%; */
+@media screen and (max-width: 768px) {
+  .Table {
+    font-size: 12px;
+  }
 }
-
-.testerr2 {
-  /* text-align: left; */
-  white-space: nowrap;
-  /* width: 100%; */
-  width: 20%;
+.Table-Head {
+  background: #ccc;
 }
-.testerr3 {
-  /* text-align: left; */
-  white-space: nowrap;
-  /* width: 100%; */
-  width: 20%;
+.Table-Head-Row-Cell {
+  border: solid 2px #333;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
-.testerr4 {
-  /* text-align: left; */
-  white-space: nowrap;
-  /* width: 100%; */
-  /* width: 25%; */
+.Table-Body {
+  background: #fff;
 }
-
-.skillArea2 {
-  width: 50%;
-  border: solid;
-  margin: 20px;
+.Table-Body-Row-Cell {
+  border: solid 2px #333;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }

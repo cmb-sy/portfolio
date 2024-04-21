@@ -1,4 +1,5 @@
 import AccordionItem from "./Accordion";
+import Skill from "../Skill/SkillSection";
 
 export type AccordionType = {
   overview: string;
@@ -23,6 +24,7 @@ const Menu = () => {
     <div>
       {accordionData.map((item, index) => (
         <AccordionItem key={index} titleNode={<h2>{item.overview}</h2>}>
+          <Skill />
           <span>{item.detail}</span>
         </AccordionItem>
       ))}
