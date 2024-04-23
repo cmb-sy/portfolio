@@ -1,6 +1,6 @@
 import AccordionItem from "./Accordion";
-import Skill from "../Skill/SkillSection";
-
+import Skill from "../Skill/SkillTable";
+import "./Test.css";
 export type AccordionType = {
   overview: string;
   detail: string | string[];
@@ -17,15 +17,25 @@ const accordionData: AccordionType[] = [
     detail:
       "詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト",
   },
+  {
+    overview: "フロントエンド",
+    detail:
+      "詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト",
+  },
+  {
+    overview: "フロントエンド",
+    detail:
+      "詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト詳細テキスト",
+  },
 ];
 
 const Menu = () => {
   return (
-    <div>
+    <div className="test1">
       {accordionData.map((item, index) => (
         <AccordionItem key={index} titleNode={<h2>{item.overview}</h2>}>
           <Skill />
-          <span>{item.detail}</span>
+          {/* <span>{item.detail}</span> */}
         </AccordionItem>
       ))}
     </div>

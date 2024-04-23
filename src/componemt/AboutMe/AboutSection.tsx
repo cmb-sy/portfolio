@@ -12,10 +12,10 @@ function AboutSection() {
       <div className="content">
         <div className="text1">
           <div>
-            {/* <img
+            <img
               src="https://avatars.githubusercontent.com/u/63276819?v=4"
               className="customImg"
-            /> */}
+            />
           </div>
           <div className="customTable">
             {AboutLinks.map((item) => (

@@ -46,8 +46,9 @@ const AccordionItem = (props: Props) => {
 };
 
 const wrapper = css`
-  margin-bottom: 40px;
-  width: 400px;
+  width: 45%;
+
+  margin: 40px 25px 40px 25px;
 `;
 
 const button = css`
@@ -91,7 +92,6 @@ const touchIcon = css`
 const innerContent = css`
   transition: height 0.2s linear, opacity 0.2s ease-in;
   overflow: hidden;
-  padding: 10px;
   background-color: whitesmoke;
 `;
 

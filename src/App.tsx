@@ -8,8 +8,8 @@ import Header from "./componemt/Header/HeaderSection";
 import HomePage from "./componemt/Home/HomePage";
 import About from "./componemt/AboutMe/AboutSection";
 import Works from "./componemt/Works/WorksSection";
-import Skill from "./componemt/Skill/SkillSection";
 import BasicExample from "./componemt/Test/Menu";
+import Skill from "./componemt/Skill/SkillTable";
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/works" element={<Works />} />
-          <Route path="/skills" element={<Skill />} />
-          <Route path="/abc" element={<BasicExample />} />
+          <Route path="/skills" element={<BasicExample />} />
+          <Route path="/test" element={<Skill />} />
         </Routes>
       </div>
     </Router>

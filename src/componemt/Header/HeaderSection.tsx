@@ -1,19 +1,26 @@
-// import styles from './Header.module.css';
+import { Link } from "react-router-dom";
+import "./Header.css";
 import { navigationItems } from "./HeaderItem";
-import { Navbar, Nav } from "react-bootstrap";
+
 export const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="/">SampleApp</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          {navigationItems.map((item) => (
-            <Nav.Link href={item.url}>{item.value}</Nav.Link>
-          ))}
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <nav>
+      <div className="logo">
+        <h4>ナビゲーションバー</h4>
+      </div>
+      <ul className="nav-links">
+        {navigationItems.map((item) => (
+          <li>
+            <Link to={item.url}>{item.value}</Link>
+          </li>
+        ))}
+      </ul>
+      <div className="burger">
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+    </nav>
   );
 };
 

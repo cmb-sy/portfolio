@@ -5,20 +5,20 @@ function worksSection() {
   return (
     <section>
       <h1>Works</h1>
-      <div className="worksArea">
+      <div className={styles.worksArea}>
         {WorkLists.map((work) => (
-          <div className="l-wrapper_06">
-            <div className="card_06">
+          <div className={styles.lwrapper_06}>
+            <div className={styles.card_06}>
               <img
-                className="card-img_06"
+                className={styles.cardimg_06}
                 src="https://dubdesign.net/wp-content/uploads/2020/05/0508_dtplayouteyecatch.jpg"
                 alt=""
               />
-              <div className="card-content_06">
-                <p className="card-title_06">{work.title}</p>
-                <p className="card-text_06">{work.description}</p>
+              <div className={styles.cardcontent_06}>
+                <p className={styles.cardtitle_06}>{work.title}</p>
+                <p className={styles.cardtext_06}>{work.description}</p>
               </div>
-              <div className="card-link_06">
+              <div className={styles.cardlink_06}>
                 <a href="/">HOME</a>
               </div>
             </div>

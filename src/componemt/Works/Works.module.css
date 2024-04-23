@@ -4,18 +4,18 @@
   display: flex;
   flex-wrap: wrap; /* 折り返し */
   width: 100%;
-  /* justify-content: space-around; */
+  justify-content: space-around;
 }
 
 /*--------------------------------------
   カード型_06
 --------------------------------------*/
-.l-wrapper_06 {
+.lwrapper_06 {
   margin: 1rem;
   width: 30%;
 }
 
-.l-wrapper_06:hover {
+.lwrapper_06:hover {
   transform: translateY(-5px);
   box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   transition: all 0.5s;
@@ -26,39 +26,39 @@
   box-shadow: 0 2px 5px #ccc;
 }
 
-.card-img_06 {
+.cardimg_06 {
   border-radius: 5px 5px 0 0;
   max-width: 100%;
   height: auto;
 }
-.card-content_06 {
+.cardcontent_06 {
   padding: 8px 20px 20px;
 }
-.card-title_06 {
+.cardtitle_06 {
   font-size: 1.6em;
   color: #333;
   font-weight: 700;
 }
-.card-text_06 {
+.cardtext_06 {
   color: #777;
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 0.2em;
 }
-.card-link_06 {
+.cardlink_06 {
   text-align: center;
   border-top: 1px solid #eee;
   padding: 20px;
 }
-.card-link_06 a {
+.cardlink_06 a {
   text-decoration: none;
   color: #4f96f6;
   margin: 0 10px;
 }
-.card-link_06 a:hover {
+.cardlink_06 a:hover {
   color: #6bb6ff;
 }
 
-.card-content_06 p {
+.cardcontent_06 p {
   margin-bottom: 0;
 }
