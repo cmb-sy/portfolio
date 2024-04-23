@@ -1,5 +1,5 @@
 import React from "react";
-import "./WorksStyle.css";
+import styles from "./Works.module.css";
 import { WorkLists } from "./worksList";
 function worksSection() {
   return (

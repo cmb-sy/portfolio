@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./AboutSection.css";
 import { AboutLinks } from "./link";
 import Career from "../Career/CareerSection";
@@ -12,10 +12,10 @@ function AboutSection() {
       <div className="content">
         <div className="text1">
           <div>
-            <img
+            {/* <img
               src="https://avatars.githubusercontent.com/u/63276819?v=4"
               className="customImg"
-            />
+            /> */}
           </div>
           <div className="customTable">
             {AboutLinks.map((item) => (
