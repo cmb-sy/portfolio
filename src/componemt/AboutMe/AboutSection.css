@@ -7,7 +7,7 @@
 
 .customImg {
   border-radius: 50%;
-  width: 180px;
+  width: 200px;
 }
 
 .text2 {
@@ -19,6 +19,7 @@
   gap: 10px;
   display: flex;
   justify-content: center;
+  margin: 15px;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,5 +1,5 @@
 import AccordionItem from "./Accordion";
-import Skill from "../Skill/SkillTable";
+import Skill from "../Works/Card";
 import "./Test.css";
 export type AccordionType = {
   overview: string;

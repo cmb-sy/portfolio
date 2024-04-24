@@ -4,7 +4,6 @@ import { WorkLists } from "./worksList";
 function worksSection() {
   return (
     <section>
-      <h1>Works</h1>
       <div className={styles.worksArea}>
         {WorkLists.map((work) => (
           <div className={styles.lwrapper_06}>

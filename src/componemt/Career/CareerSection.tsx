@@ -3,7 +3,8 @@ import "./Career.css";
 function CareerSection() {
   return (
     <section>
-      <h1>aaa</h1>
+      <h2>BackGround</h2>
+      <span>経歴</span>
       {careers.map((item) => (
         <div className="container">
           <div className="timeline-item" date-is={item.date}>

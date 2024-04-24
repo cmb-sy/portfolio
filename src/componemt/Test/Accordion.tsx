@@ -46,8 +46,6 @@ const AccordionItem = (props: Props) => {
 };
 
 const wrapper = css`
-  width: 45%;
-
   margin: 40px 25px 40px 25px;
 `;
 
