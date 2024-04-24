@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { navigationItems } from "./HeaderItem";
+import { buffer } from "stream/consumers";
 
 export const Header = () => {
   const [navActive, setNavActive] = useState(false);
@@ -14,7 +15,9 @@ export const Header = () => {
     <body>
       <nav>
         <div className="logo">
-          <h4>ナビゲーションバー</h4>
+          <Link to="/" className="logo">
+            ナビゲーションバー
+          </Link>
         </div>
         <ul className={navActive ? "nav-links nav-active" : "nav-links"}>
           {navigationItems.map((item) => (
@@ -26,7 +29,12 @@ export const Header = () => {
           ))}
         </ul>
         {/* ハンバーガメニュー */}
-        <div className="burger" onClick={toggleNav}>
+        <div
+          className={`burger ${navActive ? "toggle" : ""}`}
+          onClick={() => {
+            toggleNav();
+          }}
+        >
           <div className="line1"></div>
           <div className="line2"></div>
           <div className="line3"></div>

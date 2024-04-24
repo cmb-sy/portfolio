@@ -7,11 +7,11 @@
 
 .customImg {
   border-radius: 50%;
-  width: 230px;
+  width: 180px;
 }
 
 .text2 {
-  margin-left: 80px;
+  margin-left: 50px;
   width: 30%;
   text-align: left;
 }
@@ -19,4 +19,18 @@
   gap: 10px;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .text2 {
+    text-align: left;
+    width: unset;
+    margin: 10px 15px 10px 15px;
+  }
 }
