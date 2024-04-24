@@ -42,3 +42,44 @@ nav {
   background-color: red;
   margin: 5px;
 }
+
+.nav-active {
+  transform: translateX(0) !important;
+}
+
+/* 1024pxを下回る場合 */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* 横スクロールできないようにする */
+  .nav-body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .nav-links {
+    /* 場所移動 */
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: blue;
+
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    transform: translateX(100%);
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    /* display : none　→　block */
+    display: block;
+  }
+}
