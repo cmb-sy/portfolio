@@ -43,10 +43,6 @@ nav {
   margin: 5px;
 }
 
-.nav-active {
-  transform: translateX(0) !important;
-}
-
 /* 1024pxを下回る場合 */
 @media screen and (max-width: 1024px) {
   .nav-links {
@@ -56,9 +52,15 @@ nav {
 @media screen and (max-width: 768px) {
   /* 横スクロールできないようにする */
   .nav-body {
-    position: relative;
+    /* position: relative; */
     overflow-x: hidden;
   }
+
+  .nav-active {
+    /* transform: translateX(0) !important; */
+    transform: translateX(100%) !important;
+  }
+
   .nav-links {
     /* 場所移動 */
     position: absolute;
@@ -71,7 +73,7 @@ nav {
     align-items: center;
     width: 50%;
 
-    transform: translateX(100%);
+    transform: translateX(0);
   }
 
   .nav-links li {
