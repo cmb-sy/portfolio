@@ -19,6 +19,7 @@
   transform: translateY(-5px);
   box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   transition: all 0.5s;
+  cursor: pointer;
 }
 .card_06 {
   background: #fff;
@@ -32,33 +33,28 @@
   height: auto;
 }
 .cardcontent_06 {
-  padding: 8px 20px 20px;
+  text-align: left;
 }
 .cardtitle_06 {
-  font-size: 1.6em;
+  font-size: 1.2em;
   color: #333;
   font-weight: 700;
+  margin: 0.5rem 0px 0.5rem 0px;
 }
-.cardtext_06 {
-  color: #777;
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 0.2em;
+.carddescription {
+  margin-top: 10px;
 }
 .cardlink_06 {
-  text-align: center;
   border-top: 1px solid #eee;
-  padding: 20px;
+  padding: 10px;
 }
-.cardlink_06 a {
-  text-decoration: none;
-  color: #4f96f6;
-  margin: 0 10px;
-}
+
 .cardlink_06 a:hover {
   color: #6bb6ff;
 }
 
-.cardcontent_06 p {
-  margin-bottom: 0;
+.testkk {
+  display: flex;
+  gap: 4px;
+  color: #4f96f6;
 }
