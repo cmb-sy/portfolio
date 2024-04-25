@@ -2,17 +2,26 @@
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   display: flex;
+  justify-content: space-around; /* 必須 */
   flex-wrap: wrap; /* 折り返し */
-  width: 100%;
-  justify-content: space-around;
 }
 
-/*--------------------------------------
-  カード型_06
---------------------------------------*/
 .lwrapper_06 {
   margin: 1rem;
   width: 30%;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .lwrapper_06 {
+    width: 18rem !important;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .lwrapper_06 {
+    width: 40%;
+  }
 }
 
 .lwrapper_06:hover {
@@ -57,4 +66,9 @@
   display: flex;
   gap: 4px;
   color: #4f96f6;
+}
+
+.testaa {
+  text-decoration: none;
+  color: black;
 }
