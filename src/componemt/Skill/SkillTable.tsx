@@ -1,7 +1,7 @@
 import React from "react";
 import "./SkillStyle.css";
 import { ProgrammingSkills } from "./SkillList";
-
+import { ReactComponent as Sad } from "../../assets/SNS/github.svg";
 function SkillTable() {
   return (
     <div className="skillArea">
@@ -10,16 +10,19 @@ function SkillTable() {
           <div>
             <table className="Table">
               <thead className="Table-Head">
-                <tr class="Table-Head-Row">
-                  <th className="Table-Head-Row-Cell">技術</th>
-                  <th className="Table-Head-Row-Cell">経験年数 / 得意度</th>
-                  <th className="Table-Head-Row-Cell">内容</th>
+                <tr className="Table-Head-Row">
+                  <th className="Table-Head-Row-Cell1">Tech</th>
+                  <th className="Table-Head-Row-Cell2">Level</th>
+                  <th className="Table-Head-Row-Cell3">Content</th>
                 </tr>
               </thead>
               {item.skill.map((item2) => (
                 <tbody className="Table-Body">
                   <tr className="Table-Body-Row">
-                    <td className="Table-Body-Row-Cell">{item2.skillTitle}</td>
+                    <td className="Table-Body-Row-Cell">
+                      {item2.skillTitle}
+                      <Sad style={{ height: `10px`, width: `10px` }}></Sad>
+                    </td>
                     <td className="Table-Body-Row-Cell">
                       {item2.experienceLevel}
                     </td>

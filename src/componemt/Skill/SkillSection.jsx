@@ -23,7 +23,9 @@ function skillSection() {
                       <td className="Table-Body-Row-Cell">
                         {item2.skillTitle}
                       </td>
-                      <td className="Table-Body-Row-Cell">{item2.comment}</td>
+                      <td className="Table-Body-Row-Cell">
+                        {item2.comment}aaaaa
+                      </td>
                     </tr>
                   </tbody>
                 ))}

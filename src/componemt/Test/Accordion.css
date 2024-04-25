@@ -1,0 +1,43 @@
+.wrapper {
+  margin: 40px 25px 40px 25px;
+}
+
+.button {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: gray;
+  border: none;
+  cursor: pointer;
+}
+
+.innerContent {
+  transition: height 0.2s linear, opacity 0.2s ease-in;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+.toggle {
+  position: relative;
+}
+.toggle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20%;
+  right: 20px; /* 20px に修正 */
+  width: 40px;
+  height: 40px;
+  background-image: url("../../assets/chevron.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform 0.3s; /* transform の遷移を共通化 */
+}
+
+.toggle.active:after {
+  transform: rotate(180deg);
+}
+
+.toggle:not(.active):after {
+  transform: rotate(0deg);
+}

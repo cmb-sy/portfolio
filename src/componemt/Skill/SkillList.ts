@@ -28,21 +28,6 @@ export const ProgrammingSkills: ProgrammingSkill[] = [
         comment:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
-      {
-        skillTitle: "python",
-        experienceLevel: "2年(業務)／1年(プライベート)",
-        comment: "aaa",
-      },
-      {
-        skillTitle: "python",
-        experienceLevel: "2年(業務)／1年(プライベート)",
-        comment: "aaa",
-      },
-      {
-        skillTitle: "python",
-        experienceLevel: "2年(業務)／1年(プライベート)",
-        comment: "aaa",
-      },
     ],
   },
 ];

@@ -12,12 +12,31 @@
 .Table-Head {
   background: #ccc;
 }
-.Table-Head-Row-Cell {
+.Table-Head-Row-Cell1 {
   border: solid 2px #333;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  width: 20%;
+}
+
+.Table-Head-Row-Cell2 {
+  border: solid 2px #333;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  width: 20%;
+}
+
+.Table-Head-Row-Cell3 {
+  border: solid 2px #333;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  width: 60%;
 }
 .Table-Body {
   background: #fff;

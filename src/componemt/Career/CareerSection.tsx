@@ -2,9 +2,9 @@ import { careers } from "./Career";
 import "./Career.css";
 function CareerSection() {
   return (
-    <section>
+    <div>
       <h2>BackGround</h2>
-      <span>経歴</span>
+      <span>test</span>
       {careers.map((item) => (
         <div className="container">
           <div className="timeline-item" date-is={item.date}>
@@ -15,7 +15,7 @@ function CareerSection() {
           </div>
         </div>
       ))}
-    </section>
+    </div>
   );
 }
 export default CareerSection;
