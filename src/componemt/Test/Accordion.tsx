@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import { useRef, useState } from "react";
 import "./Accordion.css";
 export type Props = {
@@ -36,20 +34,11 @@ const AccordionItem = (props: Props) => {
       >
         {props.titleNode}
       </button>
-
-      {/* <button onClick={onClickAccordionToggle} className="button">
-        {props.titleNode}
-      </button>
-      <button
-        className={isActive ? "toggle active" : "toggle"}
-        onClick={handleClick}
-      >
-        Toggle
-      </button> */}
       <div
         style={{
           height: showContents ? `${contentHeight}px` : "0px",
           opacity: showContents ? 1 : 0,
+          transition: "height 0.3s, opacity 0.3s", // トランジションを追加
         }}
         className="innerConten"
       >
@@ -60,53 +49,5 @@ const AccordionItem = (props: Props) => {
     </div>
   );
 };
-
-// const wrapper = css`
-//   margin: 40px 25px 40px 25px;
-// `;
-
-// const button = css`
-//   width: 100%;
-//   height: 50px;
-//   color: #fff;
-//   background-color: teal;
-//   border: none;
-//   cursor: pointer;
-// `;
-
-// const touchIcon = css`
-//   transition: height 0.2s linear, opacity 0.2s ease-in;
-//   overflow: hidden;
-//   position: relative;
-
-//   &::before,
-//   &::after {
-//     content: "";
-//     display: inline-block;
-//     width: 20px;
-//     height: 1px;
-//     position: absolute;
-//     top: 50%;
-//     background-color: #fff;
-//     right: -150px;
-//   }
-//   &::after {
-//     transform: rotate(90deg);
-//     transition: transform 0.4s ease;
-//   }
-
-//   // オープンの場合
-//   &.isOpen {
-//     &::after {
-//       transform: rotate(0);
-//     }
-//   }
-// `;
-
-// const innerContent = css`
-//   transition: height 0.2s linear, opacity 0.2s ease-in;
-//   overflow: hidden;
-//   background-color: whitesmoke;
-// `;
 
 export default AccordionItem;

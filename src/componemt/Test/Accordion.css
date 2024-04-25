@@ -11,11 +11,11 @@
   cursor: pointer;
 }
 
-.innerContent {
-  transition: height 0.2s linear, opacity 0.2s ease-in;
+/* .innerContent {
+  transition: height 0.5s linear, opacity 0.5s ease-in;
   overflow: hidden;
   background-color: whitesmoke;
-}
+} */
 
 .toggle {
   position: relative;
