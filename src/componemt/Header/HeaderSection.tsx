@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { navigationItems } from "./HeaderItem";
-import { buffer } from "stream/consumers";
 
 export const Header = () => {
   const [navActive, setNavActive] = useState(false);
