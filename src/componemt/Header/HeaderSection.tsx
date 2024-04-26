@@ -15,7 +15,7 @@ export const Header = () => {
       <nav>
         <div className="logo">
           <Link to="/" className="logo">
-            ナビゲーションバー
+            Portfolio
           </Link>
         </div>
         <ul className={navActive ? "nav-links nav-active" : "nav-links"}>

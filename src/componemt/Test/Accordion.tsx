@@ -40,9 +40,12 @@ const AccordionItem = (props: Props) => {
       </button>
       <div
         style={{
-          height: showContents ? `${contentHeight}px` : "0px",
+          height: showContents
+            ? `${childElement.current?.scrollHeight}px`
+            : "0px",
           opacity: showContents ? 1 : 0,
-          transition: "height 0.3s, opacity 0.3s", // トランジションを追加
+          overflow: "hidden",
+          transition: "height 0.5s ease, opacity 1.0s ease",
         }}
         className="innerConten"
       >

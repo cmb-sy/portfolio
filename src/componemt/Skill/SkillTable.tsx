@@ -21,7 +21,7 @@ function SkillTable() {
                     <td className="Table-Body-Row-Cell">
                       <div className="testtest">
                         <img src={item2.imagePass} className="customSvg" />
-                        <span>{item2.skillTitle}</span>
+                        <span className="skillTitle">{item2.skillTitle}</span>
                       </div>
                     </td>
                     <td className="Table-Body-Row-Cell">
