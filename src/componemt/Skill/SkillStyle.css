@@ -48,3 +48,15 @@
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+
+.testtest {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.customSvg {
+  height: 15px;
+  width: 15px;
+  margin-top: 2px;
+}

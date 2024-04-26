@@ -1,7 +1,6 @@
-import React from "react";
 import "./SkillStyle.css";
 import { ProgrammingSkills } from "./SkillList";
-import { ReactComponent as Sad } from "../../assets/SNS/github.svg";
+// import { ReactComponent as Sad } from "../../assets/pythonLogo.svg";
 function SkillTable() {
   return (
     <div className="skillArea">
@@ -20,8 +19,10 @@ function SkillTable() {
                 <tbody className="Table-Body">
                   <tr className="Table-Body-Row">
                     <td className="Table-Body-Row-Cell">
-                      {item2.skillTitle}
-                      <Sad style={{ height: `10px`, width: `10px` }}></Sad>
+                      <div className="testtest">
+                        <img src={item2.imagePass} className="customSvg" />
+                        <span>{item2.skillTitle}</span>
+                      </div>
                     </td>
                     <td className="Table-Body-Row-Cell">
                       {item2.experienceLevel}

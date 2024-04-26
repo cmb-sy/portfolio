@@ -29,7 +29,7 @@ export const Header = () => {
         </ul>
         {/* ハンバーガメニュー */}
         <div
-          className={`burger ${navActive ? "toggle" : ""}`}
+          className={`burger ${navActive ? "header-toggle" : ""}`}
           onClick={() => {
             toggleNav();
           }}

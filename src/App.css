@@ -2,10 +2,12 @@
   text-align: center;
 }
 
-h1 {
-  color: rgb(110, 110, 227);
-}
-
 section {
   margin: 10px 5rem 0rem 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin: 10px 0 0 0 !important;
+  }
 }

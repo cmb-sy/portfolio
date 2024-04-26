@@ -1,8 +1,12 @@
+import pythonLogo from "../../assets/TechLogo/python.png";
+import DjangoLogo from "../../assets/TechLogo/django.png";
+import FlaskLogo from "../../assets/TechLogo/flask.png";
+
 export type ProgrammingSkill = {
   skillType: "ProgrammingSkill";
   skill: {
     skillTitle: string;
-    imageUrl?: string;
+    imagePass?: string;
     experienceLevel: string;
     comment: string;
   }[];
@@ -12,7 +16,7 @@ export type Certificate = {
   skillType: "Certificate";
   skill: {
     Title: string;
-    imageUrl?: string;
+    imgaePass?: string;
   }[];
 };
 
@@ -22,9 +26,22 @@ export const ProgrammingSkills: ProgrammingSkill[] = [
     skill: [
       {
         skillTitle: "python",
-        imageUrl:
-          "/Users/snakashima/develop/nakashima/portfolio/src/assets/Python_logo_01.svg",
-        experienceLevel: "⭐️⭐️⭐️⭐️",
+        imagePass: pythonLogo,
+        experienceLevel: "★★★☆☆",
+        comment:
+          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+      },
+      {
+        skillTitle: "django",
+        imagePass: DjangoLogo,
+        experienceLevel: "★★★☆☆",
+        comment:
+          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+      },
+      {
+        skillTitle: "flask",
+        imagePass: FlaskLogo,
+        experienceLevel: "★★★☆☆",
         comment:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
@@ -38,6 +55,7 @@ export const Certificates: Certificate[] = [
     skill: [
       {
         Title: "python",
+        imgaePass: "a",
       },
       {
         Title: "javascript",

@@ -9,7 +9,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: blue;
+  background-color: #0f4a0f;
+  position: relative;
+  /* 上の重ねる優先度を上げる */
+  z-index: 1;
 }
 
 .logo {
@@ -55,13 +58,13 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 
-.toggle .line1 {
+.header-toggle .line1 {
   transform: rotate(45deg) translate(5px, 6px);
 }
-.toggle .line2 {
+.header-toggle .line2 {
   opacity: 0;
 }
-.toggle .line3 {
+.header-toggle .line3 {
   transform: rotate(-45deg) translate(5px, -6px);
 }
 
