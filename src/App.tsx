@@ -5,7 +5,7 @@ import About from "./componemt/AboutMe/AboutSection";
 import Works from "./componemt/Works/WorksSection";
 import BasicExample from "./componemt/Test/Menu";
 import Career from "./componemt/Career/CareerSection";
-import Contact from "./componemt/contact";
+import Contact from "./componemt/Contact/Contact";
 
 function App() {
   return (

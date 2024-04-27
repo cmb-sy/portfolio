@@ -1,0 +1,35 @@
+a.btn_blue {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  background-color: #1755aa;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a.btn_blue span.bl__text {
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+a.btn_blue:hover {
+  background-color: #01b5d0;
+}
+a.btn_blue:hover span.bl__text:after {
+  border-top: 3px solid #01b5d0;
+  border-right: 3px solid #01b5d0;
+}
+@media (max-width: 736px) {
+  a.btn_blue {
+    max-width: 280px;
+    padding: 1.5rem 2rem;
+  }
+  a.btn_blue span.bl__text {
+    font-size: 20px;
+  }
+}
