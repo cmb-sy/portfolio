@@ -3,6 +3,7 @@
   justify-content: space-around; /* 必須 */
   flex-wrap: wrap; /* 折り返し */
   margin-top: 20px;
+  gap: 10px;
 }
 
 .lwrapper_06 {
@@ -11,14 +12,15 @@
 }
 
 @media screen and (max-width: 768px) {
-  .lwrapper_06 {
-    width: 15rem !important;
+  .card_06 {
+    width: 80% !important;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .lwrapper_06 {
-    width: 40%;
+@media screen and (max-width: 1180px) {
+  .card_06 {
+    width: unset !important;
+    height: unset !important;
   }
 }
 
@@ -32,8 +34,11 @@
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
-  width: 20vw;
-  height: 20vw;
+  /* 正方形のため固定値に設定 */
+  width: 350px;
+  height: 350px;
+
+  margin-top: 20px;
 }
 
 .cardimg_06 {
@@ -44,10 +49,6 @@
   text-align: left;
 }
 
-.cardtext_06 {
-  /* padding: 5px; */
-  /* padding: 10px; */
-}
 .cardtitle_06 {
   font-size: 1.2em;
   color: #333;
@@ -58,12 +59,13 @@
   margin-top: 10px;
 }
 .carddescription {
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .cardlink_06 {
   border-top: 1px solid #eee;
   padding: 10px;
   text-align: left;
+  margin-top: 40px;
 }
 
 .cardlink_06 a:hover {
@@ -73,10 +75,6 @@
 .testkk {
   display: flex;
   gap: 4px;
-  color: #4f96f6;
-}
-
-.testaa {
   text-decoration: none;
   color: black;
 }

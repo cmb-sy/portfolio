@@ -31,14 +31,15 @@ const accordionData: AccordionType[] = [
 
 const Menu = () => {
   return (
-    <div className="test1">
+    <section className="test1">
+      <h1>技術</h1>
       {accordionData.map((item, index) => (
         <AccordionItem key={index} titleNode={<h2>{item.overview}</h2>}>
           <Skill />
           {/* <span>{item.detail}</span> */}
         </AccordionItem>
       ))}
-    </div>
+    </section>
   );
 };
 

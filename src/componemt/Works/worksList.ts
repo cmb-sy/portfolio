@@ -13,7 +13,7 @@ export const WorkLists: WorkList[] = [
     title: "カンバン式タスク管理ツール",
     tag: ["#python", "#Django"],
     description:
-      "カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。",
+      "カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。",
     imgUrl: bgImage,
     sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
   },

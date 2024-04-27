@@ -2,8 +2,8 @@ import { careers } from "./Career";
 import "./Career.css";
 function CareerSection() {
   return (
-    <div>
-      <h2>BackGround</h2>
+    <section>
+      <h1>BackGround</h1>
       <span>test</span>
       {careers.map((item) => (
         <div className="container">
@@ -15,7 +15,7 @@ function CareerSection() {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }
 export default CareerSection;
