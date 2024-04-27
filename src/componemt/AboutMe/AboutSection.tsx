@@ -1,7 +1,6 @@
 // import React from "react";
 import "./AboutSection.css";
 import { AboutLinks, MyInformations } from "./link";
-import Career from "../Career/CareerSection";
 import { ReactComponent as Sad } from "../../assets/SNS/github.svg";
 
 function AboutSection() {
@@ -25,7 +24,9 @@ function AboutSection() {
         </div>
         <div className="text2">{MyInformations.introduction}</div>
       </div>
-      <Career />
+      <p>
+        <a href="mailto:jdvlak&#64;gmail.com">私にメールを送信</a>
+      </p>
     </section>
   );
 }
