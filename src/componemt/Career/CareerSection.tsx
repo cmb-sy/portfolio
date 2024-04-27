@@ -2,7 +2,7 @@ import { careers } from "./Career";
 import "./Career.css";
 function CareerSection() {
   return (
-    <section>
+    <section id="career">
       <h1>BackGround</h1>
       <span>test</span>
       {careers.map((item) => (

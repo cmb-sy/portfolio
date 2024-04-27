@@ -4,7 +4,9 @@ export type NavigationItem = {
 };
 
 export const navigationItems: NavigationItem[] = [
-  { value: "About", url: "/about" },
-  { value: "Works", url: "/works" },
-  { value: "Skills", url: "/skills" },
+  { value: "About", url: "#about" },
+  { value: "Works", url: "#works" },
+  { value: "Skills", url: "#skills" },
+  { value: "Careers", url: "#career" },
+  { value: "Contact", url: "#contact" },
 ];

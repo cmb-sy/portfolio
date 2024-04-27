@@ -3,7 +3,7 @@ import "./AboutSection.css";
 import { AboutLinks, Introductions } from "./link";
 function AboutSection() {
   return (
-    <section>
+    <section id="about">
       <h1>About</h1>
       <span>私について</span>
 
