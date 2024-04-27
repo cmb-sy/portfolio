@@ -8,7 +8,7 @@ function worksSection() {
       <h1>Works</h1>
       <div className={styles.worksArea}>
         {WorkLists.map((work) => (
-          <div className={styles.card_06}>
+          <div className={styles.card}>
             <img className={styles.cardimg_06} src={work.imgUrl} alt="" />
             <div className={styles.cardlink_06}>
               <div className={styles.testkk}>

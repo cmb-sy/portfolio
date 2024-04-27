@@ -11,16 +11,35 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  .card_06 {
+/* @media screen and (max-width: 768px) {
+  .card {
     width: 80% !important;
+    height: auto !important;
+  }
+} */
+
+/* 画面サイズ 600px 未満 */
+@media (width < 600px) {
+  .card {
+    width: 80%;
+    height: auto;
   }
 }
 
-@media screen and (max-width: 1180px) {
-  .card_06 {
-    width: unset !important;
-    height: unset !important;
+/* 画面サイズ 600px 以上 1200px 未満 */
+@media (600px <= width < 1200px) {
+  .card {
+    width: 45%;
+    height: auto;
+  }
+}
+
+/* 画面サイズ 1200px 以上 */
+@media (1200px <= width) {
+  .card {
+    /* 正方形のため固定値に設定 */
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -30,14 +49,10 @@
   transition: all 0.5s;
   cursor: pointer;
 }
-.card_06 {
+.card {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
-  /* 正方形のため固定値に設定 */
-  width: 350px;
-  height: 350px;
-
   margin-top: 20px;
 }
 
