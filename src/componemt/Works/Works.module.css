@@ -7,13 +7,7 @@
 
 .lwrapper_06 {
   margin: 1rem;
-  width: 30vw;
-  /* height: 60vw; */
   text-decoration: none;
-  &::before {
-    padding-top: 100%;
-    /* width: 100%; */
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -38,12 +32,13 @@
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
+  width: 20vw;
+  height: 20vw;
 }
 
 .cardimg_06 {
   border-radius: 5px 5px 0 0;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 .cardcontent_06 {
   text-align: left;

@@ -8,6 +8,7 @@ import About from "./componemt/AboutMe/AboutSection";
 import Works from "./componemt/Works/WorksSection";
 import BasicExample from "./componemt/Test/Menu";
 import Skill from "./componemt/Skill/SkillTable";
+import Contact from "./componemt/Contact/ContactSection";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/works" element={<Works />} />
           <Route path="/skills" element={<BasicExample />} />
           <Route path="/test" element={<Skill />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
