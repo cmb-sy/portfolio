@@ -1,8 +1,6 @@
 // import React from "react";
 import "./AboutSection.css";
-import { AboutLinks, MyInformations } from "./link";
-import { ReactComponent as Sad } from "../../assets/SNS/github.svg";
-
+import { AboutLinks, Introductions } from "./link";
 function AboutSection() {
   return (
     <section>
@@ -12,21 +10,21 @@ function AboutSection() {
       <div className="content">
         <div className="text1">
           <div>
-            <img src={MyInformations.logoPass} className="customImg" />
+            <img src={Introductions.logoPass} className="customImg" />
           </div>
           <div className="customTable">
             {AboutLinks.map((item) => (
               <a href={item.url}>
-                <Sad style={{ height: `25px`, width: `25px` }}></Sad>
+                <img
+                  src={item.imagePass}
+                  style={{ height: `25px`, width: `25px` }}
+                ></img>
               </a>
             ))}
           </div>
         </div>
-        <div className="text2">{MyInformations.introduction}</div>
+        <div className="text2">{Introductions.introduction}</div>
       </div>
-      <p>
-        <a href="mailto:jdvlak&#64;gmail.com">私にメールを送信</a>
-      </p>
     </section>
   );
 }

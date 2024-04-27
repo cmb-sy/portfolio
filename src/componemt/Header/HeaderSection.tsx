@@ -14,16 +14,14 @@ export const Header = () => {
     <body>
       <nav>
         <div className="logo">
-          <Link to="/" className="logo">
-            Portfolio
-          </Link>
+          <a href="/" className="logo" />
+          Portfolio
         </div>
         <ul className={navActive ? "nav-links nav-active" : "nav-links"}>
           {navigationItems.map((item) => (
             <li key={item.url}>
-              <Link to={item.url} onClick={toggleNav}>
-                {item.value}
-              </Link>
+              <a href={item.url} onClick={toggleNav} />
+              {item.value}
             </li>
           ))}
         </ul>
