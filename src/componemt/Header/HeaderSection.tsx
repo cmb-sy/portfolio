@@ -48,11 +48,14 @@ function Header() {
     const handleScrollForMobile = () => {
       const header = document.querySelector("header");
       if (header) {
-        if (window.scrollY > 0) {
-          header.style.opacity = "0.8"; // 例: モバイル用の透明度
-        } else {
-          header.style.opacity = "1"; // 例: モバイル用の透明度
-        }
+        // スクロールが発生したときに透明度を変更
+        (header as HTMLElement).style.opacity = "0.5";
+
+        // スクロールが停止した場合にタイマーを使って透明度を元に戻す
+        clearTimeout(scrollingTimer);
+        scrollingTimer = window.setTimeout(() => {
+          (header as HTMLElement).style.opacity = "1";
+        }, 300); // 200ミリ秒間スクロールが停止したとみなす
       }
     };
 
