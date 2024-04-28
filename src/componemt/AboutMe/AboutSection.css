@@ -12,8 +12,9 @@
 
 .text2 {
   margin-left: 50px;
-  width: 30%;
+  width: 35%;
   text-align: left;
+  margin-bottom: 30px;
 }
 .customTable {
   gap: 15px;
@@ -44,7 +45,6 @@
   margin: 2em 0;
   color: #2c2c2f;
   background: #cde4ff; /*背景色*/
-  margin: 10px;
 }
 
 .waku1 {
@@ -53,4 +53,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+}
+
+.aboutArea {
+  /* ヘッダー分も考慮 */
+  margin-top: 15vh;
 }

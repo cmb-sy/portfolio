@@ -5,8 +5,8 @@ export type NavigationItem = {
 
 export const navigationItems: NavigationItem[] = [
   { value: "About", url: "#about" },
-  { value: "Works", url: "#works" },
-  { value: "Skills", url: "#skills" },
+  { value: "Works", url: "#work" },
+  { value: "Skills", url: "#skill" },
   { value: "Careers", url: "#career" },
   { value: "Contact", url: "#contact" },
 ];

@@ -33,3 +33,7 @@ a.btn_blue:hover span.bl__text:after {
     font-size: 20px;
   }
 }
+
+.contactArea {
+  height: 80vh;
+}

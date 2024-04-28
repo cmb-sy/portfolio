@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { navigationItems } from "./HeaderItem";
 
@@ -7,6 +7,21 @@ export const Header = () => {
 
   const toggleNav = () => {
     setNavActive(!navActive);
+  };
+
+  const smoothScroll = (href: string) => {
+    const targetSection = document.querySelector(href) as HTMLElement;
+    if (targetSection) {
+      const sectionTop = targetSection.getBoundingClientRect().top;
+      const currentPos = window.scrollY;
+      const gap = 84;
+      const target = sectionTop + currentPos - gap;
+
+      window.scrollTo({
+        top: target,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -19,8 +34,17 @@ export const Header = () => {
         <ul className={navActive ? "nav-links nav-active" : "nav-links"}>
           {navigationItems.map((item) => (
             <li key={item.url}>
-              <a href={item.url} onClick={toggleNav} />
-              {item.value}
+              <a
+                href={item.url}
+                onClick={(e) => {
+                  e.preventDefault();
+                  smoothScroll(item.url);
+                  toggleNav();
+                }}
+                className="rrrr"
+              >
+                {item.value}
+              </a>
             </li>
           ))}
         </ul>
@@ -36,7 +60,6 @@ export const Header = () => {
           <div className="line3"></div>
         </div>
       </nav>
-      <script src="script.js"></script>
     </body>
   );
 };

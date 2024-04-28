@@ -1,11 +1,12 @@
-import React from "react";
 import styles from "./Works.module.css";
+import Heading from "../CommonHeadeing";
 import { WorkLists } from "./worksList";
 
 function worksSection() {
   return (
-    <section>
-      <h1>Works</h1>
+    <section id="work">
+      <Heading headingTitle="Work" headingSubTitle="作品" />
+      <span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
       <div className={styles.worksArea}>
         {WorkLists.map((work) => (
           <div className={styles.card}>

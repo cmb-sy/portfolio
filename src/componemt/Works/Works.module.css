@@ -11,13 +11,6 @@
   text-decoration: none;
 }
 
-/* @media screen and (max-width: 768px) {
-  .card {
-    width: 80% !important;
-    height: auto !important;
-  }
-} */
-
 /* 画面サイズ 600px 未満 */
 @media (width < 600px) {
   .card {

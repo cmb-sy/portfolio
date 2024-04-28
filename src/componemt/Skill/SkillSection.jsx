@@ -5,7 +5,6 @@ import { ProgrammingSkills } from "./SkillList";
 function skillSection() {
   return (
     <section>
-      {/* <h1>skill</h1> */}
       <div className="skillArea">
         <div className="skillArea2">
           {ProgrammingSkills.map((item) => (

@@ -1,14 +1,16 @@
 import "./ContactStyle.css";
+import Heading from "../CommonHeadeing";
 
 function Contact() {
   return (
-    <section id="contact">
-      <h1>Contact</h1>
+    <section id="contact" className="contactArea">
+      <Heading headingTitle="Contact" />
       <br />
       <br />
       <p style={{ lineHeight: `2`, margin: `5px` }}>
-        ブログの内容に誤りがある場合や、GitHub上のコードについてのご指摘がある場合は、
-        こちらからご連絡ください。メールの返信には時間を要する場合がありますので、予めご了承ください。
+        ブログの内容に誤りがある場合や、GitHub上のコードについてのご指摘がある場合は、こちらからご連絡ください。
+        {"\n"}
+        メールの返信には時間を要する場合がありますので、予めご了承ください。
       </p>
       <br />
 

@@ -9,13 +9,21 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #0f4a0f;
+  background-color: #082e08;
   position: fixed;
   width: 100%;
   top: 0;
   /* 上の重ねる優先度を上げる */
   z-index: 1;
   gap: 30%;
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+.rrrr {
+  display: block;
+  margin-top: -100px;
+  padding-top: 100px;
 }
 
 .logo {
@@ -56,7 +64,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: red;
+  background-color: white;
   margin: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -93,7 +101,7 @@ nav {
     right: 0;
     height: 92vh;
     top: 8vh;
-    background-color: blue;
+    background-color: #082e08;
 
     flex-direction: column;
     align-items: center;

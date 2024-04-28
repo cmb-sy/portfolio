@@ -4,14 +4,18 @@ import mailLogo from "../../assets/about/mail.png";
 
 export type Introduction = {
   name: string;
-  introduction: string;
+  introduction: string[];
   logoPass?: string;
 };
 
 export const Introductions: Introduction = {
   name: "kunst",
-  introduction:
-    "私は、優れた結果を提供することに情熱を持ったフルスタック開発者です。フロントエンドの React と NextJS、バックエンドの PHP、CodeIgniter、NodeJS、Express の専門知識を活かして、私が取り組んでいるすべてのプロジェクトに技術スキルと創造的な問題解決の独自の組み合わせをもたらします。",
+  introduction: [
+    "こんにちは、kunstと言います。",
+    "フロントエンドエンジニアとして働く傍ら、データサイエンスの世界でも活動しています。\n" +
+      "静的型付けの言語やインフラ、そして機械学習に興味があります。ITの最先端を使って課題を解決したいと思っています。",
+    "今年は統計検定1級とSC、英会話に挑戦中です。",
+  ],
   logoPass: myLogo,
 };
 

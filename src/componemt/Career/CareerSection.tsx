@@ -1,10 +1,11 @@
 import { careers } from "./Career";
 import "./Career.css";
+import Heading from "../CommonHeadeing";
+
 function CareerSection() {
   return (
     <section id="career">
-      <h1>BackGround</h1>
-      <span>test</span>
+      <Heading headingTitle="Career" headingSubTitle="経歴" />
       {careers.map((item) => (
         <div className="container">
           <div className="timeline-item" date-is={item.date}>

@@ -1,11 +1,12 @@
 // import React from "react";
 import "./AboutSection.css";
 import { AboutLinks, Introductions } from "./link";
+import Heading from "../CommonHeadeing";
+
 function AboutSection() {
   return (
-    <section id="about">
-      <h1>About</h1>
-      <span>私について</span>
+    <section id="about" className="aboutArea">
+      <Heading headingTitle="About" headingSubTitle="私について" />
 
       <div className="content">
         <div className="text1">
@@ -23,7 +24,14 @@ function AboutSection() {
             ))}
           </div>
         </div>
-        <div className="text2">{Introductions.introduction}</div>
+        <div className="text2">
+          {Introductions.introduction.map((item, index) => (
+            <span key={index}>
+              {item}
+              <br />
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );
