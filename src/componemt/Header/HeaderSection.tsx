@@ -29,7 +29,7 @@ function Header() {
       const header = document.querySelector("header");
       if (header) {
         if (window.scrollY > 0) {
-          header.style.opacity = "0.8";
+          header.style.opacity = "0.3";
         } else {
           header.style.opacity = "1";
         }

@@ -21,9 +21,9 @@ nav {
 }
 
 .rrrr {
-  display: block;
-  margin-top: -100px;
-  padding-top: 100px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
