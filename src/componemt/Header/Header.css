@@ -122,6 +122,5 @@ nav {
   nav {
     display: flex;
     justify-content: flex-end;
-    overflow-x: hidden;
   }
 }

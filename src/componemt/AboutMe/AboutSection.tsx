@@ -31,7 +31,6 @@ function AboutSection() {
               <br />
             </span>
           ))}
-          <button>aa</button>
         </div>
       </div>
     </section>
