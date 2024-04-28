@@ -24,6 +24,7 @@ p {
 
 .timeline-item {
   padding: 3em 2em 2em;
+  z-index: 0;
   position: relative;
   color: rgba(black, 0.7);
   border-left: 2px solid #007a33;

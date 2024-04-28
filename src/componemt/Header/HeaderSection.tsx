@@ -3,6 +3,8 @@ import "./Header.css";
 import { navigationItems } from "./HeaderItem";
 
 function Header() {
+  let scrollingTimer: number;
+
   const [navActive, setNavActive] = useState(false);
 
   const toggleNav = () => {
@@ -28,18 +30,63 @@ function Header() {
     const handleScroll = () => {
       const header = document.querySelector("header");
       if (header) {
+        // スクロールが発生したときに透明度を変更
+        (header as HTMLElement).style.opacity = "0.5";
+
+        // スクロールが停止した場合にタイマーを使って透明度を元に戻す
+        clearTimeout(scrollingTimer);
+        scrollingTimer = window.setTimeout(() => {
+          (header as HTMLElement).style.opacity = "1";
+        }, 300); // 200ミリ秒間スクロールが停止したとみなす
+      }
+    };
+
+    // メディアクエリを定義
+    const mediaQuery = window.matchMedia("(max-width: 600px)");
+
+    // モバイル用のスクロールハンドリング関数
+    const handleScrollForMobile = () => {
+      const header = document.querySelector("header");
+      if (header) {
         if (window.scrollY > 0) {
-          header.style.opacity = "0.3";
+          header.style.opacity = "0.8"; // 例: モバイル用の透明度
         } else {
-          header.style.opacity = "1";
+          header.style.opacity = "1"; // 例: モバイル用の透明度
         }
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // 初回実行
+    if (mediaQuery.matches) {
+      window.addEventListener("scroll", handleScrollForMobile);
+    } else {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    // ウィンドウサイズが変更されたときに挙動を切り替える
+    mediaQuery.addEventListener("change", (e) => {
+      if (e.matches) {
+        // 幅が600px未満の場合
+        window.removeEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScrollForMobile);
+      } else {
+        // 幅が600px以上の場合
+        window.removeEventListener("scroll", handleScrollForMobile);
+        window.addEventListener("scroll", handleScroll);
+      }
+    });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      mediaQuery.removeEventListener("change", (e) => {
+        if (e.matches) {
+          // 幅が600px未満の場合
+          window.removeEventListener("scroll", handleScrollForMobile);
+        } else {
+          // 幅が600px以上の場合
+          window.removeEventListener("scroll", handleScroll);
+        }
+      });
     };
   }, []);
 
