@@ -96,10 +96,6 @@ function Header() {
   return (
     <header>
       <nav>
-        <div className="logo">
-          <a href="/" className="logo" />
-          Portfolio
-        </div>
         <ul className={navActive ? "nav-links nav-active" : "nav-links"}>
           {navigationItems.map((item) => (
             <li key={item.url}>

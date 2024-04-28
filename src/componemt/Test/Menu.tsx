@@ -2,6 +2,7 @@ import AccordionItem from "./Accordion";
 import Skill from "../Skill/SkillTable";
 import "./Test.css";
 import Heading from "../CommonHeadeing";
+import Contact from "../Contact/Contact";
 
 export type AccordionType = {
   overview: string;
@@ -51,9 +52,9 @@ const Menu = () => {
       {accordionData.map((item, index) => (
         <AccordionItem key={index} titleNode={<h2>{item.overview}</h2>}>
           <Skill />
-          {/* <span>{item.detail}</span> */}
         </AccordionItem>
       ))}
+      <Contact />
     </section>
   );
 };

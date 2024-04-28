@@ -26,7 +26,7 @@ a.btn_blue:hover span.bl__text:after {
 }
 @media (max-width: 736px) {
   a.btn_blue {
-    max-width: 280px;
+    max-width: 250px;
     padding: 1.5rem 2rem;
   }
   a.btn_blue span.bl__text {

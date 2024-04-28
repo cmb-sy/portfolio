@@ -5,7 +5,6 @@ import About from "./componemt/AboutMe/AboutSection";
 import Works from "./componemt/Works/WorksSection";
 import BasicExample from "./componemt/Test/Menu";
 import Career from "./componemt/Career/CareerSection";
-import Contact from "./componemt/Contact/Contact";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
       <Career />
       <Works />
       <BasicExample />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }
