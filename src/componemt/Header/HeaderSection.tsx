@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { navigationItems } from "./HeaderItem";
 
-export const Header = () => {
+function Header() {
   const [navActive, setNavActive] = useState(false);
 
   const toggleNav = () => {
@@ -24,8 +24,27 @@ export const Header = () => {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector("header");
+      if (header) {
+        if (window.scrollY > 0) {
+          header.style.opacity = "0.8";
+        } else {
+          header.style.opacity = "1";
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <body>
+    <header>
       <nav>
         <div className="logo">
           <a href="/" className="logo" />
@@ -60,8 +79,8 @@ export const Header = () => {
           <div className="line3"></div>
         </div>
       </nav>
-    </body>
+    </header>
   );
-};
+}
 
 export default Header;
