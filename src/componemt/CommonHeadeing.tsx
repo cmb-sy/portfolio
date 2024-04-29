@@ -1,17 +1,34 @@
 export type Props = {
   headingTitle: string;
-  headingSubTitle?: string;
+  description?: string;
 };
 
 function CommonHeadeing(props: Props) {
   return (
-    <div style={{ marginBottom: `30px` }}>
-      <h1
-        style={{ color: `#02942b`, fontSize: `1.875rem`, fontWeight: `bold` }}
+    <div>
+      <div style={{ marginBottom: `10px` }}>
+        <h1
+          style={{
+            color: `#02942b`,
+            fontSize: `4rem`,
+            fontWeight: `bold`,
+          }}
+        >
+          {props.headingTitle}
+        </h1>
+      </div>
+
+      <p
+        style={{
+          lineHeight: `2`,
+          margin: `10px`,
+          wordBreak: `break-all`,
+          color: `#424242`,
+          marginBottom: `7vh`,
+        }}
       >
-        {props.headingTitle}
-      </h1>
-      <span style={{ color: `#899f91` }}>{props.headingSubTitle}</span>
+        {props.description}
+      </p>
     </div>
   );
 }

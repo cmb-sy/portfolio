@@ -1,62 +1,114 @@
-.content {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+:root {
+  --icon-large-size: 50px;
+  --icon-small-size: 25px;
 
-.customImg {
-  border-radius: 50%;
-  width: 200px;
-}
-
-.text2 {
-  margin-left: 50px;
-  width: 35%;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.customTable {
-  gap: 15px;
-  display: flex;
-  justify-content: center;
-  margin: 15px;
-}
-
-@media screen and (max-width: 768px) {
-  .content {
-    margin: 10px;
-    display: block;
-    text-align: center;
+  .customTable {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
   }
-
-  .text2 {
+}
+/* 画面サイズ 1200px 以上 */
+@media (1200px <= width) {
+  .about-container {
+    margin: 0 7rem 10rem 7rem;
+  }
+  .contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right-item {
+    margin-left: 5rem;
+    width: 40%;
     text-align: left;
-    width: unset;
-    margin: 10px 15px 10px 15px;
+    margin-bottom: 30px;
+    line-height: 2;
+    font-size: medium;
+  }
+  .my-icon {
+    border-radius: 50%;
+    width: 300px;
+  }
+
+  .sns-icon {
+    width: var(--icon-large-size);
+    height: var(--icon-large-size);
+  }
+
+  .about-area {
+    /* ヘッダー分も考慮 */
+    margin-top: 8vh;
   }
 }
 
-.my-information-area {
-  width: 40%;
-  text-align: left;
+/* 画面サイズ 600px 以上 1200px 未満 */
+@media (768px <= width < 1200px) {
+  .contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right-item {
+    margin-left: 5rem;
+    width: 40%;
+    text-align: left;
+    margin-bottom: 30px;
+    line-height: 2;
+    font-size: medium;
+  }
+  .about-container {
+    margin: 5rem 7rem 0 7rem;
+  }
+  .my-icon {
+    border-radius: 50%;
+    width: 300px;
+  }
 
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  color: #2c2c2f;
-  background: #cde4ff; /*背景色*/
+  .sns-icon {
+    width: var(--icon-large-size);
+    height: var(--icon-large-size);
+  }
 }
 
-.waku1 {
-  display: flex;
-  height: 300px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
+/* 画面サイズ 600px 以上 1200px 未満 */
+@media (600px <= width < 768px) {
+  .about-container {
+    margin: 5rem 3rem 0 3rem;
+  }
+  .my-icon {
+    border-radius: 50%;
+    width: 300px;
+  }
+
+  .sns-icon {
+    width: var(--icon-large-size);
+    height: var(--icon-large-size);
+  }
 }
 
-.aboutArea {
-  /* ヘッダー分も考慮 */
-  margin-top: 15vh;
+@media (width < 600px) {
+  .contents {
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-container {
+    margin: 5rem 1rem 0 1rem;
+  }
+  .my-icon {
+    border-radius: 50%;
+    width: 200px;
+  }
+
+  .sns-icon {
+    width: var(--icon-small-size);
+    height: var(--icon-small-size);
+  }
+  .right-item {
+    margin-top: 2rem;
+  }
 }

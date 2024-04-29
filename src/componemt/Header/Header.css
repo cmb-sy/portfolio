@@ -16,20 +16,13 @@ nav {
   /* 上の重ねる優先度を上げる */
   z-index: 1;
   gap: 30%;
-  scroll-padding-top: 100px;
-  scroll-behavior: smooth;
-}
-
-.rrrr {
-  height: 8vh;
-  display: flex;
-  align-items: center;
 }
 
 .logo {
   color: white;
   text-decoration: none;
   font-size: 22px;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -117,10 +110,6 @@ nav {
   .burger {
     /* display : none　→　block */
     display: block;
-    padding-right: 25px;
-  }
-  nav {
-    display: flex;
-    justify-content: flex-end;
+    /* margin-right: 30px; */
   }
 }

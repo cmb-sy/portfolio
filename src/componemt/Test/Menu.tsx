@@ -47,15 +47,25 @@ const scrollToHash = (event: React.MouseEvent<HTMLAnchorElement>) => {
 
 const Menu = () => {
   return (
-    <section className="test1" id="skill" onClick={scrollToHash}>
-      <Heading headingTitle="Skill" headingSubTitle="技術" />
-      {accordionData.map((item, index) => (
-        <AccordionItem key={index} titleNode={<h2>{item.overview}</h2>}>
-          <Skill />
-        </AccordionItem>
-      ))}
+    <div>
+      <section className="skill-area" id="skill" onClick={scrollToHash}>
+        <div className="container">
+          <Heading
+            headingTitle="Skill"
+            description="★の数で次の解釈をしています。
+          「1個: 軽く使用した程度」、「2個: 数ヶ月以上使用しているがもう少し習熟が必要」、「3個: 実務レベルで時間をかけると駆使できる」、
+          「4個: 実務レベルで十分に駆使できる」 "
+          />
+          {accordionData.map((item, index) => (
+            <AccordionItem key={index} titleNode={<h2>{item.overview}</h2>}>
+              <Skill />
+            </AccordionItem>
+          ))}
+          <div className="contact-area"></div>
+        </div>
+      </section>
       <Contact />
-    </section>
+    </div>
   );
 };
 

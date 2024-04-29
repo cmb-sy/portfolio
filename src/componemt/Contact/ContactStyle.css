@@ -3,7 +3,7 @@ a.btn_blue {
   max-width: 350px;
   margin: 0 auto;
   padding: 1.5rem 3rem;
-  background-color: #1755aa;
+  background-color: #0d8c42;
   border-radius: 8px;
   box-sizing: border-box;
   text-decoration: none;
@@ -18,12 +18,9 @@ a.btn_blue span.bl__text {
 }
 
 a.btn_blue:hover {
-  background-color: #01b5d0;
+  background-color: #0ad86e;
 }
-a.btn_blue:hover span.bl__text:after {
-  border-top: 3px solid #01b5d0;
-  border-right: 3px solid #01b5d0;
-}
+
 @media (max-width: 736px) {
   a.btn_blue {
     max-width: 250px;

@@ -5,32 +5,30 @@ import Heading from "../CommonHeadeing";
 
 function AboutSection() {
   return (
-    <section id="about" className="aboutArea">
-      <Heading headingTitle="About" headingSubTitle="私について" />
-
-      <div className="content">
-        <div className="text1">
-          <div>
-            <img src={Introductions.logoPass} className="customImg" />
+    <section id="about" className="about-area">
+      <div className="about-container">
+        <Heading headingTitle="About" />
+        <div className="contents">
+          <div className="left-item">
+            <div>
+              <img src={Introductions.logoPass} className="my-icon" />
+            </div>
+            <div className="customTable">
+              {AboutLinks.map((item) => (
+                <a href={item.url}>
+                  <img src={item.imagePass} className="sns-icon"></img>
+                </a>
+              ))}
+            </div>
           </div>
-          <div className="customTable">
-            {AboutLinks.map((item) => (
-              <a href={item.url}>
-                <img
-                  src={item.imagePass}
-                  style={{ height: `25px`, width: `25px` }}
-                ></img>
-              </a>
+          <div className="right-item">
+            {Introductions.introduction.map((item, index) => (
+              <span key={index}>
+                {item}
+                <br />
+              </span>
             ))}
           </div>
-        </div>
-        <div className="text2">
-          {Introductions.introduction.map((item, index) => (
-            <span key={index}>
-              {item}
-              <br />
-            </span>
-          ))}
         </div>
       </div>
     </section>

@@ -13,39 +13,23 @@ export const WorkLists: WorkList[] = [
     title: "カンバン式タスク管理ツール",
     tag: ["#python", "#Django"],
     description:
-      "カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。",
-    imgUrl: bgImage,
-    sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
-  },
-  {
-    title: "カンバン式タスク管理ツール",
-    tag: ["#python", "#Django"],
-    description:
       "カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。",
     imgUrl: bgImage,
     sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
   },
   {
-    title: "カンバン式タスク管理ツール",
-    tag: ["#python", "#Django"],
+    title: "にゃんこGenerator",
+    tag: ["#REACT", "#Typescript"],
     description:
-      "カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。",
+      "REACT学習を目的として猫画像を眺めるアプリケーションを開発しました。",
     imgUrl: bgImage,
     sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
   },
   {
-    title: "カンバン式タスク管理ツール",
-    tag: ["#python", "#Django"],
+    title: "媚みくじ",
+    tag: ["#python", "#Flask"],
     description:
-      "カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。",
-    imgUrl: bgImage,
-    sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
-  },
-  {
-    title: "カンバン式タスク管理ツール",
-    tag: ["#python", "#Django"],
-    description:
-      "カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。",
+      "ハッカソンで作成した、おみくじに遊び要素を組み入れたアプリケーション。",
     imgUrl: bgImage,
     sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
   },
