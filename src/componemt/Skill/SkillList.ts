@@ -2,6 +2,29 @@ import pythonLogo from "../../assets/TechLogo/python.png";
 import DjangoLogo from "../../assets/TechLogo/django.png";
 import FlaskLogo from "../../assets/TechLogo/flask.png";
 
+export type AccordionType = {
+  overview: string;
+};
+
+export const accordionData: AccordionType[] = [
+  {
+    overview: "フロントエンド",
+  },
+  {
+    overview: "バックエンド",
+  },
+  {
+    overview: "インフラ",
+  },
+  {
+    overview: "資格",
+  },
+];
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+
 export type ProgrammingSkill = {
   skillType: "ProgrammingSkill";
   skill: {
@@ -9,14 +32,6 @@ export type ProgrammingSkill = {
     imagePass?: string;
     experienceLevel: string;
     comment: string;
-  }[];
-};
-
-export type Certificate = {
-  skillType: "Certificate";
-  skill: {
-    Title: string;
-    imgaePass?: string;
   }[];
 };
 
@@ -48,6 +63,18 @@ export const ProgrammingSkills: ProgrammingSkill[] = [
     ],
   },
 ];
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+
+export type Certificate = {
+  skillType: "Certificate";
+  skill: {
+    Title: string;
+    imgaePass?: string;
+  }[];
+};
 
 export const Certificates: Certificate[] = [
   {
