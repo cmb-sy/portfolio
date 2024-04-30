@@ -81,17 +81,19 @@ export const Certificates: Certificate[] = [
     skillType: "Certificate",
     skill: [
       {
-        Title: "python",
-        imgaePass: "a",
+        Title: "基本情報技術者",
       },
       {
-        Title: "javascript",
+        Title: "応用情報技術者",
       },
       {
-        Title: "python",
+        Title: "統計検定2級/準1級",
       },
       {
-        Title: "javascript",
+        Title: "E資格",
+      },
+      {
+        Title: "TOEIC 810点",
       },
     ],
   },
