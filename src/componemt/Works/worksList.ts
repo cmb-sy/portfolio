@@ -1,4 +1,6 @@
-import bgImage from "../../assets/worksImage/taskManage.png";
+import taskManage from "../../assets/worksImage/taskManage.png";
+import nyanko from "../../assets/worksImage/nyankoGenerator.png";
+import omikuzi from "../../assets/worksImage/omikuzi.png";
 
 export type WorkList = {
   title: string;
@@ -14,7 +16,7 @@ export const WorkLists: WorkList[] = [
     tag: ["#python", "#Django"],
     description:
       "カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。",
-    imgUrl: bgImage,
+    imgUrl: taskManage,
     sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
   },
   {
@@ -22,15 +24,15 @@ export const WorkLists: WorkList[] = [
     tag: ["#REACT", "#Typescript"],
     description:
       "REACT学習を目的として猫画像を眺めるアプリケーションを開発しました。",
-    imgUrl: bgImage,
-    sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
+    imgUrl: nyanko,
+    sourceUrl: "https://github.com/cmb-sy/nyanko-generator",
   },
   {
     title: "媚みくじ",
     tag: ["#python", "#Flask"],
     description:
       "ハッカソンで作成した、おみくじに遊び要素を組み入れたアプリケーション。",
-    imgUrl: bgImage,
-    sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
+    imgUrl: omikuzi,
+    sourceUrl: "https://github.com/cmb-sy/Omikuji",
   },
 ];

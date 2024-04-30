@@ -26,7 +26,7 @@ function SkillTable() {
                     <td className="Table-Body-Row-Cell">
                       {item2.experienceLevel}
                     </td>
-                    <td className="Table-Body-Row-Cell">{item2.comment}</td>
+                    <td className="Table-Body-Row-Cell2">{item2.comment}</td>
                   </tr>
                 </tbody>
               ))}
