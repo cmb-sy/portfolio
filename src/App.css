@@ -4,7 +4,7 @@
 
 @media (width < 768px) {
   section {
-    min-height: 100vh;
+    min-height: 93vh;
   }
 }
 

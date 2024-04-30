@@ -6,10 +6,7 @@ function worksSection() {
   return (
     <section id="work">
       <div className={styles.workArea}>
-        <Heading
-          headingTitle="Work"
-          description="過去に学習を目的として作成した作品を載せておきます。"
-        />
+        <Heading headingTitle="Work" description="過去に作成した作品です。" />
         <div className={styles.worksArea}>
           {WorkLists.map((work) => (
             <a href={work.sourceUrl} className={styles.yyy}>
@@ -18,7 +15,7 @@ function worksSection() {
                 <div className={styles.cardlink_06}>
                   <div className={styles.testkk}>
                     {work.tag.map((item) => (
-                      <span>{item}</span>
+                      <span className={styles.tag}>{item}</span>
                     ))}
                   </div>
                   <div className={styles.cardcontent_06}>

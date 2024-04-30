@@ -1,5 +1,5 @@
 :root {
-  --icon-large-size: 50px;
+  --icon-large-size: 30px;
   --icon-small-size: 25px;
 
   .customTable {
@@ -29,7 +29,7 @@
   }
   .my-icon {
     border-radius: 50%;
-    width: 300px;
+    width: 200px;
   }
 
   .sns-icon {

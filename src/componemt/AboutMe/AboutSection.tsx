@@ -7,7 +7,7 @@ function AboutSection() {
   return (
     <section id="about" className="about-area">
       <div className="about-container">
-        <Heading headingTitle="About" />
+        <Heading headingTitle="About" description="私について" />
         <div className="contents">
           <div className="left-item">
             <div>

@@ -49,7 +49,7 @@ const Menu = () => {
   return (
     <div>
       <section className="skill-area" id="skill" onClick={scrollToHash}>
-        <div className="container">
+        <div className="skill-container">
           <Heading
             headingTitle="Skill"
             description="★の数で次の解釈をしています。

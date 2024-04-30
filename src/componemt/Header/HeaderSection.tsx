@@ -17,7 +17,7 @@ function Header() {
       const sectionTop = targetSection.getBoundingClientRect().top;
       const currentPos = window.scrollY;
       const gap = 84;
-      const target = sectionTop + currentPos - gap;
+      const target = sectionTop + currentPos - gap + 20;
 
       window.scrollTo({
         top: target,
