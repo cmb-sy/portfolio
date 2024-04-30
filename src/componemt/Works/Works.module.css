@@ -9,7 +9,7 @@
 .yyy {
   color: #333;
   text-decoration: none;
-  width: 32%;
+  width: 30%;
 }
 
 .yyy:hover {
@@ -28,6 +28,11 @@
     width: 100%;
     margin: 0 20px 0 20px;
   }
+  .card {
+    width: 45%;
+    height: auto;
+    width: 100%;
+  }
 }
 
 @media (600px <= width < 768px) {
@@ -37,12 +42,18 @@
   .workArea {
     margin: 0 2rem 0 2rem;
   }
-}
-
-@media (768px <= width < 1200px) {
   .card {
     width: 45%;
     height: auto;
+    width: 100%;
+  }
+}
+
+@media (768px <= width < 1400px) {
+  .card {
+    width: 45%;
+    height: auto;
+    width: 100%;
   }
   .yyy {
     width: 40%;
@@ -54,11 +65,11 @@
 }
 
 /* 画面サイズ 1200px 以上 */
-@media (1200px <= width) {
+@media (1400px <= width) {
   .card {
     /* 正方形のため固定値に設定 */
-    width: 350px;
-    height: 350px;
+    width: 20rem;
+    height: 20rem;
   }
   .workArea {
     margin: 0 10rem 0 10rem;
@@ -69,7 +80,6 @@
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
-  width: 100%;
 }
 
 .cardimg_06 {

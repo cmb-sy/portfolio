@@ -5,6 +5,7 @@
 @media (width < 768px) {
   section {
     min-height: 80vh;
+    margin-bottom: 3rem;
   }
 }
 
