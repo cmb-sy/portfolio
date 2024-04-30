@@ -3,7 +3,7 @@ import Heading from "../CommonHeadeing";
 
 function Contact() {
   return (
-    <section id="contact" className="contactArea">
+    <div id="contact" className="contactArea">
       <div className="container-contact">
         <Heading
           headingTitle="Contact"
@@ -14,7 +14,7 @@ function Contact() {
           <span className="bl__text">Get in touch</span>
         </a>
       </div>
-    </section>
+    </div>
   );
 }
 

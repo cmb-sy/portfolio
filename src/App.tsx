@@ -4,8 +4,9 @@ import Header from "./componemt/Header/HeaderSection";
 // import Home from "./componemt/Home/HomeSection";
 import About from "./componemt/AboutMe/AboutSection";
 import Career from "./componemt/Career/CareerSection";
-import Works from "./componemt/Works/WorksSection";
-import BasicExample from "./componemt/Test/Menu";
+import Work from "./componemt/Works/WorksSection";
+import Skill from "./componemt/Skill/SkillSection";
+import Footer from "./componemt/Footer/FooterSection";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       {/* <Home /> */}
       <About />
       <Career />
-      <Works />
-      <BasicExample />
+      <Work />
+      <Skill />
+      <Footer />
     </div>
   );
 }

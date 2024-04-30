@@ -4,14 +4,14 @@
 
 @media (width < 768px) {
   section {
-    min-height: 93vh;
+    min-height: 80vh;
   }
 }
 
 /* 画面サイズ 600px 以上 1200px 未満 */
 @media (768px <= width < 1200px) {
   section {
-    min-height: 100vh;
+    min-height: 92vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
 /* 画面サイズ 1200px 以上 */
 @media (1200px <= width) {
   section {
-    min-height: 100vh;
+    min-height: 92vh;
     display: flex;
     align-items: center;
     justify-content: center;

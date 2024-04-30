@@ -1,0 +1,30 @@
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #227c22;
+  height: 35vh;
+}
+
+.circle {
+  width: 15vh;
+  height: 15vh;
+  background-color: #07eb07;
+  border-radius: 15vh;
+  position: relative;
+  top: -5vh;
+  /* left: 5vh; */
+  transform: rotate(180deg);
+}
+
+.tester {
+  color: white;
+  font-size: 3rem;
+}
+
+.backer {
+  background-color: #07eb07;
+  display: flex;
+  justify-content: center;
+  height: 7rem;
+}

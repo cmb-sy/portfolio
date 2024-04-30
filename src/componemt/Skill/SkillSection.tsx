@@ -1,6 +1,6 @@
 import AccordionItem from "./Accordion";
-import Skill from "../Skill/SkillTable";
-import "./Test.css";
+import Skill from "./SkillTable";
+import "./SkillSection.css";
 import Heading from "../CommonHeadeing";
 import Contact from "../Contact/Contact";
 

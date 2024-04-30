@@ -1,6 +1,5 @@
 import "./SkillStyle.css";
 import { ProgrammingSkills } from "./SkillList";
-// import { ReactComponent as Sad } from "../../assets/pythonLogo.svg";
 function SkillTable() {
   return (
     <div className="skillArea">
