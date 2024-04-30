@@ -11,7 +11,12 @@ function worksSection() {
           {WorkLists.map((work) => (
             <a href={work.sourceUrl} className={styles.yyy}>
               <div className={styles.card}>
-                <img className={styles.cardimg_06} src={work.imgUrl} alt="" />
+                <img
+                  className={styles.cardimg_06}
+                  src={work.imgUrl}
+                  alt=""
+                  // style={{ width: "20rem", height: "10rem" }}
+                />
                 <div className={styles.cardlink_06}>
                   <div className={styles.testkk}>
                     {work.tag.map((item) => (
