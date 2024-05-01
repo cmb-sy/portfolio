@@ -1,7 +1,23 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Home.css";
+import chevron from "../../assets/chevron.svg";
 
 function HomeSection() {
+  const smoothScroll = (href: string) => {
+    const targetSection = document.querySelector(href) as HTMLElement;
+    if (targetSection) {
+      const sectionTop = targetSection.getBoundingClientRect().top;
+      const currentPos = window.scrollY;
+      const gap = 84;
+      const target = sectionTop + currentPos - gap + 20;
+
+      window.scrollTo({
+        top: target,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const leafContainer = useRef<HTMLDivElement>(null);
 
   // コンポーネントのマウント時にタイマーをセットアップし、アンマウント時にクリア
@@ -36,7 +52,20 @@ function HomeSection() {
   return (
     <div id="home" className="homeArea">
       <div ref={leafContainer} className="forest-container">
-        <h1 className="yyyy">Thank You Coming!</h1>
+        <div className="rrrt">
+          <h3 className="yyyy">Thank you for visiting</h3>
+          <h4 className="yyyy">Please take it easy</h4>
+          <a
+            href="#home"
+            className="circle2"
+            onClick={(e) => {
+              e.preventDefault();
+              smoothScroll("#about");
+            }}
+          >
+            <img src={chevron} />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -17,7 +17,6 @@
   overflow: hidden;
 
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -45,7 +44,33 @@
 .yyyy {
   color: white;
   font-size: 5rem;
+}
+.rrrt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
   z-index: 2;
+}
+
+.circle2 {
+  width: 15vh;
+  height: 15vh;
+  background-color: #07eb07;
+  border-radius: 15vh;
+  position: relative;
+  top: 5vh;
+  animation: floating-y 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floating-y {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
 }
 
 @keyframes snowFall {
