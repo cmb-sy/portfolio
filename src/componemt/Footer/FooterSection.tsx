@@ -20,7 +20,7 @@ function Footer() {
   return (
     <div>
       <div className="test">
-        <p className="tester">Thank you Watching</p>
+        <p className="tester">Thank you for Watching</p>
       </div>
       <div className="backer">
         <a

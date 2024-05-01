@@ -53,8 +53,8 @@ function HomeSection() {
     <div id="home" className="homeArea">
       <div ref={leafContainer} className="forest-container">
         <div className="rrrt">
-          <h3 className="yyyy">Thank you for visiting</h3>
-          <h4 className="yyyy">Please take it easy</h4>
+          <span className="yyyy">Thank you for visiting</span>
+          <span className="yyyy1">Please take it easy</span>
           <a
             href="#home"
             className="circle2"

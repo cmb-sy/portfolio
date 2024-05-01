@@ -41,10 +41,6 @@
   z-index: 1;
 }
 
-.yyyy {
-  color: white;
-  font-size: 5rem;
-}
 .rrrt {
   display: flex;
   align-items: center;
@@ -53,15 +49,43 @@
   flex-direction: column;
   z-index: 2;
 }
+.yyyy {
+  color: white;
+  font-size: 4rem;
+}
 
+.yyyy1 {
+  color: white;
+  font-size: 3rem;
+}
 .circle2 {
   width: 15vh;
   height: 15vh;
   background-color: #07eb07;
   border-radius: 15vh;
   position: relative;
-  top: 5vh;
+  top: 12vh;
   animation: floating-y 2s ease-in-out infinite alternate-reverse;
+}
+
+@media (width < 600px) {
+  .yyyy {
+    color: white;
+    font-size: 2rem;
+  }
+  .yyyy1 {
+    color: white;
+    font-size: 1rem;
+  }
+  .circle2 {
+    width: 15vh;
+    height: 15vh;
+    background-color: #07eb07;
+    border-radius: 15vh;
+    position: relative;
+    top: 12vh;
+    animation: floating-y 2s ease-in-out infinite alternate-reverse;
+  }
 }
 
 @keyframes floating-y {
