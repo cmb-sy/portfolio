@@ -1,6 +1,6 @@
 import { careers } from "./Career";
 import "./Career.css";
-import Heading from "../CommonHeadeing";
+import Heading from "../Heading/CommonHeadeing";
 
 function CareerSection() {
   return (

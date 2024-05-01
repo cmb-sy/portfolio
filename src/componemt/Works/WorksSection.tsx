@@ -1,5 +1,5 @@
 import styles from "./Works.module.css";
-import Heading from "../CommonHeadeing";
+import Heading from "../Heading/CommonHeadeing";
 import { WorkLists } from "./worksList";
 
 function worksSection() {

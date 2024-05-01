@@ -1,7 +1,6 @@
-// import React from "react";
 import "./AboutSection.css";
 import { AboutLinks, Introductions } from "./link";
-import Heading from "../CommonHeadeing";
+import Heading from "../Heading/CommonHeadeing";
 
 function AboutSection() {
   return (

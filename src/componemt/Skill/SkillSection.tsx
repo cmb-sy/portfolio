@@ -1,9 +1,9 @@
 import AccordionItem from "./Accordion";
-import Skill from "./SkillTable";
-import "./SkillSection.css";
-import Heading from "../CommonHeadeing";
+import SkillTable from "./SkillTable";
+import Heading from "../Heading/CommonHeadeing";
 import Contact from "../Contact/Contact";
-import { accordionData } from "./SkillList";
+import { ProgrammingSkills } from "./SkillList";
+import "./SkillSection.css";
 
 const scrollToHash = (event: React.MouseEvent<HTMLAnchorElement>) => {
   event.preventDefault(); // デフォルトのクリック動作を無効化
@@ -29,9 +29,9 @@ const Menu = () => {
           「1個: 軽く使用した程度」、「2個: 数ヶ月以上使用しているがもう少し習熟が必要」、「3個: 実務レベルで時間をかけると駆使できる」、
           「4個: 実務レベルで十分に駆使できる」 "
           />
-          {accordionData.map((item, index) => (
-            <AccordionItem key={index} titleNode={<h2>{item.overview}</h2>}>
-              <Skill />
+          {ProgrammingSkills.map((item, index) => (
+            <AccordionItem key={index} titleNode={<h2>{item.skillType}</h2>}>
+              <SkillTable skill={item.skill} />
             </AccordionItem>
           ))}
           <div className="contact-area"></div>
