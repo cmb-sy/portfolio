@@ -24,11 +24,11 @@ function Footer() {
       </div>
       <div className="backer">
         <a
-          href="#about"
+          href="#home"
           className="circle"
           onClick={(e) => {
             e.preventDefault();
-            smoothScroll("#about");
+            smoothScroll("#home");
           }}
         >
           <img src={chevron} />

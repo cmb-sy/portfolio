@@ -97,8 +97,16 @@ function Header() {
     <header>
       <nav>
         <div className="logo">
-          <a href="#home" className="logo" />
-          Portfolio
+          <a
+            href="#home"
+            className="logo"
+            onClick={(e) => {
+              e.preventDefault();
+              smoothScroll("#home");
+            }}
+          >
+            Portfolio
+          </a>
         </div>
         <ul className={navActive ? "nav-links nav-active" : "nav-links"}>
           {navigationItems.map((item) => (
