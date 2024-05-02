@@ -3,126 +3,100 @@ import DjangoLogo from "../../assets/TechLogo/django.png";
 import FlaskLogo from "../../assets/TechLogo/flask.png";
 
 export type skillDetail = {
-  skillTitle: string;
+  tableLeftCell: string;
   imagePass?: string;
-  experienceLevel: string;
-  comment: string;
+  tableCenterCell: string;
+  tableRightCell: string;
 };
 
-export type ProgrammingSkill = {
-  skillType: "フロントエンド" | "バックエンド" | "インフラ";
+export type skillTable = {
+  skillType: string;
+  tableHeading: string[];
   skill: skillDetail[];
 };
 
-export const ProgrammingSkills: ProgrammingSkill[] = [
+export const ProgrammingSkills: skillTable[] = [
   {
     skillType: "フロントエンド",
+    tableHeading: ["aaa", "ssss", "sidklns"],
     skill: [
       {
-        skillTitle: "python",
+        tableLeftCell: "python",
         imagePass: pythonLogo,
-        experienceLevel: "★★★☆☆",
-        comment:
+        tableCenterCell: "★★★☆☆",
+        tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        skillTitle: "django",
+        tableLeftCell: "django",
         imagePass: DjangoLogo,
-        experienceLevel: "★★★☆☆",
-        comment:
+        tableCenterCell: "★★★☆☆",
+        tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        skillTitle: "flask",
+        tableLeftCell: "flask",
         imagePass: FlaskLogo,
-        experienceLevel: "★★★☆☆",
-        comment:
+        tableCenterCell: "★★★☆☆",
+        tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
     ],
   },
   {
     skillType: "バックエンド",
+    tableHeading: ["aaa", "ssss", "sidklns"],
     skill: [
       {
-        skillTitle: "python",
+        tableLeftCell: "python",
         imagePass: pythonLogo,
-        experienceLevel: "★★★☆☆",
-        comment:
+        tableCenterCell: "★★★☆☆",
+        tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        skillTitle: "django",
+        tableLeftCell: "django",
         imagePass: DjangoLogo,
-        experienceLevel: "★★★☆☆",
-        comment:
+        tableCenterCell: "★★★☆☆",
+        tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        skillTitle: "flask",
+        tableLeftCell: "flask",
         imagePass: FlaskLogo,
-        experienceLevel: "★★★☆☆",
-        comment:
+        tableCenterCell: "★★★☆☆",
+        tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
     ],
   },
   {
-    skillType: "インフラ",
+    skillType: "certificate",
+    tableHeading: ["certificate", "取得日時", "取得理由"],
     skill: [
       {
-        skillTitle: "python",
-        imagePass: pythonLogo,
-        experienceLevel: "★★★☆☆",
-        comment:
+        tableLeftCell: "基本情報",
+        tableCenterCell: "xxxx/xx/xx",
+        tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        skillTitle: "django",
-        imagePass: DjangoLogo,
-        experienceLevel: "★★★☆☆",
-        comment:
+        tableLeftCell: "基本情報",
+        tableCenterCell: "xxxx/xx/xx",
+        tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        skillTitle: "flask",
-        imagePass: FlaskLogo,
-        experienceLevel: "★★★☆☆",
-        comment:
+        tableLeftCell: "基本情報",
+        tableCenterCell: "xxxx/xx/xx",
+        tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
-    ],
-  },
-];
-
-// ----------------------------------------------------------------
-
-export type Certificate = {
-  skillType: "Certificate";
-  skill: {
-    Title: string;
-    imgaePass?: string;
-  }[];
-};
-
-export const Certificates: Certificate[] = [
-  {
-    skillType: "Certificate",
-    skill: [
       {
-        Title: "基本情報技術者",
-      },
-      {
-        Title: "応用情報技術者",
-      },
-      {
-        Title: "統計検定2級/準1級",
-      },
-      {
-        Title: "E資格",
-      },
-      {
-        Title: "TOEIC 810点",
+        tableLeftCell: "基本情報",
+        tableCenterCell: "xxxx/xx/xx",
+        tableRightCell:
+          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
     ],
   },

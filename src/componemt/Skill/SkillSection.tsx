@@ -31,7 +31,10 @@ const Menu = () => {
           />
           {ProgrammingSkills.map((item, index) => (
             <AccordionItem key={index} titleNode={<h2>{item.skillType}</h2>}>
-              <SkillTable skill={item.skill} />
+              <SkillTable
+                skillDetail={item.skill}
+                tableHeading={item.tableHeading}
+              />
             </AccordionItem>
           ))}
           <div className="contact-area"></div>

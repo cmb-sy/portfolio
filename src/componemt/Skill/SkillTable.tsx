@@ -1,8 +1,9 @@
 import "./SkillStyle.css";
-import { skillDetail } from "./SkillList";
+import { skillDetail, skillTable } from "./SkillList";
 
 type Props = {
-  skill: skillDetail[];
+  skillDetail: skillDetail[];
+  tableHeading: skillTable["tableHeading"];
 };
 
 function SkillTable(props: Props) {
@@ -11,31 +12,33 @@ function SkillTable(props: Props) {
       <div className="skillArea2">
         <div>
           <table className="Table">
-            {props.skill.map((item3) => (
-              <thead className="Table-Head">
-                <tr className="Table-Head-Row">
-                  <th className="Table-Head-Row-Cell1">Tech</th>
-                  <th className="Table-Head-Row-Cell2">Level</th>
-                  <th className="Table-Head-Row-Cell3">Content</th>
-                  {/* <th className="Table-Head-Row-Cell1">certicate</th>
-                <th className="Table-Head-Row-Cell2">取得日時</th>
-              <th className="Table-Head-Row-Cell3">取得理由</th> */}
-                </tr>
-              </thead>
-            ))}
-            {props.skill.map((item2) => (
+            <thead className="Table-Head">
+              <tr className="Table-Head-Row">
+                {props.tableHeading.map((heading, index) => (
+                  <th
+                    key={`heading-${index}`}
+                    className={`Table-Head-Row-Cell${index + 1}`}
+                  >
+                    {heading}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            {props.skillDetail.map((item2) => (
               <tbody className="Table-Body">
                 <tr className="Table-Body-Row">
                   <td className="Table-Body-Row-Cell">
                     <div className="testtest">
                       <img src={item2.imagePass} className="customSvg" />
-                      <span className="skillTitle">{item2.skillTitle}</span>
+                      <span className="skillTitle">{item2.tableLeftCell}</span>
                     </div>
                   </td>
                   <td className="Table-Body-Row-Cell">
-                    {item2.experienceLevel}
+                    {item2.tableCenterCell}
                   </td>
-                  <td className="Table-Body-Row-Cell2">{item2.comment}</td>
+                  <td className="Table-Body-Row-Cell2">
+                    {item2.tableRightCell}
+                  </td>
                 </tr>
               </tbody>
             ))}
