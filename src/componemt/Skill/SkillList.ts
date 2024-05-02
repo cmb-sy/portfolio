@@ -72,28 +72,28 @@ export const ProgrammingSkills: skillTable[] = [
   },
   {
     skillType: "certificate",
-    tableHeading: ["certificate", "取得日時", "取得理由"],
+    tableHeading: ["資格名", "取得日時", "取得理由"],
     skill: [
       {
-        tableLeftCell: "基本情報",
+        tableLeftCell: "FE/AP",
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        tableLeftCell: "基本情報",
+        tableLeftCell: "統計検定2級/準1級",
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        tableLeftCell: "基本情報",
+        tableLeftCell: "E資格",
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
-        tableLeftCell: "基本情報",
+        tableLeftCell: "TOEIC810点",
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",

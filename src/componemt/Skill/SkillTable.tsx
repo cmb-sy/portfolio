@@ -29,8 +29,18 @@ function SkillTable(props: Props) {
                 <tr className="Table-Body-Row">
                   <td className="Table-Body-Row-Cell">
                     <div className="testtest">
-                      <img src={item2.imagePass} className="customSvg" />
-                      <span className="skillTitle">{item2.tableLeftCell}</span>
+                      {item2.imagePass ? (
+                        <div>
+                          <img src={item2.imagePass} className="customSvg" />
+                          <span className="skillTitle">
+                            {item2.tableLeftCell}
+                          </span>
+                        </div>
+                      ) : (
+                        <span className="skillTitle">
+                          {item2.tableLeftCell}
+                        </span>
+                      )}
                     </div>
                   </td>
                   <td className="Table-Body-Row-Cell">
