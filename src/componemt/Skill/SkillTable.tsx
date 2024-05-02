@@ -1,5 +1,5 @@
 import "./SkillStyle.css";
-import { ProgrammingSkill, skillDetail } from "./SkillList";
+import { skillDetail } from "./SkillList";
 
 type Props = {
   skill: skillDetail[];
@@ -11,13 +11,18 @@ function SkillTable(props: Props) {
       <div className="skillArea2">
         <div>
           <table className="Table">
-            <thead className="Table-Head">
-              <tr className="Table-Head-Row">
-                <th className="Table-Head-Row-Cell1">Tech</th>
-                <th className="Table-Head-Row-Cell2">Level</th>
-                <th className="Table-Head-Row-Cell3">Content</th>
-              </tr>
-            </thead>
+            {props.skill.map((item3) => (
+              <thead className="Table-Head">
+                <tr className="Table-Head-Row">
+                  <th className="Table-Head-Row-Cell1">Tech</th>
+                  <th className="Table-Head-Row-Cell2">Level</th>
+                  <th className="Table-Head-Row-Cell3">Content</th>
+                  {/* <th className="Table-Head-Row-Cell1">certicate</th>
+                <th className="Table-Head-Row-Cell2">取得日時</th>
+              <th className="Table-Head-Row-Cell3">取得理由</th> */}
+                </tr>
+              </thead>
+            ))}
             {props.skill.map((item2) => (
               <tbody className="Table-Body">
                 <tr className="Table-Body-Row">
