@@ -12,6 +12,10 @@ import Flask from "../../assets/TechLogo/backend/Flask.png";
 import Python from "../../assets/TechLogo/dataScience/Python.png";
 import R from "../../assets/TechLogo/dataScience/R.png";
 
+import StatisticalSocietyCertificate2 from "../../assets/TechLogo/certificate/StatisticalSocietyCertificate2.png";
+import StatisticalSocietyCertificatePre1 from "../../assets/TechLogo/certificate/StatisticalSocietyCertificatePre1.png";
+import Ecertification from "../../assets/TechLogo/certificate/Ecertification.png";
+
 export type skillDetail = {
   tableLeftCell: string;
   imagePass?: string;
@@ -133,18 +137,21 @@ export const ProgrammingSkills: skillTable[] = [
       },
       {
         tableLeftCell: "統計検定2級",
+        // imagePass: StatisticalSocietyCertificate2,
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
         tableLeftCell: "統計検定準1級",
+        // imagePass: StatisticalSocietyCertificatePre1,
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
         tableLeftCell: "E資格",
+        // imagePass: Ecertification,
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",

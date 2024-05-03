@@ -41,7 +41,7 @@ const AccordionItem = (props: Props) => {
       <div
         style={{
           height: showContents
-            ? `${childElement.current?.scrollHeight}px`
+            ? `calc(${childElement.current?.scrollHeight}px + 20px)`
             : "0px",
           opacity: showContents ? 1 : 0,
           overflow: "hidden",

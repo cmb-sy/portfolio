@@ -1,80 +1,72 @@
+/* SkillStyle.css */
+
+/* Table Styles */
 .Table {
   width: 100%;
-  border: solid 2px #333;
   border-collapse: collapse;
-  font-size: 16px;
-}
-@media screen and (max-width: 768px) {
-  .Table {
-    font-size: 12px;
-  }
-  .customSvg {
-    width: 0 !important;
-  }
 }
 
-.skillTitle {
-  font-size: calc(100% + 60%);
-}
 .Table-Head {
-  background: #ccc;
-}
-.Table-Head-Row-Cell1 {
-  border: solid 2px #333;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  width: 20%;
+  background-color: gray;
+  color: white;
 }
 
-.Table-Head-Row-Cell2 {
-  border: solid 2px #333;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  width: 20%;
+.Table-Head-Row {
+  border-bottom: 2px solid #ddd;
 }
 
-.Table-Head-Row-Cell3 {
-  border: solid 2px #333;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  width: 60%;
-}
-.Table-Body {
-  background: #fff;
-}
-.Table-Body-Row-Cell {
-  border: solid 2px #333;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+.Table-Head-Row th {
+  padding: 12px;
+  text-align: left;
+  border-right: 1px solid #fff; /* Add right border */
 }
 
-.testtest {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
+.Table-Body-Row {
+  border-bottom: 1px solid #ddd;
+}
+
+.Table-Body-Row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.Table-Body-Row:hover {
+  background-color: #f0f0f0;
+}
+
+.Table-Body-Row td {
+  padding: 12px;
+  text-align: left;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
 }
 
 .customSvg {
-  width: 15%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
-.Table-Body-Row-Cell2 {
-  border: solid 2px #333;
-  text-align: left;
-  padding: 5px;
+.skillTitle {
+  font-weight: bold;
+  font-size: calc(100% - 2px);
 }
 
-.uuu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .Table-Head-Row {
+    display: none;
+  }
+
+  .Table-Body-Row {
+    display: block;
+    border: none;
+  }
+
+  .Table-Body-Row td {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    text-align: left;
+  }
 }

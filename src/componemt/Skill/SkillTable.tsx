@@ -24,35 +24,28 @@ function SkillTable(props: Props) {
                 ))}
               </tr>
             </thead>
-            {props.skillDetail.map((item2) => (
-              <tbody className="Table-Body">
-                <tr className="Table-Body-Row">
-                  <td className="Table-Body-Row-Cell">
-                    <div className="testtest">
-                      {item2.imagePass ? (
-                        <div className="uuu">
-                          <img src={item2.imagePass} className="customSvg" />
-                          <span className="skillTitle">
-                            {item2.tableLeftCell}
-                          </span>
-                        </div>
-                      ) : (
-                        <span className="skillTitle">
-                          {item2.tableLeftCell}
-                        </span>
-                      )}
-                    </div>
-                  </td>
-
-                  <td className="Table-Body-Row-Cell">
-                    {item2.tableCenterCell}
+            <tbody>
+              {props.skillDetail.map((item, index) => (
+                <tr key={`row-${index}`} className="Table-Body-Row">
+                  <td className="Table-Body-Row-Cell1">
+                    {item.imagePass && (
+                      <img
+                        src={item.imagePass}
+                        alt="Skill Icon"
+                        className="customSvg"
+                      />
+                    )}
+                    <span className="skillTitle">{item.tableLeftCell}</span>
                   </td>
                   <td className="Table-Body-Row-Cell2">
-                    {item2.tableRightCell}
+                    {item.tableCenterCell}
+                  </td>
+                  <td className="Table-Body-Row-Cell3">
+                    {item.tableRightCell}
                   </td>
                 </tr>
-              </tbody>
-            ))}
+              ))}
+            </tbody>
           </table>
         </div>
       </div>
