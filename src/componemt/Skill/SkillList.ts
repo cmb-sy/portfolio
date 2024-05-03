@@ -137,21 +137,21 @@ export const ProgrammingSkills: skillTable[] = [
       },
       {
         tableLeftCell: "統計検定2級",
-        // imagePass: StatisticalSocietyCertificate2,
+        imagePass: StatisticalSocietyCertificate2,
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
         tableLeftCell: "統計検定準1級",
-        // imagePass: StatisticalSocietyCertificatePre1,
+        imagePass: StatisticalSocietyCertificatePre1,
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
       },
       {
         tableLeftCell: "E資格",
-        // imagePass: Ecertification,
+        imagePass: Ecertification,
         tableCenterCell: "xxxx/xx/xx",
         tableRightCell:
           "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
