@@ -31,53 +31,46 @@ export const ProgrammingSkills: skillTable[] = [
     tableHeading: ["Tech", "Level", "Comment"],
     skill: [
       {
-        tableLeftCell: "Typescript",
-        imagePass: Typescript,
-        tableCenterCell: "★★★☆☆",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
-      },
-      {
         tableLeftCell: "JavaScript",
         imagePass: JavaScript,
         tableCenterCell: "★★★☆☆",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableRightCell: "業務で",
+      },
+      {
+        tableLeftCell: "Typescript",
+        imagePass: Typescript,
+        tableCenterCell: "★★★☆☆",
+        tableRightCell: "",
       },
       {
         tableLeftCell: "Vue",
         imagePass: Vue,
-        tableCenterCell: "★★★☆☆",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableCenterCell: "★★★★☆",
+        tableRightCell: "業務での開発として",
       },
       {
         tableLeftCell: "React",
         imagePass: React,
         tableCenterCell: "★★★☆☆",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableRightCell: "",
       },
       {
         tableLeftCell: "Astro",
         imagePass: Astro,
-        tableCenterCell: "★★★☆☆",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableCenterCell: "★★☆☆☆",
+        tableRightCell: "",
       },
       {
         tableLeftCell: "HTML",
         imagePass: HTML,
         tableCenterCell: "★★★☆☆",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableRightCell: "",
       },
       {
         tableLeftCell: "CSS",
         imagePass: CSS,
         tableCenterCell: "★★★☆☆",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableRightCell: "",
       },
     ],
   },
@@ -88,16 +81,16 @@ export const ProgrammingSkills: skillTable[] = [
       {
         tableLeftCell: "Django",
         imagePass: Django,
-        tableCenterCell: "★★★☆☆",
+        tableCenterCell: "★★☆☆☆",
         tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+          "プライベートなアプリケーション開発として使用した経験があります。",
       },
       {
         tableLeftCell: "Flask",
         imagePass: Flask,
-        tableCenterCell: "★★★☆☆",
+        tableCenterCell: "★★☆☆☆",
         tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+          "プライベートなアプリケーション開発や、ハッカソンでの採用技術として使用した経験があります。",
       },
     ],
   },
@@ -108,58 +101,54 @@ export const ProgrammingSkills: skillTable[] = [
       {
         tableLeftCell: "python",
         imagePass: Python,
-        tableCenterCell: "★★★☆☆",
+        tableCenterCell: "★★★★☆",
         tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+          "業務とプライベートの両方でデータ分析や機械学習モデル構築をしてきました。また、データ分析やグラフ描画、モデル構築のため様々なフレームワークを用いた経験があります。",
       },
       {
         tableLeftCell: "R",
         imagePass: R,
         tableCenterCell: "★★★☆☆",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableRightCell: "業務としてR言語を用いてデータ分析を行いました。",
       },
     ],
   },
   {
-    skillType: "資格",
+    skillType: "E資格",
     tableHeading: ["Certification", "Date", "Reason"],
     skill: [
       {
         tableLeftCell: "基本情報技術者",
-        tableCenterCell: "xxxx/xx/xx",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableCenterCell: "2023/05/12",
+        tableRightCell: "ITエンジニアの基本知識を獲得するために取得しました。",
       },
       {
         tableLeftCell: "応用情報技術者",
-        tableCenterCell: "xxxx/xx/xx",
+        tableCenterCell: "2023/04/16",
         tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+          "ITエンジニアの知識をより深めて、業務に活用するために取得しました。",
       },
       {
         tableLeftCell: "統計検定2級",
-        tableCenterCell: "xxxx/xx/xx",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableCenterCell: "2023/12/20",
+        tableRightCell: "統計学の最低限の知識を獲得するために取得しました。",
       },
       {
         tableLeftCell: "統計検定準1級",
-        tableCenterCell: "xxxx/xx/xx",
+        tableCenterCell: "2024/03/11",
         tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+          "データ分析業務にあたって、統計学のより深い知識が必要のため取得しました。",
       },
       {
         tableLeftCell: "E資格",
-        tableCenterCell: "xxxx/xx/xx",
+        tableCenterCell: "2023/09/21",
         tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+          "大学院生のときの知識に含めてディープラーニングの知識をより深めるために取得しました。",
       },
       {
         tableLeftCell: "TOEIC810点",
-        tableCenterCell: "xxxx/xx/xx",
-        tableRightCell:
-          "numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。numpy, matplotlibを通して機械学習のモデルを作成。Django, Flaskを用いてアプリケーションを開発。",
+        tableCenterCell: " 2024/02/25",
+        tableRightCell: "英語のスキルは必要と考えたため取得しました。",
       },
     ],
   },

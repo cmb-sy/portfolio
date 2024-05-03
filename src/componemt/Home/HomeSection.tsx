@@ -44,7 +44,7 @@ function HomeSection() {
       }, 10000);
     };
 
-    const intervalId = setInterval(createLeaf, 1000);
+    const intervalId = setInterval(createLeaf, 800);
 
     return () => clearInterval(intervalId);
   }, []);
