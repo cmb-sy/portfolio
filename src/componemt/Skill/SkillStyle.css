@@ -63,7 +63,7 @@
 
   .Table-Body-Row {
     display: block;
-    border: none;
+    border: 1px solid black;
   }
 
   .Table-Body-Row td {
