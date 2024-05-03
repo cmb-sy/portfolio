@@ -1,3 +1,6 @@
+/* SkillStyle.css */
+
+/* Table Styles */
 .Table {
   width: 100%;
   border-collapse: collapse;
@@ -16,6 +19,10 @@
   padding: 12px;
   text-align: left;
   border-right: 1px solid #fff;
+}
+
+.Table-Body-Row-Cell1 {
+  width: 23%;
 }
 
 .Table-Body-Row {
@@ -38,16 +45,14 @@
 }
 
 .customSvg {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin-bottom: 5px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: -8px;
 }
 
 .skillTitle {
-  display: block;
   font-weight: bold;
-  font-size: calc(100% - 2px);
 }
 
 /* Responsive Styles */
@@ -68,6 +73,11 @@
     padding: 10px;
     text-align: left;
   }
+}
+
+/* Other Styles */
+.skillArea {
+  margin-top: 20px;
 }
 
 .skillArea2 {
