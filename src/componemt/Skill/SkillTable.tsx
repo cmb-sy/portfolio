@@ -30,7 +30,7 @@ function SkillTable(props: Props) {
                   <td className="Table-Body-Row-Cell">
                     <div className="testtest">
                       {item2.imagePass ? (
-                        <div>
+                        <div className="uuu">
                           <img src={item2.imagePass} className="customSvg" />
                           <span className="skillTitle">
                             {item2.tableLeftCell}
@@ -43,6 +43,7 @@ function SkillTable(props: Props) {
                       )}
                     </div>
                   </td>
+
                   <td className="Table-Body-Row-Cell">
                     {item2.tableCenterCell}
                   </td>

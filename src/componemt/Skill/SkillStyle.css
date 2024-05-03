@@ -64,11 +64,17 @@
 
 .customSvg {
   width: 15%;
-  margin-top: 2px;
 }
 
 .Table-Body-Row-Cell2 {
   border: solid 2px #333;
   text-align: left;
   padding: 5px;
+}
+
+.uuu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
