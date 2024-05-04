@@ -1,10 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-nav {
+.navContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -13,8 +7,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  /* 上の重ねる優先度を上げる */
-  z-index: 3;
+  z-index: 3; /* 上の重ねる優先度を上げる */
   gap: 30%;
 }
 
@@ -25,15 +18,20 @@ nav {
   cursor: pointer;
 }
 
-.nav-links {
+.header-nav-links {
   display: flex;
   justify-content: space-around;
   gap: 45px;
   transition: all 0.3s ease-in-out;
 }
 
-.nav-links li {
+.header-nav-links li {
   list-style: none;
+}
+
+.header-nav-links a {
+  color: white;
+  text-decoration: none;
 }
 
 @keyframes navLinksFade {
@@ -43,11 +41,6 @@ nav {
   100% {
     opacity: 1;
   }
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
 }
 
 .burger {
@@ -72,44 +65,34 @@ nav {
   transform: rotate(-45deg) translate(5px, -6px);
 }
 
-/* 1024pxを下回る場合 */
-@media screen and (max-width: 1024px) {
-  .nav-links {
+@media screen and (768px < width <= 1024px) {
+  .header-nav-links {
     width: 55%;
   }
 }
-@media screen and (max-width: 768px) {
-  /* 横スクロールできないようにする */
-  .nav-body {
-    overflow-x: hidden;
-  }
-
-  .nav-active {
+@media screen and (width <= 768px) {
+  .header-nav-active {
     transform: translateX(0) !important;
   }
 
-  .nav-links {
+  .header-nav-links {
     /* 場所移動 */
     position: absolute;
     right: 0;
     height: 92vh;
-    top: 8vh;
+    top: 5vh;
     background-color: #082e08;
 
     flex-direction: column;
     align-items: center;
     width: 50%;
+    padding: unset;
 
     transform: translateX(100%);
   }
 
-  /* .nav-links li { */
-  /* opacity: 0; */
-  /* } */
-
   .burger {
     /* display : none　→　block */
     display: block;
-    /* margin-right: 30px; */
   }
 }

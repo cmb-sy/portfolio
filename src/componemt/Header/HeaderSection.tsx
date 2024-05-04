@@ -81,7 +81,7 @@ function Header() {
 
   return (
     <header>
-      <nav>
+      <nav className="navContainer">
         <div className="logo">
           <a
             href="#home"
@@ -94,7 +94,13 @@ function Header() {
             Portfolio
           </a>
         </div>
-        <ul className={navActive ? "nav-links nav-active" : "nav-links"}>
+        <ul
+          className={
+            navActive
+              ? "header-nav-links header-nav-active"
+              : "header-nav-links"
+          }
+        >
           {navigationItems.map((item) => (
             <li key={item.url}>
               <a

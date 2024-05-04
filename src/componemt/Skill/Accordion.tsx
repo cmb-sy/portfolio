@@ -20,12 +20,12 @@ const AccordionItem = (props: Props) => {
   };
 
   return (
-    <div className="accordionWrapper">
+    <div className="accordion-wrapper">
       <button
         className={
           isActive
-            ? "accordionButton accordion-toggle active"
-            : "accordionButton accordion-toggle"
+            ? "accordion-button accordion-toggle active"
+            : "accordion-button accordion-toggle"
         }
         onClick={() => {
           onClickAccordionToggle();

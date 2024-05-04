@@ -20,7 +20,7 @@ const skillSection = () => {
           「★★★★☆: 実務レベルで十分に駆使できる」、「★★★★★: 完璧に理解しており実務でも困ることなく使いこなせる」。"
           />
           {ProgrammingSkills.map((item, index) => (
-            <AccordionItem key={index} titleNode={<h2>{item.skillType}</h2>}>
+            <AccordionItem key={index} titleNode={item.skillType}>
               <SkillTable
                 skillDetail={item.skill}
                 tableHeading={item.tableHeading}

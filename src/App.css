@@ -10,7 +10,6 @@
   }
 }
 
-/* 画面サイズ 600px 以上 1200px 未満 */
 @media (768px <= width < 1200px) {
   section {
     min-height: 92vh;
@@ -20,20 +19,13 @@
     margin-bottom: 5vh;
     padding: 10px;
   }
-  .container {
-    margin: 0 7rem 0 7rem;
-  }
 }
 
-/* 画面サイズ 1200px 以上 */
 @media (1200px <= width) {
   section {
     min-height: 92vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .container {
-    margin: 0 7rem 0 7rem;
   }
 }
