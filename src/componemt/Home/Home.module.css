@@ -1,8 +1,5 @@
 .homeArea {
   height: 100vh; /* 画面の高さいっぱいに広がるように設定 */
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 .forestContainer {

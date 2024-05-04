@@ -23,7 +23,7 @@ function Header() {
         clearTimeout(scrollingTimer);
         scrollingTimer = window.setTimeout(() => {
           (header as HTMLElement).style.opacity = "1";
-        }, 300); // 200ミリ秒間スクロールが停止したとみなす
+        }, 200); // 200ミリ秒間スクロールが停止したとみなす
       }
     };
 
@@ -41,7 +41,7 @@ function Header() {
         clearTimeout(scrollingTimer);
         scrollingTimer = window.setTimeout(() => {
           (header as HTMLElement).style.opacity = "1";
-        }, 300); // 200ミリ秒間スクロールが停止したとみなす
+        }, 200); // 200ミリ秒間スクロールが停止したとみなす
       }
     };
 

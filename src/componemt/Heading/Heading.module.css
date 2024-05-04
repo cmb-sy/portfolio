@@ -13,3 +13,9 @@
   color: #424242;
   margin-bottom: 7vh;
 }
+
+@media (width <= 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+}
