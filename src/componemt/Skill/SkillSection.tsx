@@ -1,28 +1,18 @@
+import styles from "./SkillSection.module.css";
+
 import AccordionItem from "./Accordion";
 import SkillTable from "./SkillTable";
 import Heading from "../Heading/Headeing";
 import Contact from "../Contact/Contact";
+
 import { ProgrammingSkills } from "./SkillList";
-import "./SkillSection.css";
+import { scrollToHash } from "../scrollToHash";
 
-const scrollToHash = (event: React.MouseEvent<HTMLAnchorElement>) => {
-  event.preventDefault(); // デフォルトのクリック動作を無効化
-  const elmHash = event.currentTarget.getAttribute("href");
-  if (elmHash) {
-    const targetElement = document.querySelector(elmHash);
-    if (targetElement) {
-      const pos =
-        targetElement.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({ top: pos, behavior: "smooth" });
-    }
-  }
-};
-
-const Menu = () => {
+const skillSection = () => {
   return (
     <div>
-      <section className="skill-area" id="skill" onClick={scrollToHash}>
-        <div className="skill-container">
+      <section className={styles.skillArea} id="skill" onClick={scrollToHash}>
+        <div className={styles.skillContainer}>
           <Heading
             headingTitle="Skill"
             description="★の数で次の解釈をしています。
@@ -37,7 +27,7 @@ const Menu = () => {
               />
             </AccordionItem>
           ))}
-          <div className="contact-area"></div>
+          <div className={styles.contactArea}></div>
         </div>
       </section>
       <Contact />
@@ -45,4 +35,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default skillSection;

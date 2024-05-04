@@ -1,5 +1,6 @@
-import { useRef, useState } from "react";
 import "./Accordion.css";
+import { useRef, useState } from "react";
+
 export type Props = {
   titleNode: React.ReactNode;
   children: React.ReactNode;
@@ -7,7 +8,6 @@ export type Props = {
 
 const AccordionItem = (props: Props) => {
   const [showContents, setShowContents] = useState(false);
-  const [contentHeight, setContentHeight] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const childElement = useRef<HTMLDivElement>(null);
 
@@ -16,20 +16,16 @@ const AccordionItem = (props: Props) => {
   };
 
   const onClickAccordionToggle = () => {
-    if (childElement.current) {
-      const childHeight = childElement.current?.clientHeight;
-      setContentHeight(childHeight);
-      setShowContents(!showContents);
-    }
+    setShowContents(!showContents);
   };
 
   return (
-    <div className="wrapper">
+    <div className="accordionWrapper">
       <button
         className={
           isActive
-            ? "button accordion-toggle active"
-            : "button accordion-toggle"
+            ? "accordionButton accordion-toggle active"
+            : "accordionButton accordion-toggle"
         }
         onClick={() => {
           onClickAccordionToggle();

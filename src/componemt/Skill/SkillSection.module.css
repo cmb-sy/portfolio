@@ -1,0 +1,25 @@
+.skillArea {
+  background-color: #ecefed;
+}
+
+.contactArea {
+  background-color: white;
+}
+
+@media (width < 768px) {
+  .skillContainer {
+    margin: 0 0 0 0;
+  }
+}
+
+@media (768px <= width < 1200px) {
+  .skillContainer {
+    margin: 0 5rem 0 5rem;
+  }
+}
+
+@media (1200px <= width) {
+  .skillContainer {
+    margin: 0 10rem 0 10rem;
+  }
+}
