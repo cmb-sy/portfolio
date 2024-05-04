@@ -3,76 +3,60 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 20px;
-  gap: 20px;
+  gap: 30px;
 }
 
-.yyy {
+.workLink {
+  display: flex;
+  justify-content: center;
   color: #333;
   text-decoration: none;
   width: 30%;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s;
+    cursor: pointer;
+  }
 }
 
-.yyy:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-  transition: all 0.5s;
-  cursor: pointer;
-}
-/* 画面サイズ 600px 未満 */
-@media (width < 600px) {
+@media (max-width: 600px) {
   .card {
     width: 80%;
     height: auto;
   }
-  .yyy {
+  .workLink {
     width: 100%;
-    margin: 0 20px 0 20px;
-  }
-  .card {
-    width: 45%;
-    height: auto;
-    width: 100%;
+    margin: 0 20px;
   }
 }
 
-@media (600px <= width < 768px) {
-  .yyy {
+@media (min-width: 600px) and (max-width: 767px) {
+  .workLink {
     width: 90%;
   }
   .workArea {
-    margin: 0 2rem 0 2rem;
-  }
-  .card {
-    width: 45%;
-    height: auto;
-    width: 100%;
+    margin: 0 2rem;
   }
 }
 
-@media (768px <= width < 1400px) {
-  .card {
-    width: 45%;
-    height: auto;
-    width: 100%;
-  }
-  .yyy {
+@media (min-width: 768px) and (max-width: 1399px) {
+  .workLink {
     width: 40%;
-    margin: 0 7px 0 7px;
+    margin: 0 7px;
   }
   .workArea {
-    margin: 0 3rem 0 3rem;
+    margin: 0 3rem;
   }
 }
 
-/* 画面サイズ 1200px 以上 */
-@media (1400px <= width) {
+@media (min-width: 1400px) {
   .card {
-    /* 正方形のため固定値に設定 */
     width: 20rem;
     height: 20rem;
   }
   .workArea {
-    margin: 0 10rem 0 10rem;
+    margin: 0 10rem;
   }
 }
 
@@ -82,15 +66,15 @@
   box-shadow: 0 2px 5px #ccc;
 }
 
-.cardimg_06 {
+.cardImg {
   border-radius: 5px 5px 0 0;
   width: 100%;
 }
-.cardcontent_06 {
+.cardContent {
   text-align: left;
 }
 
-.cardtitle_06 {
+.cardTitle {
   font-size: 1.2em;
   color: #333;
   font-weight: 700;
@@ -98,17 +82,17 @@
   margin-top: 10px;
 }
 
-.cardlink_06 {
+.cardLink {
   border-top: 1px solid #eee;
   padding: 10px;
   text-align: left;
 }
 
-.cardlink_06 a:hover {
+.cardLink a:hover {
   color: #6bb6ff;
 }
 
-.testkk {
+.tagContainer {
   display: flex;
   gap: 4px;
   text-decoration: none;
