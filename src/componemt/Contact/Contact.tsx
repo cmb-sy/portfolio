@@ -1,5 +1,5 @@
 import styles from "./Contact.module.css";
-import Heading from "../Heading/CommonHeadeing";
+import Heading from "../Heading/Headeing";
 
 function Contact() {
   return (

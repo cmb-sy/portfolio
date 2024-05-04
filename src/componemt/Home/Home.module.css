@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;100;600;700&display=swap");
-
 .homeArea {
   height: 100vh; /* 画面の高さいっぱいに広がるように設定 */
   margin: 0;
@@ -7,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.forest-container {
+.forestContainer {
   background-image: url("../../assets/forest-272595_1280.jpeg");
   width: 100%;
   height: 100vh;
@@ -18,18 +16,18 @@
 
   display: flex;
   justify-content: center;
-}
 
-.forest-container::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  opacity: 0.5;
-  z-index: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 0;
+  }
 }
 
 .leaf {
@@ -41,7 +39,7 @@
   z-index: 1;
 }
 
-.rrrt {
+.content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,16 +47,19 @@
   flex-direction: column;
   z-index: 2;
 }
-.yyyy {
+
+.greeting {
   color: white;
   font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
-.yyyy1 {
+.message {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
-.circle2 {
+
+.circle {
   width: 15vh;
   height: 15vh;
   background-color: #07eb07;
@@ -69,15 +70,15 @@
 }
 
 @media (width < 600px) {
-  .yyyy {
+  .greeting {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  .yyyy1 {
+  .message {
     color: white;
     font-size: 1rem;
   }
-  .circle2 {
+  .circle {
     width: 15vh;
     height: 15vh;
     background-color: #07eb07;

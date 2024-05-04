@@ -1,6 +1,6 @@
 import AccordionItem from "./Accordion";
 import SkillTable from "./SkillTable";
-import Heading from "../Heading/CommonHeadeing";
+import Heading from "../Heading/Headeing";
 import Contact from "../Contact/Contact";
 import { ProgrammingSkills } from "./SkillList";
 import "./SkillSection.css";

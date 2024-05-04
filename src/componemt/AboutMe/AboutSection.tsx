@@ -1,6 +1,6 @@
 import styles from "./AboutSection.module.css";
 
-import Heading from "../Heading/CommonHeadeing";
+import Heading from "../Heading/Headeing";
 import { AboutLinks, Introductions } from "./link";
 
 function AboutSection() {

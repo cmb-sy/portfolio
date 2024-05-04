@@ -1,5 +1,5 @@
 import styles from "./Career.module.css";
-import Heading from "../Heading/CommonHeadeing";
+import Heading from "../Heading/Headeing";
 import { careers } from "./Career";
 
 function CareerSection() {

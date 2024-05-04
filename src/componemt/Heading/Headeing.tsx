@@ -1,4 +1,4 @@
-import styles from "./CommonHeading.module.css";
+import styles from "./Heading.module.css";
 
 export type Props = {
   headingTitle: string;
