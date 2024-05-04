@@ -11,9 +11,7 @@
 }
 
 .description {
-  line-height: 2;
-  margin: 10px 1% 1rem 1rem;
-  word-break: break-all;
+  margin: 10px 1rem 1rem 1rem;
   color: #424242;
   margin-bottom: 7vh;
 }

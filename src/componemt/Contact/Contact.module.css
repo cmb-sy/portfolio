@@ -1,0 +1,55 @@
+.contactArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactContainer {
+  margin: 3rem 15rem 5rem 15rem;
+}
+
+.contactBtn {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  background-color: #0d8c42;
+  border-radius: 8px;
+  text-decoration: none;
+  &:hover {
+    background-color: #0ad86e;
+  }
+}
+
+.ContactText {
+  color: #fff;
+  font-size: 25px;
+}
+
+@media (width < 768px) {
+  .contactBtn {
+    max-width: 250px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 20px;
+  }
+  .ContactText {
+    font-size: 20px;
+  }
+  .contactContainer {
+    margin: 0 0 0 0;
+  }
+}
+
+@media (769px <= width < 1200px) {
+  .contactBtn {
+    max-width: 250px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 20px;
+  }
+  .ContactText {
+    font-size: 20px;
+  }
+  .contactContainer {
+    margin: 0 5rem 0 5rem;
+  }
+}

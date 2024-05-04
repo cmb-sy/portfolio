@@ -1,43 +1,30 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
-
-.career-area {
+.careerArea {
   background-color: #ecefed;
 }
 
-.text-box {
-  text-align: left;
-  margin-top: 5px;
-}
-
-.container2 {
-  max-width: 1024px;
+.careerContainer {
   width: 90%;
   margin: 0 auto;
 }
 
-/* $border-color: rgba(black, 0.3); */
-
-.timeline-item {
+.timelineItem {
   padding: 3em 2em 5em;
   z-index: 0;
   position: relative;
-  color: rgba(black, 0.7);
   border-left: 8px solid #007a33;
 
   &::before {
     content: attr(date-is);
     position: absolute;
     left: 1em;
-    font-weight: bold;
     top: 4px;
-    display: block;
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     color: #227c22;
   }
 
   &::after {
+    content: "";
     width: 20px;
     height: 20px;
     display: block;
@@ -45,24 +32,17 @@
     position: absolute;
     left: -16px;
     border-radius: 15px;
-    content: "";
     border: 2px solid rgb(20, 165, 20);
     background: white;
   }
 }
 
-@media (768px < width) {
-  .container-career {
-    margin: 5rem 10rem 5rem 10rem;
-  }
-}
-@media (768px >= width) {
-  .container-career {
-    padding: 5rem 0 5rem 0;
-  }
+.textBox {
+  text-align: left;
+  margin-top: 5px;
 }
 
-.timeline-description {
+.timelineDescription {
   line-height: 2;
   margin-top: 5px;
 }

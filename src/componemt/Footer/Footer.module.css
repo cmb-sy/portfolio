@@ -1,4 +1,4 @@
-.test {
+.footerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,16 +13,15 @@
   border-radius: 15vh;
   position: relative;
   top: -5vh;
-  /* left: 5vh; */
   transform: rotate(180deg);
 }
 
-.tester {
+.footerText {
   color: white;
   font-size: 3rem;
 }
 
-.backer {
+.backToTop {
   background-color: #07eb07;
   display: flex;
   justify-content: center;
