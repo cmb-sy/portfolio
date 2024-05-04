@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
 import "./Header.css";
+import { useState, useEffect } from "react";
 import { navigationItems } from "./HeaderItem";
+import { smoothScroll } from "../smoothScroll";
 
 function Header() {
   let scrollingTimer: number;
@@ -9,21 +10,6 @@ function Header() {
 
   const toggleNav = () => {
     setNavActive(!navActive);
-  };
-
-  const smoothScroll = (href: string) => {
-    const targetSection = document.querySelector(href) as HTMLElement;
-    if (targetSection) {
-      const sectionTop = targetSection.getBoundingClientRect().top;
-      const currentPos = window.scrollY;
-      const gap = 84;
-      const target = sectionTop + currentPos - gap + 5;
-
-      window.scrollTo({
-        top: target,
-        behavior: "smooth",
-      });
-    }
   };
 
   useEffect(() => {
