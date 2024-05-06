@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d0a7c5ed.css",
+    "main.js": "/static/js/main.5062558c.js",
+    "static/media/omikuzi.png": "/static/media/omikuzi.b62089dbd76ee4e58bf5.png",
+    "static/media/nyankoGenerator.png": "/static/media/nyankoGenerator.f067be01b762e0c87847.png",
+    "static/media/forest-272595_1280.jpeg": "/static/media/forest-272595_1280.5319fa0e310aae75e7b9.jpeg",
+    "static/media/taskManage.png": "/static/media/taskManage.ae8d309e9ee117cdeab1.png",
+    "static/media/Astro.png": "/static/media/Astro.5ef0e6070f743734bb49.png",
+    "static/media/kunst.jpg": "/static/media/kunst.5bf554566d7dbd5157e0.jpg",
+    "static/media/R.png": "/static/media/R.66e652eb2e0cd20ba24f.png",
+    "static/media/Flask.png": "/static/media/Flask.efa6786d3cd190e0a477.png",
+    "static/media/Django.png": "/static/media/Django.f465c3d91f7f2302bd78.png",
+    "static/media/React.png": "/static/media/React.57c4a49f6803d191097e.png",
+    "static/media/HTML.png": "/static/media/HTML.0c69f365fc24f42353ef.png",
+    "static/media/CSS.png": "/static/media/CSS.8aaf7833370a6845139c.png",
+    "static/media/mail.png": "/static/media/mail.b5e27bcfc3ce4b3d7b43.png",
+    "static/media/Python.png": "/static/media/Python.9c47735ea0c4a2d20349.png",
+    "static/media/Vue.png": "/static/media/Vue.e3e5b49c23cffebd9aae.png",
+    "index.html": "/index.html",
+    "static/media/chevron.svg": "/static/media/chevron.4f1521b3a9504e49d145d9a054a0618f.svg",
+    "main.d0a7c5ed.css.map": "/static/css/main.d0a7c5ed.css.map",
+    "main.5062558c.js.map": "/static/js/main.5062558c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0a7c5ed.css",
+    "static/js/main.5062558c.js"
+  ]
+}
