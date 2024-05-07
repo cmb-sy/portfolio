@@ -34,25 +34,29 @@ export const ProgrammingSkills: skillTable[] = [
         tableLeftCell: "JavaScript",
         imagePass: JavaScript,
         tableCenterCell: "★★★☆☆",
-        tableRightCell: "システム開発として使用経験があります。また、プライベートでもJSを使って開発した経験があります。",
+        tableRightCell:
+          "システム開発として使用経験があります。また、プライベートでもJSを使って開発した経験があります。",
       },
       {
         tableLeftCell: "Typescript",
         imagePass: Typescript,
         tableCenterCell: "★★★☆☆",
-        tableRightCell: "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
+        tableRightCell:
+          "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
       },
       {
         tableLeftCell: "Vue",
         imagePass: Vue,
         tableCenterCell: "★★★★☆",
-        tableRightCell: "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
+        tableRightCell:
+          "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
       },
       {
         tableLeftCell: "React",
         imagePass: React,
         tableCenterCell: "★★★☆☆",
-        tableRightCell: "プライベートのアプリケーション開発として使用経験があります。",
+        tableRightCell:
+          "プライベートのアプリケーション開発として使用経験があります。",
       },
       {
         tableLeftCell: "Astro",
@@ -64,13 +68,15 @@ export const ProgrammingSkills: skillTable[] = [
         tableLeftCell: "HTML",
         imagePass: HTML,
         tableCenterCell: "★★★☆☆",
-        tableRightCell: "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
+        tableRightCell:
+          "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
       },
       {
         tableLeftCell: "CSS、ワードプレス",
         imagePass: CSS,
         tableCenterCell: "★★★☆☆",
-        tableRightCell: "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
+        tableRightCell:
+          "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
       },
     ],
   },
@@ -114,7 +120,7 @@ export const ProgrammingSkills: skillTable[] = [
     ],
   },
   {
-    skillType: "E資格",
+    skillType: "資格",
     tableHeading: ["Certification", "Date", "Reason"],
     skill: [
       {
