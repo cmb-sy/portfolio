@@ -125,12 +125,18 @@ export const ProgrammingSkills: skillTable[] = [
     skill: [
       {
         tableLeftCell: "基本情報技術者",
-        tableCenterCell: "2023/05/12",
+        tableCenterCell: "2023/06/14",
         tableRightCell: "ITエンジニアの基本知識を獲得するために取得しました。",
       },
       {
         tableLeftCell: "応用情報技術者",
-        tableCenterCell: "2023/04/16",
+        tableCenterCell: "2023/06/29",
+        tableRightCell:
+          "ITエンジニアの知識をより深めて、業務に活用するために取得しました。",
+      },
+      {
+        tableLeftCell: "情報処理安全確保支援士（未登録）",
+        tableCenterCell: "2023/07/04",
         tableRightCell:
           "ITエンジニアの知識をより深めて、業務に活用するために取得しました。",
       },
