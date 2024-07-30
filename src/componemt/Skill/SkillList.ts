@@ -141,6 +141,12 @@ export const ProgrammingSkills: skillTable[] = [
           "ITエンジニアの知識をより深めて、業務に活用するために取得しました。",
       },
       {
+        tableLeftCell: "情報処理安全確保支援士合格（未登録）",
+        tableCenterCell: "2024/04/16",
+        tableRightCell:
+          "セキュリティの知識を網羅的に取得するために挑戦しました。",
+      },
+      {
         tableLeftCell: "統計検定2級",
         tableCenterCell: "2023/12/20",
         tableRightCell: "統計学の最低限の知識を獲得するために取得しました。",
