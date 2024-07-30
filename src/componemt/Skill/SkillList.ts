@@ -136,7 +136,7 @@ export const ProgrammingSkills: skillTable[] = [
       },
       {
         tableLeftCell: "情報処理安全確保支援士（未登録）",
-        tableCenterCell: "2023/07/04",
+        tableCenterCell: "2024/07/04",
         tableRightCell: "セキュリティの知識を網羅的に学ぶために取得しました。",
       },
       {
