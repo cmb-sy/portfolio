@@ -148,18 +148,18 @@ export const ProgrammingSkills: skillTable[] = [
         tableLeftCell: "統計検定準1級",
         tableCenterCell: "2024/03/11",
         tableRightCell:
-          "データ分析業務にあたって、統計学のより深い知識が必要のため取得しました。",
+          "データ分析業務にあたって、統計学のより深い知識が必要になったため取得しました。",
       },
       {
         tableLeftCell: "E資格",
         tableCenterCell: "2023/09/21",
         tableRightCell:
-          "大学院生のときの知識に含めてディープラーニングの知識をより深めるために取得しました。",
+          "院生時の研究で得た知識とディープラーニングへの理解をより深めるために取得しました。",
       },
       {
         tableLeftCell: "TOEIC810点",
         tableCenterCell: " 2024/02/25",
-        tableRightCell: "英語のスキルは必要と考えたため取得しました。",
+        tableRightCell: "英語力は必要不可欠なため取得しました。",
       },
     ],
   },
