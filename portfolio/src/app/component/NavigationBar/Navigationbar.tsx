@@ -1,7 +1,9 @@
+"use client";
+
 import "./Header.css";
 import { useState, useEffect } from "react";
-import { navigationItems } from "../../../portfolio/src/app/component/NavigationBar/HeaderItem";
-import { smoothScroll } from "../../../portfolio/src/app/component/NavigationBar/smoothScroll";
+import { navigationItems } from "@/app/component/NavigationBar/HeaderItem";
+import { smoothScroll } from "@/app/component/NavigationBar/smoothScroll";
 
 function Header() {
   let scrollingTimer: number;

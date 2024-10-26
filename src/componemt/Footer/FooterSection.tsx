@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import chevron from "../../assets/chevron.svg";
-import { smoothScroll } from "../smoothScroll";
+import { smoothScroll } from "../../../portfolio/src/app/component/NavigationBar/smoothScroll";
 
 function Footer() {
   return (

@@ -6,7 +6,7 @@ import Heading from "../Heading/Headeing";
 import Contact from "../Contact/Contact";
 
 import { ProgrammingSkills } from "./SkillList";
-import { scrollToHash } from "../scrollToHash";
+import { scrollToHash } from "../../../portfolio/src/app/component/NavigationBar/scrollToHash";
 
 const skillSection = () => {
   return (
