@@ -84,18 +84,6 @@ function Header() {
   return (
     <header>
       <nav className="navContainer">
-        <div className="logo">
-          <a
-            href="#home"
-            className="logo"
-            onClick={(e) => {
-              e.preventDefault();
-              smoothScroll("#home");
-            }}
-          >
-            Portfolio
-          </a>
-        </div>
         <ul
           className={
             navActive
