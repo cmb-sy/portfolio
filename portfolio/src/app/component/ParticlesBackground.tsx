@@ -34,7 +34,7 @@ const ParticleBackground = () => {
       },
       fullScreen: {
         enable: true,
-        zIndex: 0,
+        zIndex: -1,
       },
       detectRetina: true,
       fpsLimit: 120,

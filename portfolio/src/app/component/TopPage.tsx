@@ -3,7 +3,7 @@ import AnimatedText from "@/app/component/animationTitle";
 import Test from "@/app/component/ParticlesBackground";
 
 const TopPage = async () => {
-  const title = "アウトプットで技術を磨くブログ \n \n kunst Site";
+  const title = "kunst portfolio";
 
   return (
     <>

@@ -7,30 +7,32 @@ import TopPage from "./component/TopPage";
 export default function Home() {
   return (
     <>
-      <NavigationBar />
+      <div className="relative z-20">
+        <NavigationBar />
+      </div>
       <TopPage />
       <div className="flex">
-        <div
-          style={{ position: "relative", zIndex: 10, backgroundColor: "white" }}
-        >
-          <div className="flex-1 p-10">
+        <div className="flex-1">
+          <div className="relative z-10 bg-white">
             <h1 className="text-4xl font-bold mt-8 mb-4 text-center text-green-500">
               About Me
             </h1>
             <AboutMe />
+          </div>
+          <div className="relative z-10">
             <h1 className="text-4xl font-bold mt-8 mb-4 text-center text-green-500">
               Background
             </h1>
-            <Background />
-            <h1 className="text-4xl font-bold mt-8 mb-4 text-center text-green-500">
-              Works
-            </h1>
-            <Works />
-            <h1 className="text-4xl font-bold mt-8 mb-4 text-center text-green-500">
-              Skills
-            </h1>
-            <Skills />
           </div>
+          <Background />
+          <h1 className="text-4xl font-bold mt-8 mb-4 text-center text-green-500">
+            Works
+          </h1>
+          <Works />
+          <h1 className="text-4xl font-bold mt-8 mb-4 text-center text-green-500">
+            Skills
+          </h1>
+          <Skills />
         </div>
       </div>
     </>

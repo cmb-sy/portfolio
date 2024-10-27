@@ -44,10 +44,7 @@ const AboutMe: React.FC = () => {
               <dt className="w-28 text-2xl font-bold">Github</dt>
               <dd className="text-xl">
                 <Link href="https://github.com/cmb-sy">
-                  <span
-                    className="text-blue-500 hover:text-blue-600nextjs
-                  "
-                  >
+                  <span className="text-blue-500 hover:text-blue-600">
                     kunst
                   </span>
                 </Link>
