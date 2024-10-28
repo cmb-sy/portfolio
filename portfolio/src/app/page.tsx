@@ -1,7 +1,7 @@
 import AboutMe from "@/app/component/AboutMe";
 import Career from "@/app/component/Career/Career";
 import Works from "@/app/component/Works";
-import Skills from "@/app/component/Skills";
+import Skills from "@/app/component/Skill/Skills";
 import NavigationBar from "@/app/component/NavigationBar/Navigationbar";
 import TopPage from "./component/TopPage";
 import Footer from "./component/Footer";
@@ -41,13 +41,15 @@ export default function Home() {
           {sections.map((section, index) => (
             <div
               key={index}
-              className={`relative z-10 ${section.bgColor} py-24 mx-auto`}
+              className={`relative z-10 ${section.bgColor} py-24`}
             >
-              <h1 className="text-4xl font-bold mb-4 text-center text-green-500">
-                {section.title}
-              </h1>
-              <p className="mb-4 text-center">{section.comment}</p>
-              {section.component}
+              <div className="mx-auto max-w-screen-lg">
+                <h1 className="text-4xl font-bold mb-4 text-center text-green-500">
+                  {section.title}
+                </h1>
+                <p className="mb-4 text-center">{section.comment}</p>
+                {section.component}
+              </div>
             </div>
           ))}
         </div>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ProgrammingSkills, skillTable } from "./SkillList";
+import { ProgrammingSkills, skillTable } from "../SkillList";
 
 const Skills: React.FC = () => {
   return (

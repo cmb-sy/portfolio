@@ -7,13 +7,16 @@ const TopPage = async () => {
 
   return (
     <>
-      {/* 背景としてParticlesコンポーネントを配置 */}
-      <Test />
-      {/* コンテンツをオーバーレイとして配置 */}
-      <div className="absolute inset-0"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center w-full h-screen px-4">
-        <div className="flex space-x-4 md:space-x-6 lg:space-x-8 mb-50">
-          <AnimatedText text={title} />
+      <div className="relative w-full h-screen">
+        {/* 背景としてParticlesコンポーネントを配置 */}
+        <div className="absolute inset-0 z-0">
+          <Test />
+        </div>
+        {/* コンテンツをオーバーレイとして配置 */}
+        <div className="relative z-10 flex flex-col items-center justify-center w-full h-full px-4">
+          <div className="flex space-x-4 md:space-x-6 lg:space-x-8 mb-50">
+            <AnimatedText text={title} />
+          </div>
         </div>
       </div>
     </>
