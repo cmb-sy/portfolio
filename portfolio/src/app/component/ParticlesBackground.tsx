@@ -28,7 +28,7 @@ const ParticleBackground = () => {
       autoPlay: true,
       background: {
         color: {
-          value: "#d1d1d1",
+          value: "#f5f6f6",
         },
         opacity: 1,
       },
@@ -42,14 +42,14 @@ const ParticleBackground = () => {
         detectsOn: "window",
         events: {
           onClick: {
-            enable: false,
+            enable: true,
             mode: "push",
           },
         },
       },
       particles: {
         color: {
-          value: "#7c7c7c",
+          value: "#747474",
         },
         move: {
           enable: true,
@@ -82,7 +82,7 @@ const ParticleBackground = () => {
           },
         },
         links: {
-          color: "#ababab",
+          color: "#747474",
           distance: 150,
           enable: true,
           opacity: 0.7,

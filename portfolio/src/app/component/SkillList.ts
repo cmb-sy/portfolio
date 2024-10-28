@@ -1,16 +1,16 @@
-import React from "../../assets/TechLogo/frontend/React.png";
-import Vue from "../../assets/TechLogo/frontend/Vue.png";
-import Typescript from "../../assets/TechLogo/frontend/Typescript.png";
-import JavaScript from "../../assets/TechLogo/frontend/Javascript.png";
-import Astro from "../../assets/TechLogo/frontend/Astro.png";
-import HTML from "../../assets/TechLogo/frontend/HTML.png";
-import CSS from "../../assets/TechLogo/frontend/CSS.png";
+import React from "/public/TechLogo/frontend/React.png";
+import Vue from "/public/TechLogo/frontend/Vue.png";
+import Typescript from "/public/TechLogo/frontend/Typescript.png";
+import JavaScript from "/public/TechLogo/frontend/JavaScript.png";
+import Astro from "/public/TechLogo/frontend/Astro.png";
+import HTML from "/public/TechLogo/frontend/HTML.png";
+import CSS from "/public/TechLogo/frontend/CSS.png";
 
-import Django from "../../assets/TechLogo/backend/Django.png";
-import Flask from "../../assets/TechLogo/backend/Flask.png";
+import Django from "/public/TechLogo/backend/Django.png";
+import Flask from "/public/TechLogo/backend/Flask.png";
 
-import Python from "../../assets/TechLogo/dataScience/Python.png";
-import R from "../../assets/TechLogo/dataScience/R.png";
+import Python from "/public/TechLogo/dataScience/Python.png";
+import R from "/public/TechLogo/dataScience/R.png";
 
 export type skillDetail = {
   tableLeftCell: string;

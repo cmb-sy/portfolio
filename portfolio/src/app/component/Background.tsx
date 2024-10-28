@@ -15,18 +15,9 @@ const timelineData: TimelineItem[] = [
     description: "株式会社ABCでソフトウェアエンジニアとして勤務。",
   },
   {
-    date: "2021年",
-    title: "ウェブ開発者",
-    description: "フリーランスとしてウェブ開発を行う。",
-  },
-  {
-    date: "2019年",
-    title: "インターンシップ",
-    description: "XYZ株式会社でインターンシップを経験。",
-  },
-  {
-    date: "2019年",
-    description: "XYZ株式会社でインターンシップを経験。",
+    date: "2023年",
+    title: "ソフトウェアエンジニア",
+    description: "株式会社ABCでソフトウェアエンジニアとして勤務。",
   },
 ];
 
@@ -37,7 +28,7 @@ const Timeline: React.FC = () => {
         {timelineData.map((item, index) => (
           <div
             key={index}
-            className="mb-12 ml-8 p-6 bg-white shadow-lg rounded-lg animate-fadeIn"
+            className="mb-12 ml-8 p-6 shadow-lg rounded-lg animate-fadeIn"
           >
             <div className="absolute w-6 h-6 bg-green-500 rounded-full -left-3 border-2 border-white"></div>
             <time className="mb-2 text-lg font-semibold leading-none text-green-500">

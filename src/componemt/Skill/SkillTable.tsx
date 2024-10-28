@@ -1,5 +1,8 @@
 import styles from "./SkillTable.module.css";
-import { skillDetail, skillTable } from "./SkillList";
+import {
+  skillDetail,
+  skillTable,
+} from "../../../portfolio/src/app/component/SkillList";
 
 type Props = {
   skillDetail: skillDetail[];

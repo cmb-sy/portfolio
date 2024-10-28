@@ -5,7 +5,7 @@ import SkillTable from "./SkillTable";
 import Heading from "../Heading/Headeing";
 import Contact from "../Contact/Contact";
 
-import { ProgrammingSkills } from "./SkillList";
+import { ProgrammingSkills } from "../../../portfolio/src/app/component/SkillList";
 import { scrollToHash } from "../../../portfolio/src/app/component/NavigationBar/scrollToHash";
 
 const skillSection = () => {
