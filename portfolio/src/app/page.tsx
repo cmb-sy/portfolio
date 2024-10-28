@@ -21,12 +21,6 @@ export default function Home() {
             </h1>
             <AboutMe />
           </div>
-          <div className="relative z-10 bg-slate-50">
-            <h1 className="text-4xl font-bold mb-4 text-center text-green-500">
-              Career
-            </h1>
-            <Career />
-          </div>
           <div className="relative z-10 bg-white">
             <h1 className="text-4xl font-bold mb-4 text-center text-green-500">
               Works
@@ -34,6 +28,12 @@ export default function Home() {
             <Works />
           </div>
           <Skills />
+          <div className="relative z-10 bg-slate-50">
+            <h1 className="text-4xl font-bold mb-4 text-center text-green-500">
+              Career
+            </h1>
+            <Career />
+          </div>
           <div className="relative z-10 bg-white">
             <Footer />
           </div>

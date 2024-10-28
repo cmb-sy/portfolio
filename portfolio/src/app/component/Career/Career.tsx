@@ -3,26 +3,32 @@
 import React, { useState, useRef, useEffect } from "react";
 import { CareerData, YearData, Project } from "./CareerData";
 
-function AccordionTable({ title, children, onToggle }) {
-  const [isOpen, setIsOpen] = useState(true); // 初期状態で開いた状態に設定
-  const contentRef = useRef(null);
+interface AccordionTableProps {
+  title: string;
+  children: React.ReactNode;
+  onToggle: (isOpen: boolean, height: number) => void;
+}
+
+function AccordionTable({ title, children, onToggle }: AccordionTableProps) {
+  const [isOpen, setIsOpen] = useState(false); // 初期状態で開いた状態に設定
+  const contentRef = useRef<HTMLDivElement>(null);
   const [maxHeight, setMaxHeight] = useState("0px");
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-    onToggle(!isOpen, contentRef.current.scrollHeight);
+    onToggle(!isOpen, contentRef.current!.scrollHeight);
   };
 
   useEffect(() => {
     if (isOpen) {
-      setMaxHeight(`${contentRef.current.scrollHeight}px`);
+      setMaxHeight(`${contentRef.current!.scrollHeight}px`);
     } else {
       setMaxHeight("0px");
     }
   }, [isOpen]);
 
   useEffect(() => {
-    onToggle(isOpen, contentRef.current.scrollHeight);
+    onToggle(isOpen, contentRef.current!.scrollHeight);
   }, []);
 
   return (
@@ -41,8 +47,7 @@ function AccordionTable({ title, children, onToggle }) {
           style={{
             width: "24px",
             height: "24px",
-            filter:
-              "invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%)",
+            color: "black",
           }}
         />
       </h3>
@@ -52,7 +57,7 @@ function AccordionTable({ title, children, onToggle }) {
         style={{
           maxHeight: maxHeight,
           overflow: "hidden",
-          transition: "max-height 0.5s ease-in-out",
+          transition: "max-height 0.3s ease-in-out",
         }}
       >
         {children}
@@ -64,7 +69,7 @@ function AccordionTable({ title, children, onToggle }) {
 function Career() {
   const [totalHeight, setTotalHeight] = useState(0);
 
-  const handleToggle = (isOpen, height) => {
+  const handleToggle = (isOpen: boolean, height: number) => {
     setTotalHeight((prev) => (isOpen ? prev + height : prev - height));
   };
 
@@ -72,9 +77,10 @@ function Career() {
     <div
       className={`flex flex-col items-center bg-slate-50 z-10 relative`}
       style={{
-        height: `calc(80vh + ${totalHeight}px)`,
+        height: `calc(200vh + ${totalHeight}px)`,
         overflowY: "hidden",
-        transition: "height 0.5s ease-in-out",
+        // 全体の高さのcssと合わせること
+        transition: "height 0.3s ease-in-out",
       }}
     >
       <div className="mt-8 flex flex-col items-center w-full max-w-4xl">
@@ -85,7 +91,7 @@ function Career() {
               title={yearData.年度}
               onToggle={handleToggle}
             >
-              {yearData.プロジェクト.map(
+              {yearData.キャリア.map(
                 (project: Project, projectIndex: number) => (
                   <table
                     key={projectIndex}

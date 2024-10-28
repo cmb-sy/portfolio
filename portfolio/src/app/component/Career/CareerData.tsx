@@ -1,5 +1,4 @@
-export interface Project {
-  プロジェクト: ReactNode;
+export interface Career {
   プロジェクト: string;
   開発環境: string;
   業務内容: string;
@@ -7,13 +6,13 @@ export interface Project {
 
 export interface YearData {
   年度: string;
-  プロジェクト: Project[];
+  キャリア: Career[];
 }
 
 export const CareerData: YearData[] = [
   {
     年度: "2023年",
-    プロジェクト: [
+    キャリア: [
       {
         プロジェクト: "JavaScript",
         開発環境: "★★★☆☆",
@@ -36,7 +35,7 @@ export const CareerData: YearData[] = [
   },
   {
     年度: "2022年",
-    プロジェクト: [
+    キャリア: [
       {
         プロジェクト: "React",
         開発環境: "★★★★☆",
@@ -58,7 +57,7 @@ export const CareerData: YearData[] = [
   },
   {
     年度: "2021年",
-    プロジェクト: [
+    キャリア: [
       {
         プロジェクト: "CSS、ワードプレス",
         開発環境: "★★★★☆",
