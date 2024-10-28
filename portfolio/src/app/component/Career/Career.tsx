@@ -65,7 +65,7 @@ function Career() {
     <div
       className="flex flex-col items-center"
       style={{
-        height: `calc(200vh + ${totalHeight}px)`,
+        height: `calc(50vh + ${totalHeight}px)`,
         overflowY: "hidden",
         transition: "height 0.3s ease-in-out",
       }}

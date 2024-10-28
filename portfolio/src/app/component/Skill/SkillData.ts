@@ -71,7 +71,7 @@ export const ProgrammingSkills: skillTable[] = [
           "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
       },
       {
-        name: "CSS、ワードプレス",
+        name: "CSS",
         imagePass: CSS,
         level: "★★★☆☆",
         description:
