@@ -1,6 +1,6 @@
 import React from "react";
 import AnimatedText from "@/app/component/animationTitle";
-import Test from "@/app/component/ParticlesBackground";
+import ParticleBackground from "@/app/component/ParticlesBackground";
 
 const TopPage = async () => {
   const title = "kunst portfolio";
@@ -10,7 +10,7 @@ const TopPage = async () => {
       <div className="relative w-full h-screen">
         {/* 背景としてParticlesコンポーネントを配置 */}
         <div className="absolute inset-0 z-0">
-          <Test />
+          <ParticleBackground />
         </div>
         {/* コンテンツをオーバーレイとして配置 */}
         <div className="relative z-10 flex flex-col items-center justify-center w-full h-full px-4">

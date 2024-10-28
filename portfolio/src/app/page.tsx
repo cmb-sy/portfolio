@@ -67,9 +67,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="relative z-10">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }
