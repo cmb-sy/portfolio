@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { CareerData, YearData, Project } from "./CareerData";
+import { CareerData, YearData } from "./CareerData";
 
 interface AccordionTableProps {
   title: string;
@@ -10,7 +10,7 @@ interface AccordionTableProps {
 }
 
 function AccordionTable({ title, children, onToggle }: AccordionTableProps) {
-  const [isOpen, setIsOpen] = useState(false); // 初期状態で開いた状態に設定
+  const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const [maxHeight, setMaxHeight] = useState("0px");
 
@@ -20,16 +20,8 @@ function AccordionTable({ title, children, onToggle }: AccordionTableProps) {
   };
 
   useEffect(() => {
-    if (isOpen) {
-      setMaxHeight(`${contentRef.current!.scrollHeight}px`);
-    } else {
-      setMaxHeight("0px");
-    }
+    setMaxHeight(isOpen ? `${contentRef.current!.scrollHeight}px` : "0px");
   }, [isOpen]);
-
-  useEffect(() => {
-    onToggle(isOpen, contentRef.current!.scrollHeight);
-  }, []);
 
   return (
     <div className="w-full max-w-3xl px-4 my-4 border border-gray-400 p-4">
@@ -44,18 +36,14 @@ function AccordionTable({ title, children, onToggle }: AccordionTableProps) {
           className={`transition-transform duration-500 ${
             isOpen ? "rotate-180" : ""
           }`}
-          style={{
-            width: "24px",
-            height: "24px",
-            color: "black",
-          }}
+          style={{ width: "24px", height: "24px", color: "black" }}
         />
       </h3>
       <div
         ref={contentRef}
         className="mt-2 transition-max-height duration-500 ease-in-out"
         style={{
-          maxHeight: maxHeight,
+          maxHeight,
           overflow: "hidden",
           transition: "max-height 0.3s ease-in-out",
         }}
@@ -75,11 +63,10 @@ function Career() {
 
   return (
     <div
-      className={`flex flex-col items-center bg-slate-50 z-10 relative`}
+      className="flex flex-col items-center"
       style={{
         height: `calc(200vh + ${totalHeight}px)`,
         overflowY: "hidden",
-        // 全体の高さのcssと合わせること
         transition: "height 0.3s ease-in-out",
       }}
     >

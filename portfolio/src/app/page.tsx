@@ -7,36 +7,49 @@ import TopPage from "./component/TopPage";
 import Footer from "./component/Footer";
 
 export default function Home() {
+  const sections = [
+    {
+      title: "About Me",
+      comment: "ああああああああああああ",
+      component: <AboutMe />,
+      bgColor: "bg-white",
+    },
+    {
+      title: "Skill",
+      comment: "ああああああああああああ",
+      component: <Skills />,
+      bgColor: "bg-slate-50",
+    },
+    {
+      title: "Works",
+      comment: "ああああああああああああ",
+      component: <Works />,
+      bgColor: "bg-white",
+    },
+    {
+      title: "Career",
+      comment: "ああああああああああああ",
+      component: <Career />,
+      bgColor: "bg-slate-50",
+    },
+  ];
   return (
     <>
-      <div className="relative z-20">
-        <NavigationBar />
-      </div>
       <TopPage />
       <div className="flex flex-col">
         <div className="flex-1">
-          <div className="relative z-10 bg-white">
-            <h1 className="text-4xl font-bold mt-8 mb-4 text-center text-green-500">
-              About Me
-            </h1>
-            <AboutMe />
-          </div>
-          <div className="relative z-10 bg-white">
-            <h1 className="text-4xl font-bold mb-4 text-center text-green-500">
-              Works
-            </h1>
-            <Works />
-          </div>
-          <Skills />
-          <div className="relative z-10 bg-slate-50">
-            <h1 className="text-4xl font-bold mb-4 text-center text-green-500">
-              Career
-            </h1>
-            <Career />
-          </div>
-          <div className="relative z-10 bg-white">
-            <Footer />
-          </div>
+          {sections.map((section, index) => (
+            <div
+              key={index}
+              className={`relative z-10 ${section.bgColor} py-24 mx-auto`}
+            >
+              <h1 className="text-4xl font-bold mb-4 text-center text-green-500">
+                {section.title}
+              </h1>
+              <p className="mb-4 text-center">{section.comment}</p>
+              {section.component}
+            </div>
+          ))}
         </div>
       </div>
     </>

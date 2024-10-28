@@ -11,149 +11,108 @@ import Flask from "/public/TechLogo/backend/Flask.png";
 
 import Python from "/public/TechLogo/dataScience/Python.png";
 import R from "/public/TechLogo/dataScience/R.png";
+import { StaticImageData } from "next/image";
 
 export type skillDetail = {
-  tableLeftCell: string;
-  imagePass?: string;
-  tableCenterCell: string;
-  tableRightCell: string;
+  name: string;
+  imagePass?: StaticImageData;
+  level: string;
+  description: string;
 };
 
 export type skillTable = {
   skillType: string;
-  tableHeading: string[];
   skill: skillDetail[];
 };
 
 export const ProgrammingSkills: skillTable[] = [
   {
     skillType: "フロントエンド",
-    tableHeading: ["Tech", "Level", "Comment"],
     skill: [
       {
-        tableLeftCell: "JavaScript",
-        tableCenterCell: "★★★☆☆",
-        tableRightCell:
+        name: "JavaScript",
+        imagePass: JavaScript,
+        level: "★★★☆☆",
+        description:
           "システム開発として使用経験があります。また、プライベートでもJSを使って開発した経験があります。",
       },
       {
-        tableLeftCell: "Typescript",
-        tableCenterCell: "★★★☆☆",
-        tableRightCell:
+        name: "Typescript",
+        imagePass: Typescript,
+        level: "★★★☆☆",
+        description:
           "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
       },
       {
-        tableLeftCell: "Vue",
-        tableCenterCell: "★★★★☆",
-        tableRightCell:
+        name: "Vue",
+        imagePass: Vue,
+        level: "★★★★☆",
+        description:
           "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
       },
       {
-        tableLeftCell: "React",
-        tableCenterCell: "★★★☆☆",
-        tableRightCell:
+        name: "React",
+        imagePass: React,
+        level: "★★★☆☆",
+        description:
           "プライベートのアプリケーション開発として使用経験があります。",
       },
       {
-        tableLeftCell: "Astro",
-        tableCenterCell: "★★☆☆☆",
-        tableRightCell: "プライベートなブログ運用で使用経験があります。",
+        name: "Astro",
+        imagePass: Astro,
+        level: "★★☆☆☆",
+        description: "プライベートなブログ運用で使用経験があります。",
       },
       {
-        tableLeftCell: "HTML",
-        tableCenterCell: "★★★☆☆",
-        tableRightCell:
+        name: "HTML",
+        imagePass: HTML,
+        level: "★★★☆☆",
+        description:
           "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
       },
       {
-        tableLeftCell: "CSS、ワードプレス",
+        name: "CSS、ワードプレス",
         imagePass: CSS,
-        tableCenterCell: "★★★☆☆",
-        tableRightCell:
+        level: "★★★☆☆",
+        description:
           "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
       },
     ],
   },
   {
     skillType: "バックエンド",
-    tableHeading: ["Tech", "Level", "Comment"],
     skill: [
       {
-        tableLeftCell: "Django",
+        name: "Django",
         imagePass: Django,
-        tableCenterCell: "★★☆☆☆",
-        tableRightCell:
+        level: "★★☆☆☆",
+        description:
           "プライベートなアプリケーション開発として使用した経験があります。",
       },
       {
-        tableLeftCell: "Flask",
+        name: "Flask",
         imagePass: Flask,
-        tableCenterCell: "★★☆☆☆",
-        tableRightCell:
+        level: "★★☆☆☆",
+        description:
           "プライベートなアプリケーション開発や、ハッカソンでの採用技術として使用した経験があります。",
       },
     ],
   },
   {
     skillType: "データサイエンス",
-    tableHeading: ["Tech", "Level", "Comment"],
     skill: [
       {
-        tableLeftCell: "python",
+        name: "python",
         imagePass: Python,
-        tableCenterCell: "★★★★☆",
-        tableRightCell:
+        level: "★★★★☆",
+        description:
           "業務とプライベートの両方でデータ分析や機械学習モデル構築をしてきました。また、データ分析やグラフ描画、モデル構築のため様々なフレームワークを用いた経験があります。",
       },
       {
-        tableLeftCell: "R",
+        name: "R",
         imagePass: R,
-        tableCenterCell: "★★★☆☆",
-        tableRightCell: "業務としてR言語を用いてデータ分析を行いました。",
-      },
-    ],
-  },
-  {
-    skillType: "資格",
-    tableHeading: ["Certification", "Date", "Reason"],
-    skill: [
-      {
-        tableLeftCell: "基本情報技術者",
-        tableCenterCell: "2023/06/14",
-        tableRightCell: "ITエンジニアの基本知識を獲得するために取得しました。",
-      },
-      {
-        tableLeftCell: "応用情報技術者",
-        tableCenterCell: "2023/06/29",
-        tableRightCell:
-          "ITエンジニアの知識をより深めて、業務に活用するために取得しました。",
-      },
-      {
-        tableLeftCell: "情報処理安全確保支援士（未登録）",
-        tableCenterCell: "2024/07/04",
-        tableRightCell: "セキュリティの知識を網羅的に学ぶために取得しました。",
-      },
-      {
-        tableLeftCell: "統計検定2級",
-        tableCenterCell: "2023/12/20",
-        tableRightCell: "統計学の最低限の知識を獲得するために取得しました。",
-      },
-      {
-        tableLeftCell: "統計検定準1級",
-        tableCenterCell: "2024/03/11",
-        tableRightCell:
-          "データ分析業務にあたって、統計学のより深い知識が必要になったため取得しました。",
-      },
-      {
-        tableLeftCell: "E資格",
-        tableCenterCell: "2023/09/21",
-        tableRightCell:
-          "院生時の研究で得た知識とディープラーニングへの理解をより深めるために取得しました。",
-      },
-      {
-        tableLeftCell: "TOEIC810点",
-        tableCenterCell: " 2024/02/25",
-        tableRightCell: "英語力は必要不可欠なため取得しました。",
+        level: "★★★☆☆",
+        description: "業務としてR言語を用いてデータ分析を行いました。",
       },
     ],
   },
