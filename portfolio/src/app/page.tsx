@@ -1,5 +1,5 @@
 import AboutMe from "@/app/component/AboutMe";
-import Background from "@/app/component/Background";
+import Career from "@/app/component/Career/Career";
 import Works from "@/app/component/Works";
 import Skills from "@/app/component/Skills";
 import NavigationBar from "@/app/component/NavigationBar/Navigationbar";
@@ -23,9 +23,9 @@ export default function Home() {
           </div>
           <div className="relative z-10 bg-slate-50">
             <h1 className="text-4xl font-bold mb-4 text-center text-green-500">
-              Background
+              Career
             </h1>
-            <Background />
+            <Career />
           </div>
           <div className="relative z-10 bg-white">
             <h1 className="text-4xl font-bold mb-4 text-center text-green-500">

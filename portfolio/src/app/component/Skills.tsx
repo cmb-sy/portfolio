@@ -52,43 +52,48 @@ const options = {
   maintainAspectRatio: false,
 };
 
-const data1 = [
-  ["データ1", "データ2", "データ3"],
-  ["データ4", "データ5", "データ6"],
-  ["データ4", "データ5", "データ6"],
-  ["データ4", "データ5", "データ6"],
-  ["データ4", "データ5", "データ6"],
-  ["データ4", "データ5", "データ6"],
-];
-
-const data2 = [
-  ["データ7", "データ8", "データ9"],
-  ["データ10", "データ11", "データ12"],
-];
-
-const data3 = [
-  ["データ13", "データ14", "データ15"],
-  ["データ16", "データ17", "データ18"],
-];
-
-const data4 = [
-  ["データ19", "データ20", "データ21"],
-  ["データ22", "データ23", "データ24"],
-];
-
-const data5 = [
-  ["データ25", "データ26", "データ27"],
-  ["データ28", "データ29", "データ30"],
-];
-
-const data6 = [
-  ["データ31", "データ32", "データ33"],
-  ["データ34", "データ35", "データ36"],
-  ["データ34", "データ35", "データ36"],
-  ["データ34", "データ35", "データ36"],
-  ["データ34", "データ35", "データ36"],
-  ["データ34", "データ35", "データ36"],
-  ["データ34", "データ35", "データ36"],
+const skillData = [
+  {
+    tableLeftCell: "JavaScript",
+    tableCenterCell: "★★★☆☆",
+    tableRightCell:
+      "システム開発として使用経験があります。また、プライベートでもJSを使って開発した経験があります。",
+  },
+  {
+    tableLeftCell: "Typescript",
+    tableCenterCell: "★★★☆☆",
+    tableRightCell:
+      "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
+  },
+  {
+    tableLeftCell: "Vue",
+    tableCenterCell: "★★★★☆",
+    tableRightCell:
+      "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
+  },
+  {
+    tableLeftCell: "React",
+    tableCenterCell: "★★★☆☆",
+    tableRightCell:
+      "プライベートのアプリケーション開発として使用経験があります。",
+  },
+  {
+    tableLeftCell: "Astro",
+    tableCenterCell: "★★☆☆☆",
+    tableRightCell: "プライベートなブログ運用で使用経験があります。",
+  },
+  {
+    tableLeftCell: "HTML",
+    tableCenterCell: "★★★☆☆",
+    tableRightCell:
+      "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
+  },
+  {
+    tableLeftCell: "CSS、ワードプレス",
+    tableCenterCell: "★★★☆☆",
+    tableRightCell:
+      "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
+  },
 ];
 
 function AccordionTable({ title, children, onToggle }) {
@@ -101,12 +106,11 @@ function AccordionTable({ title, children, onToggle }) {
   };
 
   useEffect(() => {
-    // 初期高さを設定
     onToggle(isOpen, contentRef.current.scrollHeight);
   }, []);
 
   return (
-    <div className="w-1/2 px-2">
+    <div className="w-full max-w-3xl px-4 my-4">
       <h3
         className="text-center cursor-pointer bg-blue-500 text-white py-2"
         onClick={handleToggle}
@@ -149,161 +153,37 @@ function Skills() {
         <h2 className="text-center">スキルチャート</h2>
         <Radar data={data} options={options} />
       </div>
-      <div className="mt-8 flex flex-wrap justify-center w-full max-w-4xl">
-        <AccordionTable title="表1" onToggle={handleToggle}>
-          <table className="table-auto w-full border-collapse border border-gray-400">
-            <thead>
-              <tr>
-                <th className="border border-gray-300 px-4 py-2">列1</th>
-                <th className="border border-gray-300 px-4 py-2">列2</th>
-                <th className="border border-gray-300 px-4 py-2">列3</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data1.map((row, index) => (
-                <tr key={index}>
-                  {row.map((cell, cellIndex) => (
-                    <td
-                      key={cellIndex}
-                      className="border border-gray-300 px-4 py-2"
-                    >
-                      {cell}
-                    </td>
-                  ))}
+      <div className="mt-8 flex flex-col items-center w-full max-w-4xl">
+        {skillData.map((skill, index) => (
+          <AccordionTable
+            key={index}
+            title={`表${index + 1}`}
+            onToggle={handleToggle}
+          >
+            <table className="table-auto w-full border-collapse border border-gray-400 mx-auto">
+              <thead>
+                <tr>
+                  <th className="border border-gray-300 px-4 py-2">列1</th>
+                  <th className="border border-gray-300 px-4 py-2">列2</th>
+                  <th className="border border-gray-300 px-4 py-2">列3</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionTable>
-        <AccordionTable title="表2" onToggle={handleToggle}>
-          <table className="table-auto w-full border-collapse border border-gray-400">
-            <thead>
-              <tr>
-                <th className="border border-gray-300 px-4 py-2">列1</th>
-                <th className="border border-gray-300 px-4 py-2">列2</th>
-                <th className="border border-gray-300 px-4 py-2">列3</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data2.map((row, index) => (
-                <tr key={index}>
-                  {row.map((cell, cellIndex) => (
-                    <td
-                      key={cellIndex}
-                      className="border border-gray-300 px-4 py-2"
-                    >
-                      {cell}
-                    </td>
-                  ))}
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-300 px-4 py-2">
+                    {skill.tableLeftCell}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-2">
+                    {skill.tableCenterCell}
+                  </td>
+                  <td className="border border-gray-300 px-4 py-2">
+                    {skill.tableRightCell}
+                  </td>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionTable>
-      </div>
-      <div className="mt-8 flex flex-wrap justify-center w-full max-w-4xl">
-        <AccordionTable title="表3" onToggle={handleToggle}>
-          <table className="table-auto w-full border-collapse border border-gray-400">
-            <thead>
-              <tr>
-                <th className="border border-gray-300 px-4 py-2">列1</th>
-                <th className="border border-gray-300 px-4 py-2">列2</th>
-                <th className="border border-gray-300 px-4 py-2">列3</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data3.map((row, index) => (
-                <tr key={index}>
-                  {row.map((cell, cellIndex) => (
-                    <td
-                      key={cellIndex}
-                      className="border border-gray-300 px-4 py-2"
-                    >
-                      {cell}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionTable>
-        <AccordionTable title="表4" onToggle={handleToggle}>
-          <table className="table-auto w-full border-collapse border border-gray-400">
-            <thead>
-              <tr>
-                <th className="border border-gray-300 px-4 py-2">列1</th>
-                <th className="border border-gray-300 px-4 py-2">列2</th>
-                <th className="border border-gray-300 px-4 py-2">列3</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data4.map((row, index) => (
-                <tr key={index}>
-                  {row.map((cell, cellIndex) => (
-                    <td
-                      key={cellIndex}
-                      className="border border-gray-300 px-4 py-2"
-                    >
-                      {cell}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionTable>
-      </div>
-      <div className="mt-8 flex flex-wrap justify-center w-full max-w-4xl">
-        <AccordionTable title="表5" onToggle={handleToggle}>
-          <table className="table-auto w-full border-collapse border border-gray-400">
-            <thead>
-              <tr>
-                <th className="border border-gray-300 px-4 py-2">列1</th>
-                <th className="border border-gray-300 px-4 py-2">列2</th>
-                <th className="border border-gray-300 px-4 py-2">列3</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data5.map((row, index) => (
-                <tr key={index}>
-                  {row.map((cell, cellIndex) => (
-                    <td
-                      key={cellIndex}
-                      className="border border-gray-300 px-4 py-2"
-                    >
-                      {cell}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionTable>
-        <AccordionTable title="表6" onToggle={handleToggle}>
-          <table className="table-auto w-full border-collapse border border-gray-400">
-            <thead>
-              <tr>
-                <th className="border border-gray-300 px-4 py-2">列1</th>
-                <th className="border border-gray-300 px-4 py-2">列2</th>
-                <th className="border border-gray-300 px-4 py-2">列3</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data6.map((row, index) => (
-                <tr key={index}>
-                  {row.map((cell, cellIndex) => (
-                    <td
-                      key={cellIndex}
-                      className="border border-gray-300 px-4 py-2"
-                    >
-                      {cell}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionTable>
+              </tbody>
+            </table>
+          </AccordionTable>
+        ))}
       </div>
     </div>
   );

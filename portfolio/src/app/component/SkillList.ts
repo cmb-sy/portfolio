@@ -32,41 +32,35 @@ export const ProgrammingSkills: skillTable[] = [
     skill: [
       {
         tableLeftCell: "JavaScript",
-        imagePass: JavaScript,
         tableCenterCell: "★★★☆☆",
         tableRightCell:
           "システム開発として使用経験があります。また、プライベートでもJSを使って開発した経験があります。",
       },
       {
         tableLeftCell: "Typescript",
-        imagePass: Typescript,
         tableCenterCell: "★★★☆☆",
         tableRightCell:
           "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
       },
       {
         tableLeftCell: "Vue",
-        imagePass: Vue,
         tableCenterCell: "★★★★☆",
         tableRightCell:
           "システム開発として使用経験があります。また、プライベートでもTypeScriptを使って開発した経験があります。",
       },
       {
         tableLeftCell: "React",
-        imagePass: React,
         tableCenterCell: "★★★☆☆",
         tableRightCell:
           "プライベートのアプリケーション開発として使用経験があります。",
       },
       {
         tableLeftCell: "Astro",
-        imagePass: Astro,
         tableCenterCell: "★★☆☆☆",
         tableRightCell: "プライベートなブログ運用で使用経験があります。",
       },
       {
         tableLeftCell: "HTML",
-        imagePass: HTML,
         tableCenterCell: "★★★☆☆",
         tableRightCell:
           "システム開発として使用経験があります。また、プライベートのアプリケーション開発でも使用経験があります。",
