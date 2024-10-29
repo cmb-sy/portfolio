@@ -35,7 +35,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
   const lines = text.split("\n");
 
   return (
-    <div className="text-black text-center text-lg md:text-2xl lg:text-7xl leading-relaxed">
+    <div className="text-black text-center font-bold text-4xl md:text-6xl lg:text-8xl leading-relaxed font-sans">
       {lines.map((line, lineIndex) => {
         const lineDelay = lineIndex * 1.5; // 各行の遅延時間を計算
         return (

@@ -19,22 +19,26 @@ const Skills: React.FC = () => {
             <h2 className="text-2xl font-bold mb-4 text-center">
               {skillCategory.skillType}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {skillCategory.skill.map((skill, idx) => (
-                <div key={idx} className="flex items-center mb-4">
+                <div key={idx} className="flex items-start mb-4">
                   {skill.imagePass && (
-                    <Image
-                      src={skill.imagePass}
-                      alt={skill.name}
-                      width={48}
-                      height={48}
-                      className="object-contain mr-4"
-                    />
+                    <div className="flex-shrink-0 mr-4">
+                      <Image
+                        src={skill.imagePass}
+                        alt={skill.name}
+                        width={64}
+                        height={64}
+                        className="object-contain"
+                      />
+                    </div>
                   )}
-                  <div>
+                  <div className="flex flex-col">
                     <div className="font-bold">{skill.name}</div>
-                    <div className="text-sm text-gray-600">{skill.level}</div>
-                    <div className="text-sm">{skill.description}</div>
+                    <div className="text-md text-gray-600">{skill.level}</div>
+                    <div className="text-md h-30 overflow-hidden">
+                      {skill.description}
+                    </div>
                   </div>
                 </div>
               ))}
