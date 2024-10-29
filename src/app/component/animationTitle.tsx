@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import Image from "next/image"; // Use next/image for SVG
 
 interface AnimatedTextProps {
   text: string;
@@ -11,10 +10,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
     const aboutMeSection = document.getElementById("about-me");
     if (aboutMeSection) {
       const yOffset = -50; // 遷移後の調整値
-      const y =
-        aboutMeSection.getBoundingClientRect().top +
-        window.pageYOffset +
-        yOffset;
+      const y = aboutMeSection.getBoundingClientRect().top + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };

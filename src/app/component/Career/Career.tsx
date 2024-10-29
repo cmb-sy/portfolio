@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import { CareerData, YearData } from "./CareerData";
 
 interface AccordionTableProps {
@@ -30,13 +31,14 @@ function AccordionTable({ title, children, onToggle }: AccordionTableProps) {
     >
       <h3 className="text-center text-black py-2 flex justify-between items-center">
         {title}
-        <img
+        <Image
           src="/chevron.svg"
           alt="chevron"
+          width={24}
+          height={24}
           className={`transition-transform duration-500 ${
             isOpen ? "rotate-180" : ""
           }`}
-          style={{ width: "24px", height: "24px", color: "black" }}
         />
       </h3>
       <div
@@ -78,39 +80,48 @@ function Career() {
               title={yearData.年度}
               onToggle={handleToggle}
             >
-              {yearData.キャリア.map((project: any, projectIndex: number) => (
-                <table
-                  key={projectIndex}
-                  className="table-auto w-full border-collapse border border-gray-400 mx-auto mb-4"
-                >
-                  <tbody>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
-                        プロジェクト名
-                      </td>
-                      <td className="border border-gray-300 px-4 py-2">
-                        {project.プロジェクト}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
-                        開発環境
-                      </td>
-                      <td className="border border-gray-300 px-4 py-2">
-                        {project.開発環境}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
-                        業務内容
-                      </td>
-                      <td className="border border-gray-300 px-4 py-2">
-                        {project.業務内容}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              ))}
+              {yearData.キャリア.map(
+                (
+                  project: {
+                    プロジェクト: string;
+                    開発環境: string;
+                    業務内容: string;
+                  },
+                  projectIndex: number
+                ) => (
+                  <table
+                    key={projectIndex}
+                    className="table-auto w-full border-collapse border border-gray-400 mx-auto mb-4"
+                  >
+                    <tbody>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
+                          プロジェクト名
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2">
+                          {project.プロジェクト}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
+                          開発環境
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2">
+                          {project.開発環境}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
+                          業務内容
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2">
+                          {project.業務内容}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                )
+              )}
             </AccordionTable>
           ))
         ) : (
