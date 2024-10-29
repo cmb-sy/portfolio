@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 import React from "/public/TechLogo/frontend/React.png";
 import Vue from "/public/TechLogo/frontend/Vue.png";
 import Typescript from "/public/TechLogo/frontend/Typescript.png";
-import JavaScript from "/public/TechLogo/frontend/JavaScript.png";
+import JavaScript from "/public/TechLogo/frontend/Javascript.png";
 import Astro from "/public/TechLogo/frontend/Astro.png";
 import HTML from "/public/TechLogo/frontend/HTML.png";
 import CSS from "/public/TechLogo/frontend/CSS.png";
