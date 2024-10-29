@@ -1,24 +1,24 @@
 import React from "react";
-import { works } from "./WorkData"; // WorkData.tsからインポート
+import { works } from "./WorkData";
 
 const Works: React.FC = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen p-4">
+    <div className="flex justify-center p-4">
       <div className="flex flex-wrap gap-8 justify-center">
         {works.map((work) => (
-          <div className="border rounded-lg p-6 w-full sm:w-80 md:w-96 shadow-md hover:shadow-lg hover:bg-gray-100 transition duration-300">
+          <div className="border rounded-lg p-4 w-full sm:w-96 md:w-128 shadow-md hover:shadow-lg hover:bg-gray-100 transition duration-300 transform hover:-translate-y-2">
             <img
               src={work.imageUrl}
               alt={work.title}
-              className="w-full h-40 sm:h-48 md:h-60 object-cover rounded-t-lg"
+              className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-t-lg"
             />
-            <h2 className="text-xl sm:text-2xl font-bold mt-4">{work.title}</h2>
-            <p className="mt-2 text-base sm:text-lg">{work.description}</p>
-            <div className="mt-4">
+            <h2 className="text-lg sm:text-xl font-bold mt-2">{work.title}</h2>
+            <p className="mt-1 text-sm sm:text-base">{work.description}</p>
+            <div className="mt-2">
               {work.tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                  className="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-1"
                 >
                   {tag}
                 </span>

@@ -1,13 +1,10 @@
 "use client";
 
-import "./Header.css";
 import { useState, useEffect } from "react";
 import { navigationItems } from "@/app/component/NavigationBar/HeaderItem";
 import { smoothScroll } from "@/app/component/NavigationBar/smoothScroll";
 
 function Header() {
-  let scrollingTimer: number;
-
   const [navActive, setNavActive] = useState(false);
 
   const toggleNav = () => {
@@ -15,54 +12,33 @@ function Header() {
   };
 
   useEffect(() => {
+    let scrollingTimer: number;
+
     const handleScroll = () => {
       const header = document.querySelector("header");
       if (header) {
-        // スクロールが発生したときに透明度を変更
         (header as HTMLElement).style.opacity = "0.5";
-
-        // スクロールが停止した場合にタイマーを使って透明度を元に戻す
         clearTimeout(scrollingTimer);
         scrollingTimer = window.setTimeout(() => {
           (header as HTMLElement).style.opacity = "1";
-        }, 200); // 200ミリ秒間スクロールが停止したとみなす
+        }, 200);
       }
     };
 
-    // メディアクエリを定義
     const mediaQuery = window.matchMedia("(max-width: 600px)");
 
-    // モバイル用のスクロールハンドリング関数
-    const handleScrollForMobile = () => {
-      const header = document.querySelector("header");
-      if (header) {
-        // スクロールが発生したときに透明度を変更
-        (header as HTMLElement).style.opacity = "0.5";
-
-        // スクロールが停止した場合にタイマーを使って透明度を元に戻す
-        clearTimeout(scrollingTimer);
-        scrollingTimer = window.setTimeout(() => {
-          (header as HTMLElement).style.opacity = "1";
-        }, 200); // 200ミリ秒間スクロールが停止したとみなす
-      }
-    };
-
-    // 初回実行
     if (mediaQuery.matches) {
-      window.addEventListener("scroll", handleScrollForMobile);
+      window.addEventListener("scroll", handleScroll);
     } else {
       window.addEventListener("scroll", handleScroll);
     }
 
-    // ウィンドウサイズが変更されたときに挙動を切り替える
     mediaQuery.addEventListener("change", (e) => {
       if (e.matches) {
-        // 幅が600px未満の場合
         window.removeEventListener("scroll", handleScroll);
-        window.addEventListener("scroll", handleScrollForMobile);
+        window.addEventListener("scroll", handleScroll);
       } else {
-        // 幅が600px以上の場合
-        window.removeEventListener("scroll", handleScrollForMobile);
+        window.removeEventListener("scroll", handleScroll);
         window.addEventListener("scroll", handleScroll);
       }
     });
@@ -71,10 +47,8 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
       mediaQuery.removeEventListener("change", (e) => {
         if (e.matches) {
-          // 幅が600px未満の場合
-          window.removeEventListener("scroll", handleScrollForMobile);
+          window.removeEventListener("scroll", handleScroll);
         } else {
-          // 幅が600px以上の場合
           window.removeEventListener("scroll", handleScroll);
         }
       });
@@ -82,17 +56,16 @@ function Header() {
   }, []);
 
   return (
-    <header>
-      <nav className="navContainer">
+    <header className="fixed top-0 w-full bg-white shadow-md z-50">
+      <nav className="flex justify-between items-center p-4 flex-col">
+        <div className="flex-grow"></div>
         <ul
-          className={
-            navActive
-              ? "header-nav-links header-nav-active"
-              : "header-nav-links"
-          }
+          className={`flex flex-col md:flex-row md:items-center md:gap-8 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent transition-transform transform ${
+            navActive ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+          } md:justify-center`}
         >
           {navigationItems.map((item) => (
-            <li key={item.url}>
+            <li key={item.url} className="list-none">
               <a
                 href={item.url}
                 onClick={(e) => {
@@ -100,23 +73,30 @@ function Header() {
                   smoothScroll(item.url);
                   toggleNav();
                 }}
-                className="rrrr"
+                className="block py-4 px-8 text-black no-underline hover:bg-gray-200 md:hover:bg-gray-300 text-center text-lg"
               >
                 {item.value}
               </a>
             </li>
           ))}
         </ul>
-        {/* ハンバーガメニュー */}
-        <div
-          className={`burger ${navActive ? "header-toggle" : ""}`}
-          onClick={() => {
-            toggleNav();
-          }}
-        >
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
+        <div className="flex-grow md:hidden"></div>
+        <div className="md:hidden cursor-pointer" onClick={toggleNav}>
+          <div
+            className={`w-6 h-1 bg-black mb-1 transition-transform ${
+              navActive ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></div>
+          <div
+            className={`w-6 h-1 bg-black mb-1 transition-opacity ${
+              navActive ? "opacity-0" : ""
+            }`}
+          ></div>
+          <div
+            className={`w-6 h-1 bg-black transition-transform ${
+              navActive ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></div>
         </div>
       </nav>
     </header>

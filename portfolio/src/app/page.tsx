@@ -4,7 +4,7 @@ import Works from "@/app/component/Work/Works";
 import Skills from "@/app/component/Skill/Skills";
 import NavigationBar from "@/app/component/NavigationBar/Navigationbar";
 import TopPage from "./component/TopPage";
-import Footer from "./component/Footer";
+import Footer from "./component/Footer/Footer";
 import Contact from "./component/Contact";
 
 export default function Home() {
@@ -13,32 +13,31 @@ export default function Home() {
       title: "About Me",
       comment: "私について",
       component: <AboutMe />,
-      bgColor: "bg-white",
+      bgColor: "bg-slate-50",
     },
     {
       title: "Skill",
-      comment:
-        "ラウド関連を中心に幅広く技術習得に励んでおります。これからも日々研鑽していきます！以下チャートは各スキルごとの得意度をレートで示しています。",
+      comment: "経験のあるスキルを一覧でまとめました",
       component: <Skills />,
-      bgColor: "bg-slate-50",
+      bgColor: "bg-white",
     },
     {
       title: "Works",
-      comment: "ああああああああああああ",
+      comment: "過去に作成したアプリケーションを掲載しました",
       component: <Works />,
-      bgColor: "bg-white",
-    },
-    {
-      title: "Career",
-      comment: "ああああああああああああ",
-      component: <Career />,
       bgColor: "bg-slate-50",
     },
     {
-      title: "Contact",
-      comment: "ああああああああああああ",
-      component: <Contact />,
+      title: "Career",
+      comment: "これまでの業務経験をまとめました",
+      component: <Career />,
       bgColor: "bg-white",
+    },
+    {
+      title: "Contact",
+      comment: "最後までご覧頂きありがとうございました",
+      component: <Contact />,
+      bgColor: "bg-slate-50",
     },
   ];
   return (
@@ -55,7 +54,7 @@ export default function Home() {
               className={`relative z-10 ${section.bgColor} py-24`}
             >
               <div className="mx-auto max-w-screen-lg">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 text-center text-green-500">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 text-center text-black-500">
                   {section.title}
                 </h1>
                 <p className="text-sm mb-4 text-center text-gray-500">

@@ -65,12 +65,12 @@ function Career() {
     <div
       className="flex flex-col items-center"
       style={{
-        height: `calc(50vh + ${totalHeight}px)`,
+        height: `calc(400px + ${totalHeight}px)`,
         overflowY: "hidden",
         transition: "height 0.3s ease-in-out",
       }}
     >
-      <div className="mt-8 flex flex-col items-center w-full max-w-4xl">
+      <div className="w-full max-w-3xl p-4 sm:px-10 md:px-12 lg:px-16">
         {CareerData && CareerData.length > 0 ? (
           CareerData.map((yearData: YearData, yearIndex: number) => (
             <AccordionTable
@@ -78,41 +78,39 @@ function Career() {
               title={yearData.年度}
               onToggle={handleToggle}
             >
-              {yearData.キャリア.map(
-                (project: Project, projectIndex: number) => (
-                  <table
-                    key={projectIndex}
-                    className="table-auto w-full border-collapse border border-gray-400 mx-auto mb-4"
-                  >
-                    <tbody>
-                      <tr>
-                        <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
-                          プロジェクト名
-                        </td>
-                        <td className="border border-gray-300 px-4 py-2">
-                          {project.プロジェクト}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
-                          業務内容
-                        </td>
-                        <td className="border border-gray-300 px-4 py-2">
-                          {project.業務内容}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
-                          開発環境
-                        </td>
-                        <td className="border border-gray-300 px-4 py-2">
-                          {project.開発環境}
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                )
-              )}
+              {yearData.キャリア.map((project: any, projectIndex: number) => (
+                <table
+                  key={projectIndex}
+                  className="table-auto w-full border-collapse border border-gray-400 mx-auto mb-4"
+                >
+                  <tbody>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
+                        プロジェクト名
+                      </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        {project.プロジェクト}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
+                        業務内容
+                      </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        {project.業務内容}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
+                        開発環境
+                      </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        {project.開発環境}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              ))}
             </AccordionTable>
           ))
         ) : (

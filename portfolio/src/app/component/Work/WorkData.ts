@@ -10,7 +10,8 @@ export interface Work {
 export const works: Work[] = [
   {
     title: "作品1",
-    description: "これは作品1の説明です。",
+    description:
+      "これは作品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の説明です。",
     tags: ["タグ1", "タグ2"],
     imageUrl: "https://via.placeholder.com/300",
   },

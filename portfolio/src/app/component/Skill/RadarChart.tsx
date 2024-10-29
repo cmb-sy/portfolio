@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Radar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -20,6 +20,24 @@ ChartJS.register(
 );
 
 const RadarChart: React.FC = () => {
+  const [chartSize, setChartSize] = useState({ width: 400, height: 400 });
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth * 0.8;
+      const height = window.innerHeight * 0.8;
+      setChartSize({
+        width: width > 400 ? 400 : width,
+        height: height > 400 ? 400 : height,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // 初回レンダリング時にサイズを設定
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // サンプルデータ
   const skillLevels = [
     { name: "Frontend", level: 4 },
@@ -43,6 +61,7 @@ const RadarChart: React.FC = () => {
   };
 
   const options = {
+    maintainAspectRatio: false,
     scales: {
       r: {
         min: 0,
@@ -68,10 +87,10 @@ const RadarChart: React.FC = () => {
   return (
     <div
       style={{
-        width: "50%",
-        height: "50%",
-        maxWidth: "400px",
-        maxHeight: "400px",
+        width: `${chartSize.width}px`,
+        height: `${chartSize.height}px`,
+        maxWidth: "100%",
+        maxHeight: "100%",
       }}
     >
       <Radar data={data} options={options} />
