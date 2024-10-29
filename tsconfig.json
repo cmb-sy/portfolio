@@ -15,5 +15,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "src/componemt/Career/CareerSection.tsx"]
+  "include": [
+    "src",
+    "src/componemt/Career/CareerSection.tsx",
+    "portfolio/src/app/component/NavigationBar/scrollToHash.ts",
+    "portfolio/src/app/component/NavigationBar/smoothScroll.ts",
+    "portfolio/src/app/component/NavigationBar/HeaderItem.ts",
+    "portfolio/src/app/component/SkillData.ts"
+  ]
 }
