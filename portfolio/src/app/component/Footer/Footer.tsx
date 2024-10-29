@@ -1,11 +1,23 @@
+"use client";
+
 import React from "react";
 
 const Footer: React.FC = () => {
+  const scrollToAboutMe = () => {
+    const aboutMeSection = document.getElementById("top-page");
+    if (aboutMeSection) {
+      aboutMeSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="text-black w-full z-10 relative flex flex-col items-center">
       <div className="bg-gray-600 w-full py-32 flex justify-center relative">
         <div className="text-xl text-white">Thank You for visiting </div>
-        <button className="absolute bottom-0 transform translate-y-2/3 bg-gray-800 text-white rounded-full w-36 h-36 flex items-center justify-center">
+        <button
+          className="absolute bottom-0 transform translate-y-2/3 bg-gray-800 text-white rounded-full w-36 h-36 flex items-center justify-center hover:translate-y-1/2 transition-transform duration-300"
+          onClick={scrollToAboutMe}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

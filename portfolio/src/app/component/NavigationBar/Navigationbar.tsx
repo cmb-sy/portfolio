@@ -73,7 +73,7 @@ function Header() {
                   smoothScroll(item.url);
                   toggleNav();
                 }}
-                className="block py-4 px-8 text-black no-underline hover:bg-gray-200 md:hover:bg-gray-300 text-center text-lg"
+                className="block py-4 px-8 text-black no-underline hover:bg-gray-200 md:hover:bg-gray-300 text-center text-lg font-bold"
               >
                 {item.value}
               </a>

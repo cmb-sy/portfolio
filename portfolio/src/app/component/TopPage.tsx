@@ -2,12 +2,12 @@ import React from "react";
 import AnimatedText from "@/app/component/animationTitle";
 import ParticleBackground from "@/app/component/ParticlesBackground";
 
-const TopPage = async () => {
+const TopPage: React.FC = () => {
   const title = "kunst portfolio";
 
   return (
     <>
-      <div className="relative w-full h-screen">
+      <div className="relative w-full h-screen" id="top-page">
         {/* 背景としてParticlesコンポーネントを配置 */}
         <div className="absolute inset-0 z-0">
           <ParticleBackground />
