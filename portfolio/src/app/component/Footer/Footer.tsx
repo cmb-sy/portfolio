@@ -13,8 +13,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="text-black w-full z-10 relative flex flex-col items-center">
       <div className="bg-gray-600 w-full py-16 md:py-32 flex justify-center relative">
-        <div className="text-base md:text-xl text-white">
-          Thank You for visiting{" "}
+        <div className="sm:text-3xl md:text-5xl text-white">
+          Thank You for visiting
         </div>
         <button
           className="absolute bottom-0 transform translate-y-2/3 bg-gray-800 text-white rounded-full w-24 h-24 md:w-36 md:h-36 flex items-center justify-center hover:translate-y-1/2 transition-transform duration-300"
