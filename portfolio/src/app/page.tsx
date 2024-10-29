@@ -10,36 +10,42 @@ import Contact from "./component/Contact";
 export default function Home() {
   const sections = [
     {
+      id: "about-me",
       title: "About Me",
       comment: "私について",
       component: <AboutMe />,
       bgColor: "bg-slate-50",
     },
     {
+      id: "skills",
       title: "Skill",
       comment: "経験のあるスキルを一覧でまとめました",
       component: <Skills />,
       bgColor: "bg-white",
     },
     {
+      id: "works",
       title: "Works",
       comment: "過去に作成したアプリケーションを掲載しました",
       component: <Works />,
       bgColor: "bg-slate-50",
     },
     {
+      id: "career",
       title: "Career",
       comment: "これまでの業務経験をまとめました",
       component: <Career />,
       bgColor: "bg-white",
     },
     {
+      id: "contact",
       title: "Contact",
       comment: "最後までご覧頂きありがとうございました",
       component: <Contact />,
       bgColor: "bg-slate-50",
     },
   ];
+
   return (
     <>
       <div className="relative z-20">
@@ -51,6 +57,7 @@ export default function Home() {
           {sections.map((section, index) => (
             <div
               key={index}
+              id={section.id}
               className={`relative z-10 ${section.bgColor} py-24`}
             >
               <div className="mx-auto max-w-screen-lg">

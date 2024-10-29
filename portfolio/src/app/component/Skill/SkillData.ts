@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 import React from "/public/TechLogo/frontend/React.png";
 import Vue from "/public/TechLogo/frontend/Vue.png";
 import Typescript from "/public/TechLogo/frontend/Typescript.png";
@@ -11,7 +13,9 @@ import Flask from "/public/TechLogo/backend/Flask.png";
 
 import Python from "/public/TechLogo/dataScience/Python.png";
 import R from "/public/TechLogo/dataScience/R.png";
-import { StaticImageData } from "next/image";
+
+import IPA from "/public/TechLogo/certificate/IPA_logo.png";
+import TOEIC from "/public/TechLogo/certificate/logo-toeic.svg";
 
 export type skillDetail = {
   name: string;
@@ -113,6 +117,59 @@ export const ProgrammingSkills: skillTable[] = [
         imagePass: R,
         level: "★★★☆☆",
         description: "業務としてR言語を用いてデータ分析を行いました。",
+      },
+    ],
+  },
+  {
+    skillType: "インフラ",
+    skill: [
+      {
+        name: "AWS",
+        imagePass: Python,
+        level: "★★★★☆",
+        description:
+          "業務とプライベートの両方でデータ分析や機械学習モデル構築をしてきました。また、データ分析やグラフ描画、モデル構築のため様々なフレームワークを用いた経験があります。",
+      },
+      {
+        name: "R",
+        imagePass: R,
+        level: "★★★☆☆",
+        description: "業務としてR言語を用いてデータ分析を行いました。",
+      },
+    ],
+  },
+  {
+    skillType: "その他",
+    skill: [
+      {
+        name: "AWS",
+        imagePass: Python,
+        level: "★★★★☆",
+        description:
+          "業務とプライベートの両方でデータ分析や機械学習モデル構築をしてきました。また、データ分析やグラフ描画、モデル構築のため様々なフレームワークを用いた経験があります。",
+      },
+      {
+        name: "R",
+        imagePass: R,
+        level: "★★★☆☆",
+        description: "業務としてR言語を用いてデータ分析を行いました。",
+      },
+    ],
+  },
+  {
+    skillType: "保有資格",
+    skill: [
+      {
+        name: "FE/AP/SC",
+        imagePass: IPA,
+        level: "",
+        description: "IT知識全般を身につけるため取得しました。",
+      },
+      {
+        name: "TOEIC:810",
+        imagePass: TOEIC,
+        level: "",
+        description: "最低限の英語力を身につけるため取得しました。",
       },
     ],
   },

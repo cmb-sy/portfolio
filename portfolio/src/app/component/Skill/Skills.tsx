@@ -1,6 +1,5 @@
 "use client";
 
-import React, { Suspense } from "react";
 import Image from "next/image";
 import { ProgrammingSkills, skillTable } from "./SkillData";
 import dynamic from "next/dynamic";
@@ -35,7 +34,6 @@ const Skills: React.FC = () => {
                   )}
                   <div className="flex flex-col">
                     <div className="font-bold">{skill.name}</div>
-                    <div className="text-md text-gray-600">{skill.level}</div>
                     <div className="text-md h-30 overflow-hidden">
                       {skill.description}
                     </div>

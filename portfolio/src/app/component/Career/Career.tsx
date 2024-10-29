@@ -24,11 +24,11 @@ function AccordionTable({ title, children, onToggle }: AccordionTableProps) {
   }, [isOpen]);
 
   return (
-    <div className="w-full max-w-3xl px-4 my-4 border border-gray-400 p-4">
-      <h3
-        className="text-center cursor-pointer text-black py-2 flex justify-between items-center"
-        onClick={handleToggle}
-      >
+    <div
+      className="w-full max-w-3xl px-4 my-4 border border-gray-400 p-4 cursor-pointer hover:cursor-pointer"
+      onClick={handleToggle}
+    >
+      <h3 className="text-center text-black py-2 flex justify-between items-center">
         {title}
         <img
           src="/chevron.svg"

@@ -33,28 +33,27 @@ const RadarChart: React.FC = () => {
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // 初回レンダリング時にサイズを設定
+    handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // サンプルデータ
   const skillLevels = [
-    { name: "Frontend", level: 4 },
-    { name: "Backend", level: 5 },
-    { name: "Infra", level: 3 },
-    { name: "DataScience", level: 4 },
-    { name: "Other", level: 2 },
+    { name: "フロントエンド" },
+    { name: "バックエンド" },
+    { name: "インフラ" },
+    { name: "データサイエンス" },
+    { name: "その他" },
   ];
 
   const data = {
     labels: skillLevels.map((skill) => skill.name),
     datasets: [
       {
-        label: "スキルレベル",
-        data: skillLevels.map((skill) => skill.level),
-        backgroundColor: "rgba(34, 202, 236, 0.2)",
-        borderColor: "rgba(34, 202, 236, 1)",
+        data: [4, 3, 3, 5, 3],
+        backgroundColor: "rgba(128, 128, 128, 0.2)",
+        borderColor: "#808080",
         borderWidth: 1,
       },
     ],
@@ -80,6 +79,12 @@ const RadarChart: React.FC = () => {
             size: 14,
           },
         },
+      },
+    },
+    plugins: {
+      // 文字が表示しないようにして
+      legend: {
+        display: false,
       },
     },
   };
