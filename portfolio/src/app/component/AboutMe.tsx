@@ -20,13 +20,13 @@ const AboutMe: React.FC = () => (
           { label: "氏名", value: "Kunst" },
           {
             label: "ブログ",
-            value: "kunstBlog",
+            value: "https://x.com/kunst_sy_",
             link: "https://x.com/kunst_sy_",
           },
           { label: "X:", value: "kunst", link: "https://x.com/kunst_sy_" },
           {
             label: "Github",
-            value: "kunst",
+            value: "https://github.com/cmb-sy",
             link: "https://github.com/cmb-sy",
           },
         ].map(({ label, value, link }) => (

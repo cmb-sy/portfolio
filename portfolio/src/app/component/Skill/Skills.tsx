@@ -34,6 +34,7 @@ const Skills: React.FC = () => {
                   )}
                   <div className="flex flex-col">
                     <div className="font-bold">{skill.name}</div>
+                    <div>{skill.level}</div>
                     <div className="text-md h-30 overflow-hidden">
                       {skill.description}
                     </div>

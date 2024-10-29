@@ -1,32 +1,44 @@
+import { StaticImageData } from "next/image";
+
+import nyanko from "/public/Works/nyankoGenerator.png";
+import Omikuzi from "/public/Works/omikuzi.png";
+import taskManage from "/public/Works/taskManage.png";
+
 export interface Work {
   id: number;
   title: string;
   description: string;
   tags: string[];
-  imageUrl: string;
+  imageUrl: string | StaticImageData;
+  sourceUrl: string;
 }
 
 export const works: Work[] = [
   {
     id: 1,
-    title: "作品1",
+    title: "カンバン式タスク管理ツール",
     description:
-      "これは作品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の品1の説明です。",
-    tags: ["タグ1", "タグ2"],
-    imageUrl: "https://via.placeholder.com/300",
+      "カンバン方式でタスクを管理するアプリケーション。仕事用に欲しく開発してみました。",
+    tags: ["python", "Django"],
+    imageUrl: taskManage,
+    sourceUrl: "https://github.com/cmb-sy/Manage-Tasks-with-Kanban-board",
   },
   {
     id: 2,
-    title: "作品2",
-    description: "これは作品2の説明です。",
-    tags: ["タグ3", "タグ4"],
-    imageUrl: "https://via.placeholder.com/300",
+    title: "にゃんこGenerator",
+    description:
+      "REACT学習を目的として猫画像を眺めるアプリケーションを開発しました",
+    tags: ["Typescript", "REACT"],
+    imageUrl: nyanko,
+    sourceUrl: "https://github.com/cmb-sy/nyanko-generator",
   },
   {
     id: 3,
-    title: "作品3",
-    description: "これは作品3の説明です。",
-    tags: ["タグ5", "タグ6"],
-    imageUrl: "https://via.placeholder.com/300",
+    title: "媚みくじ",
+    description:
+      "ハッカソンで開発した、おみくじに遊び要素を組み入れたアプリケーション",
+    tags: ["Python", "Flask"],
+    imageUrl: Omikuzi,
+    sourceUrl: "https://github.com/cmb-sy/Omikuji",
   },
 ];
