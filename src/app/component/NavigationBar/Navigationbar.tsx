@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { navigationItems } from "@/app/component/NavigationBar/HeaderItem";
-import { smoothScroll } from "@/app/component/NavigationBar/smoothScroll";
+import { navigationItems } from "./HeaderItem";
+import { smoothScroll } from "./smoothScroll";
 
 function Header() {
   const [navActive, setNavActive] = useState(false);

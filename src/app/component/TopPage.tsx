@@ -1,6 +1,6 @@
 import React from "react";
-import AnimatedText from "@/app/component/animationTitle";
-import ParticleBackground from "@/app/component/ParticlesBackground";
+import AnimatedText from "./animationTitle";
+import ParticleBackground from "./ParticlesBackground";
 
 const TopPage: React.FC = () => {
   const title = "kunst portfolio";
