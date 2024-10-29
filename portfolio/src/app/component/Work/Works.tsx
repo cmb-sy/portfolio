@@ -13,7 +13,6 @@ const Works: React.FC = () => {
               className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-t-lg"
             />
             <h2 className="text-lg sm:text-xl font-bold mt-2">{work.title}</h2>
-            <p className="mt-1 text-sm sm:text-base">{work.description}</p>
             <div className="mt-2">
               {work.tags.map((tag, index) => (
                 <span
@@ -24,6 +23,7 @@ const Works: React.FC = () => {
                 </span>
               ))}
             </div>
+            <p className="mt-1 text-sm sm:text-base">{work.description}</p>
           </div>
         ))}
       </div>

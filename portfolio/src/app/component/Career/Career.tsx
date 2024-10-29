@@ -94,18 +94,18 @@ function Career() {
                     </tr>
                     <tr>
                       <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
-                        業務内容
-                      </td>
-                      <td className="border border-gray-300 px-4 py-2">
-                        {project.業務内容}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
                         開発環境
                       </td>
                       <td className="border border-gray-300 px-4 py-2">
                         {project.開発環境}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 bg-gray-200 text-gray-800 font-bold w-1/4">
+                        業務内容
+                      </td>
+                      <td className="border border-gray-300 px-4 py-2">
+                        {project.業務内容}
                       </td>
                     </tr>
                   </tbody>
