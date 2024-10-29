@@ -14,8 +14,16 @@ import Flask from "/public/TechLogo/backend/Flask.png";
 import Python from "/public/TechLogo/dataScience/Python.png";
 import R from "/public/TechLogo/dataScience/R.png";
 
+import AWS from "/public/TechLogo/infra/AWS.png";
+import Postgresql from "/public/TechLogo/infra/Postgresql.png";
+
+import Linux from "/public/TechLogo/other/linux.svg";
+
 import IPA from "/public/TechLogo/certificate/IPA_logo.png";
 import TOEIC from "/public/TechLogo/certificate/logo-toeic.svg";
+import JSSC from "/public/TechLogo/certificate/JSSC.png";
+import DL from "/public/TechLogo/certificate/DeepLearning.png";
+import Bookkeeping from "/public/TechLogo/certificate/Bookkeeping.png";
 
 export type skillDetail = {
   name: string;
@@ -125,16 +133,16 @@ export const ProgrammingSkills: skillTable[] = [
     skill: [
       {
         name: "AWS",
-        imagePass: Python,
-        level: "★★★★☆",
-        description:
-          "業務とプライベートの両方でデータ分析や機械学習モデル構築をしてきました。また、データ分析やグラフ描画、モデル構築のため様々なフレームワークを用いた経験があります。",
+        imagePass: AWS,
+        level: "★★★☆☆",
+        description: "サービスの運用・保守として業務経験があります。",
       },
       {
-        name: "R",
-        imagePass: R,
+        name: "Postgresql",
+        imagePass: Postgresql,
         level: "★★★☆☆",
-        description: "業務としてR言語を用いてデータ分析を行いました。",
+        description:
+          "データ分析のデータ匿名化、サービスの運用・保守として用いた経験があります。",
       },
     ],
   },
@@ -142,17 +150,10 @@ export const ProgrammingSkills: skillTable[] = [
     skillType: "その他",
     skill: [
       {
-        name: "AWS",
-        imagePass: Python,
-        level: "★★★★☆",
-        description:
-          "業務とプライベートの両方でデータ分析や機械学習モデル構築をしてきました。また、データ分析やグラフ描画、モデル構築のため様々なフレームワークを用いた経験があります。",
-      },
-      {
-        name: "R",
-        imagePass: R,
+        name: "Linux",
+        imagePass: Linux,
         level: "★★★☆☆",
-        description: "業務としてR言語を用いてデータ分析を行いました。",
+        description: "業務とプライベートの両方で経験があります。",
       },
     ],
   },
@@ -160,7 +161,7 @@ export const ProgrammingSkills: skillTable[] = [
     skillType: "保有資格",
     skill: [
       {
-        name: "FE/AP/SC",
+        name: "IPA:FE/AP/SC",
         imagePass: IPA,
         level: "",
         description: "IT知識全般を身につけるため取得しました。",
@@ -170,6 +171,31 @@ export const ProgrammingSkills: skillTable[] = [
         imagePass: TOEIC,
         level: "",
         description: "最低限の英語力を身につけるため取得しました。",
+      },
+      {
+        name: "統計検定:準1級/2級",
+        imagePass: JSSC,
+        level: "",
+        description:
+          "機械学習のアルゴリズムを数学的に理解するため取得しました。",
+      },
+      {
+        name: "E資格",
+        imagePass: DL,
+        level: "",
+        description: "機械学習の知識を得るために取得しました。",
+      },
+      {
+        name: "E資格",
+        imagePass: DL,
+        level: "",
+        description: "機械学習の知識を得るために取得しました。",
+      },
+      {
+        name: "簿記検定:3級",
+        imagePass: Bookkeeping,
+        level: "",
+        description: "会計知識を得るために取得しました。",
       },
     ],
   },

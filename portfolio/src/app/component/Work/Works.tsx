@@ -6,7 +6,10 @@ const Works: React.FC = () => {
     <div className="flex justify-center p-4">
       <div className="flex flex-wrap gap-8 justify-center">
         {works.map((work) => (
-          <div className="border rounded-lg p-4 w-full sm:w-96 md:w-128 shadow-md hover:shadow-lg hover:bg-gray-100 transition duration-300 transform hover:-translate-y-2">
+          <div
+            key={work.id}
+            className="border rounded-lg p-4 w-full sm:w-96 md:w-128 shadow-md hover:shadow-lg hover:bg-gray-100 transition duration-300 transform hover:-translate-y-2"
+          >
             <img
               src={work.imageUrl}
               alt={work.title}
