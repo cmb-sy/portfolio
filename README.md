@@ -1,3 +1,6 @@
+##  Outline
+This is my portfolio site.
+
 ## Getting Started
 
 1. Install Node and yarn.
@@ -9,8 +12,10 @@
 - TypeScript
 - Next.js
 - Tailwind CSS
-- Vercel
 
 ## Demo
 
-##
+https://github.com/user-attachments/assets/7d5b696a-8497-45f5-9142-e0b9be86315d
+
+## comment
+This portfolio has been merged into kunstSite, so it doesn't have a domain now.
